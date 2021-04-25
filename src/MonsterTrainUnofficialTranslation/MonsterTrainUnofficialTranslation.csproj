@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(SolutionDir)..\SteamAppsDir.props" />
+
+  <PropertyGroup>
+    <AssemblyName>MonsterTrainUnofficialTranslation</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(SteamAppsDir)\workshop\content\1102190\2187468759\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(SteamAppsDir)\workshop\content\1102190\2187468759\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>$(SteamAppsDir)\workshop\content\1102190\2187468759\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.ConfigurationManager">
+      <HintPath>$(SolutionDir)External\ConfigurationManager.dll</HintPath>
+    </Reference>
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo Copying plugin to the workshop directory: $(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\&#xD;&#xA;xcopy &quot;.\deployment\&quot; &quot;$(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\&quot; /EY&#xD;&#xA;xcopy &quot;$(TargetDir)&quot; &quot;$(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\plugins\&quot; /EY&#xD;&#xA;xcopy &quot;$(SolutionDir)..\locale\&quot; &quot;$(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\plugins\locale\&quot; /EY&#xD;&#xA;" />
+  </Target>
+</Project>

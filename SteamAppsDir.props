@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <!-- Change to wherever your Steam library is located -->
+    <!-- (if there are more than one of them, pick one that contains Monster Train) -->
+
+    <!-- <SteamAppsDir>D:\Programs\x86\Steam\steamapps</SteamAppsDir> -->
+    <SteamAppsDir>C:\Program Files\Steam\steamapps</SteamAppsDir>
+    
+  </PropertyGroup>
+</Project>
