@@ -18,14 +18,15 @@ namespace TextExtractor
         JObject languageSetting = null;
         Dictionary<string, TMPro.TMP_FontAsset> fontReplacementMapping = new Dictionary<string, TMPro.TMP_FontAsset>();
         List<string> unknownEncounteredFonts = new List<string>();
-        bool fontAdjustFaceInfo = false;
 
         [Flags]
-        enum TextProcessingOptions
+        enum OptionalFeatures
         {
             None = 0,
-            KoreanWordWrapping = 1,
+            OverrideFontScalingAsFallbackOnes = 1,
+            KoreanWordWrapping = 2,
         };
+        OptionalFeatures optionalFeatures = OptionalFeatures.None;
 
         const string DEFAULTLANGUAGE = "[Default (English)]";
 
@@ -59,7 +60,7 @@ namespace TextExtractor
                 )
             );
 
-            if (configLanguage.Value == "")
+            if (configLanguage.Value == "" || configLanguage.Value == DEFAULTLANGUAGE)
             {
                 Logger.LogInfo("No translation language set.");
             }
@@ -70,6 +71,19 @@ namespace TextExtractor
             else
             {
                 languageSetting = languageMap[configLanguage.Value] as JObject;
+
+                string optionalFeaturesStr = languageSetting["OptionalFeatures"].ToString();
+                if (optionalFeaturesStr != null)
+                {
+                    if (!Enum.TryParse(optionalFeaturesStr, out optionalFeatures))
+                    {
+                        Logger.LogWarning($"Unknown OptionalFeatures: {optionalFeaturesStr}.");
+                    }
+                    else
+                    {
+                        Logger.LogInfo($"OptionalFeatures: {optionalFeatures}.");
+                    }
+                }
             }
         }
         void LoadFonts()
@@ -99,8 +113,6 @@ namespace TextExtractor
 
                 fontReplacementMapping[entry.Key] = fontAsset;
             }
-
-            fontAdjustFaceInfo = languageSetting.Value<bool>("FontAdjustFaceInfo") || false;
         }
 
         void Awake()
@@ -189,7 +201,7 @@ namespace TextExtractor
             return string.Join("", segments);
         }
 
-        List<IDictionary<String, Object>> ReadWeblateCsvData(string path, TextProcessingOptions textProcessingOptions)
+        List<IDictionary<String, Object>> ReadWeblateCsvData(string path)
         {
             var ret = new List<IDictionary<String, Object>>();
 
@@ -207,7 +219,7 @@ namespace TextExtractor
                         continue;
                     }
 
-                    if (textProcessingOptions.HasFlag(TextProcessingOptions.KoreanWordWrapping))
+                    if (optionalFeatures.HasFlag(OptionalFeatures.KoreanWordWrapping))
                     {
                         target = FixKoreanWordWrapping(target);
                     }
@@ -253,22 +265,8 @@ namespace TextExtractor
             if (languageSetting == null)
                 return;
 
-            TextProcessingOptions textProcessingOptions = TextProcessingOptions.None;
-            string textProcessingOptionsStr = languageSetting["TextProcessingOptions"].ToString();
-            if (textProcessingOptionsStr != null)
-            {
-                if (!Enum.TryParse(textProcessingOptionsStr, out textProcessingOptions))
-                {
-                    Logger.LogWarning($"Unknown TextProcessingOptions: {textProcessingOptionsStr}.");
-                }
-                else
-                {
-                    Logger.LogInfo($"TextProcessingOptions: {textProcessingOptions}.");
-                }
-            }
-
             var path = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", languageSetting["Texts"].ToString());
-            var data = ReadWeblateCsvData(path, textProcessingOptions);
+            var data = ReadWeblateCsvData(path);
 
             foreach (var src in sources)
             {
@@ -332,7 +330,7 @@ namespace TextExtractor
                 fontAsset.m_FallbackFontAssetTable.Insert(0, replacement);
                 Logger.LogInfo($"{fontAsset.name} -> {replacement.name}");
 
-                if (fontAdjustFaceInfo)
+                if (optionalFeatures.HasFlag(OptionalFeatures.OverrideFontScalingAsFallbackOnes))
                 {
                     var newFaceInfo = AdjustFaceInfo(fontAsset.faceInfo, replacement.faceInfo);
                     typeof(TMPro.TMP_FontAsset).GetField("m_FaceInfo", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(fontAsset, newFaceInfo);

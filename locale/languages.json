@@ -11,7 +11,6 @@
             "Roboto-Black SDF": "NotoSansKR-Black SDF",
             "Journal SDF": "NanumBrushScript-Regular SDF"
         },
-        "FontAdjustFaceInfo": true,
-        "TextProcessingOptions": "KoreanWordWrapping"
+        "OptionalFeatures": "OverrideFontScalingAsFallbackOnes, KoreanWordWrapping"
     }
 }
