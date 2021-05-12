@@ -10,6 +10,7 @@
             "Roboto-MediumItalic SDF": "NotoSansKR-Bold SDF",
             "Roboto-Black SDF": "NotoSansKR-Black SDF",
             "Journal SDF": "NanumBrushScript-Regular SDF"
-        }
+        },
+        "FontAdjustFaceInfo": true
     }
 }

@@ -37,6 +37,10 @@
       <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="0Harmony">
       <HintPath>$(SteamAppsDir)\workshop\content\1102190\2187468759\BepInEx\core\0Harmony.dll</HintPath>
       <Private>false</Private>

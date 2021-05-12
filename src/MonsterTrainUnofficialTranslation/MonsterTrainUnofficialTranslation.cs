@@ -19,6 +19,7 @@ namespace TextExtractor
         Dictionary<string, TMPro.TMP_FontAsset> fontReplacementMapping = new Dictionary<string, TMPro.TMP_FontAsset>();
 
         JObject languageSetting = null;
+        bool fontAdjustFaceInfo = false;
 
         const string DEFAULTLANGUAGE = "[Default (English)]";
 
@@ -92,6 +93,8 @@ namespace TextExtractor
 
                 fontReplacementMapping[entry.Key] = fontAsset;
             }
+
+            fontAdjustFaceInfo = languageSetting.Value<bool>("FontAdjustFaceInfo") || false;
         }
 
         void Awake()
@@ -173,6 +176,36 @@ namespace TextExtractor
             Logger.LogInfo("Text patching done!");
         }
 
+        UnityEngine.TextCore.FaceInfo AdjustFaceInfo(UnityEngine.TextCore.FaceInfo orig, UnityEngine.TextCore.FaceInfo repl)
+        {
+            if (orig.pointSize == 0.0f)
+            {
+                Logger.LogWarning($"0 pointSize");
+            }
+            // See http://digitalnativestudios.com/textmeshpro/docs/font/
+            float scalingFactor = ((float)orig.pointSize) / repl.pointSize;
+
+            UnityEngine.TextCore.FaceInfo ret = orig;
+            ret.scale = repl.scale;
+            ret.lineHeight = repl.lineHeight * scalingFactor;
+            ret.ascentLine = repl.ascentLine * scalingFactor;
+            ret.capLine = repl.capLine * scalingFactor;
+            ret.meanLine = repl.meanLine * scalingFactor;
+            ret.baseline = repl.baseline * scalingFactor;
+            ret.descentLine = repl.descentLine * scalingFactor;
+            ret.underlineOffset = repl.underlineOffset * scalingFactor;
+            ret.underlineThickness = repl.underlineThickness * scalingFactor;
+            ret.strikethroughOffset = repl.strikethroughOffset * scalingFactor;
+            ret.strikethroughThickness = repl.strikethroughThickness * scalingFactor;
+            ret.superscriptOffset = repl.superscriptOffset * scalingFactor;
+            ret.superscriptSize = repl.superscriptSize * scalingFactor;
+            ret.subscriptOffset = repl.subscriptOffset * scalingFactor;
+            ret.subscriptSize = repl.subscriptSize * scalingFactor;
+            ret.tabWidth = repl.tabWidth * scalingFactor;
+
+            return ret;
+        }
+
         public void OnBeforeGuiElementLoadsFontAsset(TMPro.TextMeshProUGUI element)
         {
             var fontAsset = typeof(TMPro.TextMeshProUGUI).GetField("m_fontAsset", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(element) as TMPro.TMP_FontAsset;
@@ -196,6 +229,12 @@ namespace TextExtractor
 
                 fontAsset.m_FallbackFontAssetTable.Insert(0, replacement);
                 Logger.LogInfo($"{fontAsset.name} -> {replacement.name}");
+
+                if (fontAdjustFaceInfo)
+                {
+                    var newFaceInfo = AdjustFaceInfo(fontAsset.faceInfo, replacement.faceInfo);
+                    typeof(TMPro.TMP_FontAsset).GetField("m_FaceInfo", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(fontAsset, newFaceInfo);
+                }
             }
             else if (!unknownEncounteredFonts.Contains(fontAsset.name))
             {
