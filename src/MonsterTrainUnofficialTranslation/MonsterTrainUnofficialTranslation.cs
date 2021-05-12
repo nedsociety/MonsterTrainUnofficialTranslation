@@ -14,12 +14,18 @@ namespace TextExtractor
     {
         public static MonsterTrainUnofficialTranslation Instance { get; private set; }
         bool patchAttempt = false;
-        
-        List<string> unknownEncounteredFonts = new List<string>();
-        Dictionary<string, TMPro.TMP_FontAsset> fontReplacementMapping = new Dictionary<string, TMPro.TMP_FontAsset>();
 
         JObject languageSetting = null;
+        Dictionary<string, TMPro.TMP_FontAsset> fontReplacementMapping = new Dictionary<string, TMPro.TMP_FontAsset>();
+        List<string> unknownEncounteredFonts = new List<string>();
         bool fontAdjustFaceInfo = false;
+
+        [Flags]
+        enum TextProcessingOptions
+        {
+            None = 0,
+            KoreanWordWrapping = 1,
+        };
 
         const string DEFAULTLANGUAGE = "[Default (English)]";
 
@@ -108,7 +114,82 @@ namespace TextExtractor
             harmony.PatchAll();
         }
 
-        List<IDictionary<String, Object>> ReadWeblateCsvData(string path)
+        // From https://stackoverflow.com/a/28155130/3567518
+        List<int> ToCodePoints(string str)
+        {
+            var codePoints = new List<int>(str.Length);
+            for (int i = 0; i < str.Length; i++)
+            {
+                codePoints.Add(Char.ConvertToUtf32(str, i));
+                if (Char.IsHighSurrogate(str[i]))
+                    i += 1;
+            }
+
+            return codePoints;
+        }
+
+
+        string FixKoreanWordWrapping(string text)
+        {
+            // Since the game uses old TextMeshPro 1.4.0, it does not incorporate a proper Korean wordwrapping feature introduced in 1.5.0.
+            // This code will simulate it as much as possible.
+
+            var segments = new List<string>();
+
+            bool isNoBrOpened = false;
+            foreach (var i in ToCodePoints(text))
+            {
+                // See https://stackoverflow.com/a/56314869/3567518
+                if (
+                    ((0x1100 <= i) && (i <= 0x11FF))
+                    || ((0x3001 <= i) && (i <= 0x3003))
+                    || ((0x3008 <= i) && (i <= 0x3011))
+                    || ((0x3013 <= i) && (i <= 0x301F))
+                    || ((0x302E <= i) && (i <= 0x3030))
+                    || ((0x3037 <= i) && (i <= 0x3037))
+                    || ((0x30FB <= i) && (i <= 0x30FB))
+                    || ((0x3131 <= i) && (i <= 0x318E))
+                    || ((0x3200 <= i) && (i <= 0x321E))
+                    || ((0x3260 <= i) && (i <= 0x327E))
+                    || ((0xA960 <= i) && (i <= 0xA97C))
+                    || ((0xAC00 <= i) && (i <= 0xD7A3))
+                    || ((0xD7B0 <= i) && (i <= 0xD7C6))
+                    || ((0xD7CB <= i) && (i <= 0xD7FB))
+                    || ((0xFE45 <= i) && (i <= 0xFE46))
+                    || ((0xFF61 <= i) && (i <= 0xFF65))
+                    || ((0xFFA0 <= i) && (i <= 0xFFBE))
+                    || ((0xFFC2 <= i) && (i <= 0xFFC7))
+                    || ((0xFFCA <= i) && (i <= 0xFFCF))
+                    || ((0xFFD2 <= i) && (i <= 0xFFD7))
+                    || ((0xFFDA <= i) && (i <= 0xFFDC))
+                )
+                {
+                    if (!isNoBrOpened)
+                    {
+                        segments.Add("<nobr>");
+                        isNoBrOpened = true;
+                    }
+                }
+                else
+                {
+                    if (isNoBrOpened)
+                    {
+                        segments.Add("</nobr>");
+                        isNoBrOpened = false;
+                    }
+                }
+                segments.Add(char.ConvertFromUtf32(i));
+            }
+
+            if (isNoBrOpened)
+            {
+                segments.Add("</nobr>");
+            }
+
+            return string.Join("", segments);
+        }
+
+        List<IDictionary<String, Object>> ReadWeblateCsvData(string path, TextProcessingOptions textProcessingOptions)
         {
             var ret = new List<IDictionary<String, Object>>();
 
@@ -117,18 +198,25 @@ namespace TextExtractor
             {
                 foreach (var record in csv.GetRecords<dynamic>())
                 {
+                    string target = record.target as string;
+                    
                     // By default Weblate leaves untranslated entries as an empty string.
                     // Those entries must be removed to make sure they don't get merged.
-                    if (string.IsNullOrEmpty(record.target as string))
+                    if (string.IsNullOrEmpty(target))
                     {
                         continue;
+                    }
+
+                    if (textProcessingOptions.HasFlag(TextProcessingOptions.KoreanWordWrapping))
+                    {
+                        target = FixKoreanWordWrapping(target);
                     }
 
                     dynamic entry = new ExpandoObject();
                     var entryAsIDict = entry as IDictionary<String, Object>;
 
                     entryAsIDict["Key"] = record.source;
-                    entryAsIDict["English [en-US]"] = record.target;
+                    entryAsIDict["English [en-US]"] = target;
                     
                     ret.Add(entry);
                 }
@@ -165,8 +253,22 @@ namespace TextExtractor
             if (languageSetting == null)
                 return;
 
+            TextProcessingOptions textProcessingOptions = TextProcessingOptions.None;
+            string textProcessingOptionsStr = languageSetting["TextProcessingOptions"].ToString();
+            if (textProcessingOptionsStr != null)
+            {
+                if (!Enum.TryParse(textProcessingOptionsStr, out textProcessingOptions))
+                {
+                    Logger.LogWarning($"Unknown TextProcessingOptions: {textProcessingOptionsStr}.");
+                }
+                else
+                {
+                    Logger.LogInfo($"TextProcessingOptions: {textProcessingOptions}.");
+                }
+            }
+
             var path = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", languageSetting["Texts"].ToString());
-            var data = ReadWeblateCsvData(path);
+            var data = ReadWeblateCsvData(path, textProcessingOptions);
 
             foreach (var src in sources)
             {
