@@ -140,7 +140,6 @@ namespace TextExtractor
             return codePoints;
         }
 
-
         string FixKoreanWordWrapping(string text)
         {
             // Since the game uses old TextMeshPro 1.4.0, it does not incorporate a proper Korean wordwrapping feature introduced in 1.5.0.
@@ -211,7 +210,7 @@ namespace TextExtractor
                 foreach (var record in csv.GetRecords<dynamic>())
                 {
                     string target = record.target as string;
-                    
+
                     // By default Weblate leaves untranslated entries as an empty string.
                     // Those entries must be removed to make sure they don't get merged.
                     if (string.IsNullOrEmpty(target))
@@ -229,7 +228,7 @@ namespace TextExtractor
 
                     entryAsIDict["Key"] = record.source;
                     entryAsIDict["English [en-US]"] = target;
-                    
+
                     ret.Add(entry);
                 }
             }
