@@ -246,8 +246,20 @@ namespace TextExtractor
             }
         }
 
-        public void OnLocalizationLoaded()
+        int localizationLoadCallFrameCount = 0;
+
+        public void OnLocalizationLoadCallBegin()
         {
+            localizationLoadCallFrameCount += 1;
+        }
+
+        public void OnLocalizationLoadCallEnd()
+        {
+            localizationLoadCallFrameCount -= 1;
+
+            if (localizationLoadCallFrameCount > 0)
+                return;
+
             if (patchAttempt)
                 return;
             patchAttempt = true;
@@ -343,15 +355,25 @@ namespace TextExtractor
         }
     }
 
+
+
     [HarmonyLib.HarmonyPatch(typeof(LocalizationUtil))]
     [HarmonyLib.HarmonyPatch("InitLanguageSources")]
     public static class Harmony_LocalizationUtil_InitLanguageSources
     {
+        // This function is pathologically reentrant. We're counting which depth of the callstack we're in,
+        // to make sure that the patch must be done only when the outmost call is done cleanly.
+        // Otherwise we're injecting texts mid-initialization, leading to some bugs (notably InkLoc).
+        static void Prefix()
+        {
+            MonsterTrainUnofficialTranslation.Instance.OnLocalizationLoadCallBegin();
+        }
         static void Postfix()
         {
-            MonsterTrainUnofficialTranslation.Instance.OnLocalizationLoaded();
+            MonsterTrainUnofficialTranslation.Instance.OnLocalizationLoadCallEnd();
         }
     }
+
     [HarmonyLib.HarmonyPatch(typeof(TMPro.TextMeshProUGUI))]
     [HarmonyLib.HarmonyPatch("LoadFontAsset")]
     public static class Harmony_TMPro_TextMeshProUGUI_LoadFontAsset
