@@ -1,0 +1,5 @@
+Use this file to debug into Monster Train in dnSpy. See https://github.com/dnSpy/dnSpy/wiki/Debugging-Unity-Games for details.
+
+* Built with https://github.com/dnSpy/dnSpy-Unity-mono
+* Mono version: https://github.com/Unity-Technologies/mono, commit hash d1d59bb1bc16d433c1b1da138736cba1c158688b
+* Might not work if the game updates into a different Unity version
