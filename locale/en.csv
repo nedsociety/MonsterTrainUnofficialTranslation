@@ -791,7 +791,7 @@ This triggers on Slay"
 
 [effect0.upgrade.bonushp]: A number
 [health]: <sprite name=""Health"">"
-"CardData_overrideDescriptionKey-10b81a1441491c71-83a72f78f0338a1479b0ef1f09e80eb1-v2","CardData_overrideDescriptionKey-10b81a1441491c71-83a72f78f0338a1479b0ef1f09e80eb1-v2","Take control of the non-boss enemy unit with the lowest health. Clear its status effects.","CardData_overrideDescriptionKey-10b81a1441491c71-83a72f78f0338a1479b0ef1f09e80eb1-v2","","","","(Group: 'CardData_RecruitEnemy')"
+"CardData_overrideDescriptionKey-10b81a1441491c71-83a72f78f0338a1479b0ef1f09e80eb1-v2","CardData_overrideDescriptionKey-10b81a1441491c71-83a72f78f0338a1479b0ef1f09e80eb1-v2","Summon a friendly Rebel unit to the front of this floor.","CardData_overrideDescriptionKey-10b81a1441491c71-83a72f78f0338a1479b0ef1f09e80eb1-v2","","","","(Group: 'CardData_RecruitEnemy')"
 "CardData_overrideDescriptionKey-10b8f61b255fadc3-c11e9cef1fe321d4eaaee3f680a93612-v2[Zero]","CardData_overrideDescriptionKey-10b8f61b255fadc3-c11e9cef1fe321d4eaaee3f680a93612-v2[Zero]","Deal [effect0.power] damage to the front enemy unit.","CardData_overrideDescriptionKey-10b8f61b255fadc3-c11e9cef1fe321d4eaaee3f680a93612-v2[Zero]","","","","(Group: 'CardData_IceAndPyre')
 (Plural form: 'Zero')
 
@@ -2812,7 +2812,7 @@ this will always be 2 or a multiple of 2
 "CardUpgradeData_descriptionKey-237ad9b23c32ceec-dccc3b1b5c056df438a012f00d554b68-v2","CardUpgradeData_descriptionKey-237ad9b23c32ceec-dccc3b1b5c056df438a012f00d554b68-v2","Apply [sap] 4 to enemy units.","CardUpgradeData_descriptionKey-237ad9b23c32ceec-dccc3b1b5c056df438a012f00d554b68-v2","","","","(Group: 'EnhancerData_EnemyRecruit_Sap')
 
 [sap]: <b>Sap</b>"
-"CardUpgradeData_descriptionKey-2394d39318533bf0-d2c906bfba113bc43aace68c21b80250-v2","CardUpgradeData_descriptionKey-2394d39318533bf0-d2c906bfba113bc43aace68c21b80250-v2","Spawn 2 basic copies of <b>Twin of Wax</b>.","CardUpgradeData_descriptionKey-2394d39318533bf0-d2c906bfba113bc43aace68c21b80250-v2","","","","(Group: 'CardUpgradeData_MonsterSplitterLargeSynthesis')"
+"CardUpgradeData_descriptionKey-2394d39318533bf0-d2c906bfba113bc43aace68c21b80250-v2","CardUpgradeData_descriptionKey-2394d39318533bf0-d2c906bfba113bc43aace68c21b80250-v2","Summon 1 basic copy of <b>Mote of Wax</b>.","CardUpgradeData_descriptionKey-2394d39318533bf0-d2c906bfba113bc43aace68c21b80250-v2","","","","(Group: 'CardUpgradeData_MonsterSplitterLargeSynthesis')"
 "CardUpgradeData_descriptionKey-2480c1a4eb0cbf8e-2e4d9dcb61068604baa9968afe247ba3-v2","CardUpgradeData_descriptionKey-2480c1a4eb0cbf8e-2e4d9dcb61068604baa9968afe247ba3-v2","Add this unit's [attack] and [health] to the eater.","CardUpgradeData_descriptionKey-2480c1a4eb0cbf8e-2e4d9dcb61068604baa9968afe247ba3-v2","","","","(Group: 'CardUpgradeData_PrimordiumBaseOnEaten')
 
 [attack]: <sprite name=""Attack"">
@@ -3022,7 +3022,7 @@ this will always be 2 or a multiple of 2
 [imp]: Imp
 [effect0.power]: A number
 [imp]: Imp"
-"CardUpgradeData_descriptionKey-41a70578c81dcecd-b030925b7ff30f642b4a72b5e8f8afa4-v2","CardUpgradeData_descriptionKey-41a70578c81dcecd-b030925b7ff30f642b4a72b5e8f8afa4-v2","Apply [frostbite] [effect0.status0.power].","CardUpgradeData_descriptionKey-41a70578c81dcecd-b030925b7ff30f642b4a72b5e8f8afa4-v2","","","","(Group: 'CardUpgradeData_MonsterColdstingSirenSynthesis')
+"CardUpgradeData_descriptionKey-41a70578c81dcecd-b030925b7ff30f642b4a72b5e8f8afa4-v2","CardUpgradeData_descriptionKey-41a70578c81dcecd-b030925b7ff30f642b4a72b5e8f8afa4-v2","Apply [frostbite] [effect0.status0.power] to the attacked unit.","CardUpgradeData_descriptionKey-41a70578c81dcecd-b030925b7ff30f642b4a72b5e8f8afa4-v2","","","","(Group: 'CardUpgradeData_MonsterColdstingSirenSynthesis')
 
 [frostbite]: <b>Frostbite</b>
 [effect0.status0.power]: A number"
@@ -3473,7 +3473,7 @@ this will always be 2 or a multiple of 2
 "CardUpgradeData_descriptionKey-abf2df8aa1812d7e-c329ca88b555c584fb7f664df5b267ea-v2","CardUpgradeData_descriptionKey-abf2df8aa1812d7e-c329ca88b555c584fb7f664df5b267ea-v2","Apply [rooted] to the attacked unit.","CardUpgradeData_descriptionKey-abf2df8aa1812d7e-c329ca88b555c584fb7f664df5b267ea-v2","","","","(Group: 'CardUpgradeData_WyldentenRootOnStrike')
 
 [rooted]: <b>Rooted</b>"
-"CardUpgradeData_descriptionKey-acd22f86991eaa73-013fc102752df064f97382b41a785c99-v2","CardUpgradeData_descriptionKey-acd22f86991eaa73-013fc102752df064f97382b41a785c99-v2","Apply [sap] [effect0.status0.power] to a random enemy unit.","CardUpgradeData_descriptionKey-acd22f86991eaa73-013fc102752df064f97382b41a785c99-v2","","","","(Group: 'CardUpgradeData_MonsterFrozenTotemSynthesis')
+"CardUpgradeData_descriptionKey-acd22f86991eaa73-013fc102752df064f97382b41a785c99-v2","CardUpgradeData_descriptionKey-acd22f86991eaa73-013fc102752df064f97382b41a785c99-v2","Apply [sap] [effect0.status0.power] to enemy units.","CardUpgradeData_descriptionKey-acd22f86991eaa73-013fc102752df064f97382b41a785c99-v2","","","","(Group: 'CardUpgradeData_MonsterFrozenTotemSynthesis')
 
 [sap]: <b>Sap</b>
 [effect0.status0.power]: A number"
@@ -4324,7 +4324,7 @@ this will always be 2 or a multiple of 2
 "CardUpgradeData_upgradeDescriptionKey-d03f5e0ce5930226-1acb49a230256014e9af1abde40c4446-v2","CardUpgradeData_upgradeDescriptionKey-d03f5e0ce5930226-1acb49a230256014e9af1abde40c4446-v2","Friendly units enter with [dazed].","CardUpgradeData_upgradeDescriptionKey-d03f5e0ce5930226-1acb49a230256014e9af1abde40c4446-v2","","","","(Group: 'CardUpgradeData_Dazed')
 
 [dazed]: <b>Dazed</b>"
-"CardUpgradeData_upgradeDescriptionKey-d366cda86fae32ba-b030925b7ff30f642b4a72b5e8f8afa4-v2","CardUpgradeData_upgradeDescriptionKey-d366cda86fae32ba-b030925b7ff30f642b4a72b5e8f8afa4-v2","+10[health] and '[strike]: Apply [frostbite] 3.'","CardUpgradeData_upgradeDescriptionKey-d366cda86fae32ba-b030925b7ff30f642b4a72b5e8f8afa4-v2","","","","(Group: 'CardUpgradeData_MonsterColdstingSirenSynthesis')
+"CardUpgradeData_upgradeDescriptionKey-d366cda86fae32ba-b030925b7ff30f642b4a72b5e8f8afa4-v2","CardUpgradeData_upgradeDescriptionKey-d366cda86fae32ba-b030925b7ff30f642b4a72b5e8f8afa4-v2","+10[health] and '[strike]: Apply [frostbite] 3 to the attacked unit.'","CardUpgradeData_upgradeDescriptionKey-d366cda86fae32ba-b030925b7ff30f642b4a72b5e8f8afa4-v2","","","","(Group: 'CardUpgradeData_MonsterColdstingSirenSynthesis')
 
 [health]: <sprite name=""Health"">
 [strike]: <b>Strike</b>
@@ -4352,19 +4352,20 @@ this will always be 2 or a multiple of 2
 [health]: <sprite name=""Health"">
 [revenge]: <b>Revenge</b>
 [attack]: <sprite name=""Attack"">"
-"CardUpgradeData_upgradeDescriptionKey-deef389e832aaeca-d2c906bfba113bc43aace68c21b80250-v2","CardUpgradeData_upgradeDescriptionKey-deef389e832aaeca-d2c906bfba113bc43aace68c21b80250-v2","+8[attack], +8[health], and '[extinguish]: Spawn 2 basic copies of <b>Twin of Wax</b>.'","CardUpgradeData_upgradeDescriptionKey-deef389e832aaeca-d2c906bfba113bc43aace68c21b80250-v2","","","","(Group: 'CardUpgradeData_MonsterSplitterLargeSynthesis')
+"CardUpgradeData_upgradeDescriptionKey-deef389e832aaeca-d2c906bfba113bc43aace68c21b80250-v2","CardUpgradeData_upgradeDescriptionKey-deef389e832aaeca-d2c906bfba113bc43aace68c21b80250-v2","+8[attack], +8[health], and '[revenge]: Summon 1 basic copy of <b>Mote of Wax</b>.'","CardUpgradeData_upgradeDescriptionKey-deef389e832aaeca-d2c906bfba113bc43aace68c21b80250-v2","","","","(Group: 'CardUpgradeData_MonsterSplitterLargeSynthesis')
 
 [attack]: <sprite name=""Attack"">
 [health]: <sprite name=""Health"">
-[extinguish]: <b>Extinguish</b>"
+[revenge]: <b>Revenge</b>"
 "CardUpgradeData_upgradeDescriptionKey-dfc1f7cb62b18548-eb73768c92b705245b71708919f10c55-v2","CardUpgradeData_upgradeDescriptionKey-dfc1f7cb62b18548-eb73768c92b705245b71708919f10c55-v2","Reduce to 0[ember].","CardUpgradeData_upgradeDescriptionKey-dfc1f7cb62b18548-eb73768c92b705245b71708919f10c55-v2","","","","(Group: 'CardUpgradeData_FreeUnit')
 
 [ember]: <sprite name=""Ember"">"
 "CardUpgradeData_upgradeDescriptionKey-e18a900062201f10-847ebdbc983bfb44997e0002e800c0e2-v2","CardUpgradeData_upgradeDescriptionKey-e18a900062201f10-847ebdbc983bfb44997e0002e800c0e2-v2","Reduce cost to 0[ember]. Add a copy to your discard pile when played.","CardUpgradeData_upgradeDescriptionKey-e18a900062201f10-847ebdbc983bfb44997e0002e800c0e2-v2","","","","(Group: 'CardUpgradeData_Delayed_SpellCopyFinal')
 
 [ember]: <sprite name=""Ember"">"
-"CardUpgradeData_upgradeDescriptionKey-e216ce5bc6ef25c4-013fc102752df064f97382b41a785c99-v2","CardUpgradeData_upgradeDescriptionKey-e216ce5bc6ef25c4-013fc102752df064f97382b41a785c99-v2","[incant]: Apply [sap] 1 to a random enemy unit.","CardUpgradeData_upgradeDescriptionKey-e216ce5bc6ef25c4-013fc102752df064f97382b41a785c99-v2","","","","(Group: 'CardUpgradeData_MonsterFrozenTotemSynthesis')
+"CardUpgradeData_upgradeDescriptionKey-e216ce5bc6ef25c4-013fc102752df064f97382b41a785c99-v2","CardUpgradeData_upgradeDescriptionKey-e216ce5bc6ef25c4-013fc102752df064f97382b41a785c99-v2","+2[ember] and '[incant]: Apply [sap] 1 to enemy units.'","CardUpgradeData_upgradeDescriptionKey-e216ce5bc6ef25c4-013fc102752df064f97382b41a785c99-v2","","","","(Group: 'CardUpgradeData_MonsterFrozenTotemSynthesis')
 
+[ember]: <sprite name=""Ember"">
 [incant]: <b>Incant</b>
 [sap]: <b>Sap</b>"
 "CardUpgradeData_upgradeDescriptionKey-e34452d737c8b50f-d5424552e1234274bb9949f9bd9a97c8-v2","CardUpgradeData_upgradeDescriptionKey-e34452d737c8b50f-d5424552e1234274bb9949f9bd9a97c8-v2","+3[attack]","CardUpgradeData_upgradeDescriptionKey-e34452d737c8b50f-d5424552e1234274bb9949f9bd9a97c8-v2","","","","(Group: 'CardUpgradeData_BonusDamage')
@@ -4918,6 +4919,8 @@ Gender: Female"
 Gender: Female"
 "CharacterChatterData_locKey-19d277b7c70c5367-3b88e44605eff0b44a6607f110fdf79d-v2","CharacterChatterData_locKey-19d277b7c70c5367-3b88e44605eff0b44a6607f110fdf79d-v2","Ugh, you again?","CharacterChatterData_locKey-19d277b7c70c5367-3b88e44605eff0b44a6607f110fdf79d-v2","","","","(Group: 'CharacterChatterData_HephUnitChatterData')
 Gender: Male"
+"CharacterChatterData_locKey-1a1308830d63917b-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-1a1308830d63917b-c8f939a0dd792aa4aad9fbee9363c709-v2","We are abandoned no more.","CharacterChatterData_locKey-1a1308830d63917b-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-1a502e9d1fb5de58-d5dfcfbea7781604ab963738aa36495f-v2","CharacterChatterData_locKey-1a502e9d1fb5de58-d5dfcfbea7781604ab963738aa36495f-v2","Only Heaven can exist in the end.","CharacterChatterData_locKey-1a502e9d1fb5de58-d5dfcfbea7781604ab963738aa36495f-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Female')
 Gender: Female"
 "CharacterChatterData_locKey-1a7e655288550753-8ddf8923b84e96d45be08a7f30aed937-v2","CharacterChatterData_locKey-1a7e655288550753-8ddf8923b84e96d45be08a7f30aed937-v2","Come on!","CharacterChatterData_locKey-1a7e655288550753-8ddf8923b84e96d45be08a7f30aed937-v2","","","","(Group: 'CharacterChatterData_T4GrowthBossChatterData')
@@ -4996,10 +4999,14 @@ Gender: Neutral"
 Gender: Female"
 "CharacterChatterData_locKey-22302d24b07407e4-bfd7fb9f7f884f446baeffede9f3fe8c-v2","CharacterChatterData_locKey-22302d24b07407e4-bfd7fb9f7f884f446baeffede9f3fe8c-v2","Raaargh!","CharacterChatterData_locKey-22302d24b07407e4-bfd7fb9f7f884f446baeffede9f3fe8c-v2","","","","(Group: 'CharacterChatterData_HellhornedChampionChatterData')
 Gender: Male"
+"CharacterChatterData_locKey-223c5d988183f04c-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-223c5d988183f04c-c8f939a0dd792aa4aad9fbee9363c709-v2","The Winged abandoned us.","CharacterChatterData_locKey-223c5d988183f04c-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-22748fcf0c8cbd01-1cf9c0eb9efc2104cb950eebe5b558dd-v2","CharacterChatterData_locKey-22748fcf0c8cbd01-1cf9c0eb9efc2104cb950eebe5b558dd-v2","For Seraph!","CharacterChatterData_locKey-22748fcf0c8cbd01-1cf9c0eb9efc2104cb950eebe5b558dd-v2","","","","(Group: 'CharacterChatterData_T1EnemiesChatterData_Female')
 Gender: Female"
 "CharacterChatterData_locKey-229ed968973fc224-d9a2a654ac8bb7f488608b054bfe5609-v2","CharacterChatterData_locKey-229ed968973fc224-d9a2a654ac8bb7f488608b054bfe5609-v2","Your fighting is so quaint!","CharacterChatterData_locKey-229ed968973fc224-d9a2a654ac8bb7f488608b054bfe5609-v2","","","","(Group: 'CharacterChatterData_T7BossChatterData')
 Gender: Female"
+"CharacterChatterData_locKey-22c22ec93e74dad0-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-22c22ec93e74dad0-c8f939a0dd792aa4aad9fbee9363c709-v2","We are abandoned no more.","CharacterChatterData_locKey-22c22ec93e74dad0-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-23ba22090bf03164-e2cc0a979bf66c840946cd6503d25a6a-v2","CharacterChatterData_locKey-23ba22090bf03164-e2cc0a979bf66c840946cd6503d25a6a-v2","The Titans will not doom us to die.","CharacterChatterData_locKey-23ba22090bf03164-e2cc0a979bf66c840946cd6503d25a6a-v2","","","","(Group: 'CharacterChatterData_T3BossChatterData_Exile')
 Gender: Female"
 "CharacterChatterData_locKey-243e2ff7492faaa7-11d4faca554759d4593e9c4a55e01ca6-v2","CharacterChatterData_locKey-243e2ff7492faaa7-11d4faca554759d4593e9c4a55e01ca6-v2","Oh, it's just a scratch.","CharacterChatterData_locKey-243e2ff7492faaa7-11d4faca554759d4593e9c4a55e01ca6-v2","","","","(Group: 'CharacterChatterData_DanteChatterData')
@@ -5213,6 +5220,8 @@ Gender: Female"
 Gender: Female"
 "CharacterChatterData_locKey-3cdce8fede1513bd-d5dfcfbea7781604ab963738aa36495f-v2","CharacterChatterData_locKey-3cdce8fede1513bd-d5dfcfbea7781604ab963738aa36495f-v2","You are nothing!","CharacterChatterData_locKey-3cdce8fede1513bd-d5dfcfbea7781604ab963738aa36495f-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Female')
 Gender: Female"
+"CharacterChatterData_locKey-3d062cfa9f62d349-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-3d062cfa9f62d349-c8f939a0dd792aa4aad9fbee9363c709-v2","Think now on what you've done!","CharacterChatterData_locKey-3d062cfa9f62d349-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-3d0af789d679d080-ce546150ffdd4ae4a8d95bc7672f05fc-v2","CharacterChatterData_locKey-3d0af789d679d080-ce546150ffdd4ae4a8d95bc7672f05fc-v2","MMMPH!","CharacterChatterData_locKey-3d0af789d679d080-ce546150ffdd4ae4a8d95bc7672f05fc-v2","","","","(Group: 'CharacterChatterData_RemnantTombChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-3d4af186082d689f-82041ecfe4f316148b66fb2d649f63dc-v2","CharacterChatterData_locKey-3d4af186082d689f-82041ecfe4f316148b66fb2d649f63dc-v2","To think we were once allies...","CharacterChatterData_locKey-3d4af186082d689f-82041ecfe4f316148b66fb2d649f63dc-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Male')
@@ -5235,6 +5244,8 @@ Gender: Male"
 Gender: Female"
 "CharacterChatterData_locKey-3ef625947dae7b85-d5dfcfbea7781604ab963738aa36495f-v2","CharacterChatterData_locKey-3ef625947dae7b85-d5dfcfbea7781604ab963738aa36495f-v2","Seraph will not be harmed!","CharacterChatterData_locKey-3ef625947dae7b85-d5dfcfbea7781604ab963738aa36495f-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Female')
 Gender: Female"
+"CharacterChatterData_locKey-3f5256acf46484eb-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-3f5256acf46484eb-c8f939a0dd792aa4aad9fbee9363c709-v2","My life for Pyre.","CharacterChatterData_locKey-3f5256acf46484eb-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-3f53a5b26f22e132-3a3b37382c998454c81a494e8870cabd-v2","CharacterChatterData_locKey-3f53a5b26f22e132-3a3b37382c998454c81a494e8870cabd-v2","Your soul is mine!","CharacterChatterData_locKey-3f53a5b26f22e132-3a3b37382c998454c81a494e8870cabd-v2","","","","(Group: 'CharacterChatterData_StygianChampionChatterData_Exile')
 Gender: Male"
 "CharacterChatterData_locKey-3f581727687ec319-cb36dba79dc0ed64fb65b1f1b965d573-v2","CharacterChatterData_locKey-3f581727687ec319-cb36dba79dc0ed64fb65b1f1b965d573-v2","Please, let me burn quickly.","CharacterChatterData_locKey-3f581727687ec319-cb36dba79dc0ed64fb65b1f1b965d573-v2","","","","(Group: 'CharacterChatterData_RemnantWaxerChatterData_Female')
@@ -5453,6 +5464,8 @@ Gender: Male"
 Gender: Female"
 "CharacterChatterData_locKey-585c898b35d94dbb-de417a24e7156bc4891a6b688e9b77ec-v2","CharacterChatterData_locKey-585c898b35d94dbb-de417a24e7156bc4891a6b688e9b77ec-v2","We hoped the Shardsouls would protect us...and you. It seems we only postponed the inevitable.","CharacterChatterData_locKey-585c898b35d94dbb-de417a24e7156bc4891a6b688e9b77ec-v2","","","","(Group: 'CharacterChatterData_AwokenChampionChatterData_Exile')
 Gender: Male"
+"CharacterChatterData_locKey-58840a48fdd05dbb-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-58840a48fdd05dbb-c8f939a0dd792aa4aad9fbee9363c709-v2","When I die, more will rise in my place.","CharacterChatterData_locKey-58840a48fdd05dbb-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-589d49234ffbf16a-5ae5e3e969695ba4e92e32bd6d8864d7-v2","CharacterChatterData_locKey-589d49234ffbf16a-5ae5e3e969695ba4e92e32bd6d8864d7-v2","You'd be dead before you made it two steps in MY Crucible.","CharacterChatterData_locKey-589d49234ffbf16a-5ae5e3e969695ba4e92e32bd6d8864d7-v2","","","","(Group: 'CharacterChatterData_UmbraShroudChatterData')
 Gender: Neutral"
 "CharacterChatterData_locKey-58afaab21ecaf906-3d80ee809c25eb34891afd30938a3c3a-v2","CharacterChatterData_locKey-58afaab21ecaf906-3d80ee809c25eb34891afd30938a3c3a-v2","Did you really think we could co-exist peacefully?","CharacterChatterData_locKey-58afaab21ecaf906-3d80ee809c25eb34891afd30938a3c3a-v2","","","","(Group: 'CharacterChatterData_SeraphBossChatterData')
@@ -5567,6 +5580,8 @@ Gender: Neutral"
 Gender: Male"
 "CharacterChatterData_locKey-672911d9cfd94a15-3a3b37382c998454c81a494e8870cabd-v2","CharacterChatterData_locKey-672911d9cfd94a15-3a3b37382c998454c81a494e8870cabd-v2","For Aqath!","CharacterChatterData_locKey-672911d9cfd94a15-3a3b37382c998454c81a494e8870cabd-v2","","","","(Group: 'CharacterChatterData_StygianChampionChatterData_Exile')
 Gender: Male"
+"CharacterChatterData_locKey-67294f53177fb1ea-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-67294f53177fb1ea-c8f939a0dd792aa4aad9fbee9363c709-v2","We are all guilty.","CharacterChatterData_locKey-67294f53177fb1ea-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-675e3ed9cf43f6b0-fbe54f84a54b9a44383215965ab460af-v2","CharacterChatterData_locKey-675e3ed9cf43f6b0-fbe54f84a54b9a44383215965ab460af-v2","This is all good research.","CharacterChatterData_locKey-675e3ed9cf43f6b0-fbe54f84a54b9a44383215965ab460af-v2","","","","(Group: 'CharacterChatterData_T3BossChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-67952837de71daec-82041ecfe4f316148b66fb2d649f63dc-v2","CharacterChatterData_locKey-67952837de71daec-82041ecfe4f316148b66fb2d649f63dc-v2","Hell won't save you now.","CharacterChatterData_locKey-67952837de71daec-82041ecfe4f316148b66fb2d649f63dc-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Male')
@@ -5594,6 +5609,8 @@ Gender: Male"
 "CharacterChatterData_locKey-68d95281900e710a-ff6a01d22c1452240b31ac42e1f9dffd-v2","CharacterChatterData_locKey-68d95281900e710a-ff6a01d22c1452240b31ac42e1f9dffd-v2","A little rough and tumble never hurt nobody!","CharacterChatterData_locKey-68d95281900e710a-ff6a01d22c1452240b31ac42e1f9dffd-v2","","","","(Group: 'CharacterChatterData_RemnantWicklessChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-68dfb0cb6526ac63-bad8158ca08e4df4fbd75cb7c2aabbfc-v2","CharacterChatterData_locKey-68dfb0cb6526ac63-bad8158ca08e4df4fbd75cb7c2aabbfc-v2","Our Pyre will not go out!","CharacterChatterData_locKey-68dfb0cb6526ac63-bad8158ca08e4df4fbd75cb7c2aabbfc-v2","","","","(Group: 'CharacterChatterData_DefaultMonsterCharacterChatterData')
+Gender: Male"
+"CharacterChatterData_locKey-68dffdd49f06584e-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-68dffdd49f06584e-c8f939a0dd792aa4aad9fbee9363c709-v2","Your wings are next!","CharacterChatterData_locKey-68dffdd49f06584e-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-68e3e74f4339e9eb-ae60934380f1aa64ba5d3843ac75bb74-v2","CharacterChatterData_locKey-68e3e74f4339e9eb-ae60934380f1aa64ba5d3843ac75bb74-v2","Awoken at last.","CharacterChatterData_locKey-68e3e74f4339e9eb-ae60934380f1aa64ba5d3843ac75bb74-v2","","","","(Group: 'CharacterChatterData_AwokenChampionChatterData')
 Gender: Female"
@@ -5641,6 +5658,8 @@ Gender: Male"
 Gender: Male"
 "CharacterChatterData_locKey-6ea5673e36f9fbc6-d9a2a654ac8bb7f488608b054bfe5609-v2","CharacterChatterData_locKey-6ea5673e36f9fbc6-d9a2a654ac8bb7f488608b054bfe5609-v2","I should've done this long ago!","CharacterChatterData_locKey-6ea5673e36f9fbc6-d9a2a654ac8bb7f488608b054bfe5609-v2","","","","(Group: 'CharacterChatterData_T7BossChatterData')
 Gender: Female"
+"CharacterChatterData_locKey-6ef25d5da02cde06-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-6ef25d5da02cde06-c8f939a0dd792aa4aad9fbee9363c709-v2","Fel's betrayal revealed the truth.","CharacterChatterData_locKey-6ef25d5da02cde06-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-6f00d6e1cc5494aa-ac3bd72558483444ca58f124326fa49d-v2","CharacterChatterData_locKey-6f00d6e1cc5494aa-ac3bd72558483444ca58f124326fa49d-v2","Winged will fear Hellhorned.","CharacterChatterData_locKey-6f00d6e1cc5494aa-ac3bd72558483444ca58f124326fa49d-v2","","","","(Group: 'CharacterChatterData_DemonChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-6f66472fbe235610-7bbd58d6652a38e45b2699d1c75ef87e-v2","CharacterChatterData_locKey-6f66472fbe235610-7bbd58d6652a38e45b2699d1c75ef87e-v2","Come on!","CharacterChatterData_locKey-6f66472fbe235610-7bbd58d6652a38e45b2699d1c75ef87e-v2","","","","(Group: 'CharacterChatterData_T4BossChatterData')
@@ -5653,6 +5672,8 @@ Gender: Female"
 Gender: Male"
 "CharacterChatterData_locKey-6fd1d16c91aad8b8-8aa9fc055060e3840a0166ff88062e5d-v2","CharacterChatterData_locKey-6fd1d16c91aad8b8-8aa9fc055060e3840a0166ff88062e5d-v2","We Shamans know how best to defeat you.","CharacterChatterData_locKey-6fd1d16c91aad8b8-8aa9fc055060e3840a0166ff88062e5d-v2","","","","(Group: 'CharacterChatterData_T5CasterBossChatterData')
 Gender: Male"
+"CharacterChatterData_locKey-703a3eb37b9d4a00-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-703a3eb37b9d4a00-c8f939a0dd792aa4aad9fbee9363c709-v2","This is our penance...","CharacterChatterData_locKey-703a3eb37b9d4a00-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-7057c87a4a0a1c61-200a81cb2220bfb47b1038aa5c79dc87-v2","CharacterChatterData_locKey-7057c87a4a0a1c61-200a81cb2220bfb47b1038aa5c79dc87-v2","Is Herzal aboard?","CharacterChatterData_locKey-7057c87a4a0a1c61-200a81cb2220bfb47b1038aa5c79dc87-v2","","","","(Group: 'CharacterChatterData_T6BossChatterData')
 Gender: Female"
 "CharacterChatterData_locKey-7067ae9dcffa8d5b-e2cc0a979bf66c840946cd6503d25a6a-v2","CharacterChatterData_locKey-7067ae9dcffa8d5b-e2cc0a979bf66c840946cd6503d25a6a-v2","Leave us alone, Titan filth!","CharacterChatterData_locKey-7067ae9dcffa8d5b-e2cc0a979bf66c840946cd6503d25a6a-v2","","","","(Group: 'CharacterChatterData_T3BossChatterData_Exile')
@@ -5663,6 +5684,8 @@ Gender: Female"
 Gender: Female"
 "CharacterChatterData_locKey-70d20efda38f0425-c22e22814c9c0c245b3167b6080dddf2-v2","CharacterChatterData_locKey-70d20efda38f0425-c22e22814c9c0c245b3167b6080dddf2-v2","Seraph, grant us passage into Heaven.","CharacterChatterData_locKey-70d20efda38f0425-c22e22814c9c0c245b3167b6080dddf2-v2","","","","(Group: 'CharacterChatterData_T2EnemiesChatterData_Male')
 Gender: Male"
+"CharacterChatterData_locKey-70dd41df859962a5-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-70dd41df859962a5-c8f939a0dd792aa4aad9fbee9363c709-v2","The Winged oppressors shall fall!","CharacterChatterData_locKey-70dd41df859962a5-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-71202aa2cb5f8f66-e58102acf51c2d64b9b4975d7c12cc9d-v2","CharacterChatterData_locKey-71202aa2cb5f8f66-e58102acf51c2d64b9b4975d7c12cc9d-v2","I can only do so much good in a freezing wood.","CharacterChatterData_locKey-71202aa2cb5f8f66-e58102acf51c2d64b9b4975d7c12cc9d-v2","","","","(Group: 'CharacterChatterData_AwokenChannelerChatterData')
 Gender: Neutral"
 "CharacterChatterData_locKey-714807f95bb40c85-40fd70251302c414d9202053223fb354-v2","CharacterChatterData_locKey-714807f95bb40c85-40fd70251302c414d9202053223fb354-v2","Blessed are the Wickless.","CharacterChatterData_locKey-714807f95bb40c85-40fd70251302c414d9202053223fb354-v2","","","","(Group: 'CharacterChatterData_RemnantChampionChatterData')
@@ -5672,6 +5695,8 @@ Gender: Male"
 "CharacterChatterData_locKey-7184023a2a00f921-f620829f217c2bd44925f5d644b1e791-v2","CharacterChatterData_locKey-7184023a2a00f921-f620829f217c2bd44925f5d644b1e791-v2","Oh this? It's nothing!","CharacterChatterData_locKey-7184023a2a00f921-f620829f217c2bd44925f5d644b1e791-v2","","","","(Group: 'CharacterChatterData_TreasureCherubChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-71950981afd47a02-3d80ee809c25eb34891afd30938a3c3a-v2","CharacterChatterData_locKey-71950981afd47a02-3d80ee809c25eb34891afd30938a3c3a-v2","Our peace will be founded on your defeat!","CharacterChatterData_locKey-71950981afd47a02-3d80ee809c25eb34891afd30938a3c3a-v2","","","","(Group: 'CharacterChatterData_SeraphBossChatterData')
+Gender: Male"
+"CharacterChatterData_locKey-7205108a17fe6d51-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-7205108a17fe6d51-c8f939a0dd792aa4aad9fbee9363c709-v2","Haven't I been here before?","CharacterChatterData_locKey-7205108a17fe6d51-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-722519416119bda1-8dfb489c2ef810946b8ebe991754aba9-v2","CharacterChatterData_locKey-722519416119bda1-8dfb489c2ef810946b8ebe991754aba9-v2","<smallcaps><anim=divinechatter>You've arrived again.</anim></smallcaps>","CharacterChatterData_locKey-722519416119bda1-8dfb489c2ef810946b8ebe991754aba9-v2","","","","(Group: 'CharacterChatterData_LastDivinityChatterData')
 Gender: Male"
@@ -5698,6 +5723,10 @@ Gender: Male"
 "CharacterChatterData_locKey-7476c8992a87c98f-ff6a01d22c1452240b31ac42e1f9dffd-v2","CharacterChatterData_locKey-7476c8992a87c98f-ff6a01d22c1452240b31ac42e1f9dffd-v2","Step a little closer why don't ya?","CharacterChatterData_locKey-7476c8992a87c98f-ff6a01d22c1452240b31ac42e1f9dffd-v2","","","","(Group: 'CharacterChatterData_RemnantWicklessChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-74cf78b796908e65-3d80ee809c25eb34891afd30938a3c3a-v2","CharacterChatterData_locKey-74cf78b796908e65-3d80ee809c25eb34891afd30938a3c3a-v2","If you've truly defeated her, then there is nothing left...","CharacterChatterData_locKey-74cf78b796908e65-3d80ee809c25eb34891afd30938a3c3a-v2","","","","(Group: 'CharacterChatterData_SeraphBossChatterData')
+Gender: Male"
+"CharacterChatterData_locKey-751c00802c1112fd-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-751c00802c1112fd-c8f939a0dd792aa4aad9fbee9363c709-v2","Herzal spoke the truth!","CharacterChatterData_locKey-751c00802c1112fd-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
+"CharacterChatterData_locKey-7524e11b55bec268-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-7524e11b55bec268-c8f939a0dd792aa4aad9fbee9363c709-v2","Please, see reason!","CharacterChatterData_locKey-7524e11b55bec268-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-75a082db54ece5e9-ac3bd72558483444ca58f124326fa49d-v2","CharacterChatterData_locKey-75a082db54ece5e9-ac3bd72558483444ca58f124326fa49d-v2","A new trophy!","CharacterChatterData_locKey-75a082db54ece5e9-ac3bd72558483444ca58f124326fa49d-v2","","","","(Group: 'CharacterChatterData_DemonChatterData')
 Gender: Male"
@@ -5827,12 +5856,20 @@ Gender: Male"
 Gender: Male"
 "CharacterChatterData_locKey-8354426b814d6a80-8ddf8923b84e96d45be08a7f30aed937-v2","CharacterChatterData_locKey-8354426b814d6a80-8ddf8923b84e96d45be08a7f30aed937-v2","Fight back!","CharacterChatterData_locKey-8354426b814d6a80-8ddf8923b84e96d45be08a7f30aed937-v2","","","","(Group: 'CharacterChatterData_T4GrowthBossChatterData')
 Gender: Male"
+"CharacterChatterData_locKey-835bc2de0d1a7d3c-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-835bc2de0d1a7d3c-c8f939a0dd792aa4aad9fbee9363c709-v2","When I die, more will rise in my place.","CharacterChatterData_locKey-835bc2de0d1a7d3c-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-844519ff51475c18-82041ecfe4f316148b66fb2d649f63dc-v2","CharacterChatterData_locKey-844519ff51475c18-82041ecfe4f316148b66fb2d649f63dc-v2","You were the reason for the Covenant in the first place, so let's do away with you now.","CharacterChatterData_locKey-844519ff51475c18-82041ecfe4f316148b66fb2d649f63dc-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Male')
+Gender: Male"
+"CharacterChatterData_locKey-84f345de8e61f6b7-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-84f345de8e61f6b7-c8f939a0dd792aa4aad9fbee9363c709-v2","We will not surrender!","CharacterChatterData_locKey-84f345de8e61f6b7-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
+"CharacterChatterData_locKey-853c5b91cfe5ee64-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-853c5b91cfe5ee64-c8f939a0dd792aa4aad9fbee9363c709-v2","The Winged oppressors shall fall!","CharacterChatterData_locKey-853c5b91cfe5ee64-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-856a02416587195a-22a0da4af680be84cbf278e62c074c89-v2","CharacterChatterData_locKey-856a02416587195a-22a0da4af680be84cbf278e62c074c89-v2","Do you think all the Votive Houses are gone?","CharacterChatterData_locKey-856a02416587195a-22a0da4af680be84cbf278e62c074c89-v2","","","","(Group: 'CharacterChatterData_RemnantWaxerChatterData_Male')
 Gender: Male"
 "CharacterChatterData_locKey-857c6094a2eb59a6-8d7549c8ca86ba948b2265d9355e68e8-v2","CharacterChatterData_locKey-857c6094a2eb59a6-8d7549c8ca86ba948b2265d9355e68e8-v2","Protect. The. Boneshaker. ","CharacterChatterData_locKey-857c6094a2eb59a6-8d7549c8ca86ba948b2265d9355e68e8-v2","","","","(Group: 'CharacterChatterData_TrainStewardChatterData')
 Gender: Neutral"
+"CharacterChatterData_locKey-861a295adadfb435-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-861a295adadfb435-c8f939a0dd792aa4aad9fbee9363c709-v2","The Winged oppressors shall fall!","CharacterChatterData_locKey-861a295adadfb435-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-861f14109c7c828a-524721b237e91b84cb0b44921732f270-v2","CharacterChatterData_locKey-861f14109c7c828a-524721b237e91b84cb0b44921732f270-v2","Just like when we fought the Winged!","CharacterChatterData_locKey-861f14109c7c828a-524721b237e91b84cb0b44921732f270-v2","","","","(Group: 'CharacterChatterData_T2EnemiesChatterData_Female')
 Gender: Female"
 "CharacterChatterData_locKey-86eaaaf151f05f69-6a56a2c43292d344491c4c40e7e0df27-v2","CharacterChatterData_locKey-86eaaaf151f05f69-6a56a2c43292d344491c4c40e7e0df27-v2","for the masters...","CharacterChatterData_locKey-86eaaaf151f05f69-6a56a2c43292d344491c4c40e7e0df27-v2","","","","(Group: 'CharacterChatterData_UmbraMorselChatterData')
@@ -5879,6 +5916,8 @@ Gender: Male"
 Gender: Neutral"
 "CharacterChatterData_locKey-8d404f659019e7c4-c0385252aab2f164d807b88c29a8cb2a-v2","CharacterChatterData_locKey-8d404f659019e7c4-c0385252aab2f164d807b88c29a8cb2a-v2","Hihihi hellooooooo.","CharacterChatterData_locKey-8d404f659019e7c4-c0385252aab2f164d807b88c29a8cb2a-v2","","","","(Group: 'CharacterChatterData_WurmkinEchowrightChatterData')
 Gender: Neutral"
+"CharacterChatterData_locKey-8d77571f95a46a83-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-8d77571f95a46a83-c8f939a0dd792aa4aad9fbee9363c709-v2","For the rebellion!","CharacterChatterData_locKey-8d77571f95a46a83-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-8d7efeaa865f3680-c22e22814c9c0c245b3167b6080dddf2-v2","CharacterChatterData_locKey-8d7efeaa865f3680-c22e22814c9c0c245b3167b6080dddf2-v2","You were the reason for the Covenant in the first place.","CharacterChatterData_locKey-8d7efeaa865f3680-c22e22814c9c0c245b3167b6080dddf2-v2","","","","(Group: 'CharacterChatterData_T2EnemiesChatterData_Male')
 Gender: Male"
 "CharacterChatterData_locKey-8e052a144a9e6855-cadc1f8577adaf74babaa2deca6241b7-v2","CharacterChatterData_locKey-8e052a144a9e6855-cadc1f8577adaf74babaa2deca6241b7-v2","MMMMM!","CharacterChatterData_locKey-8e052a144a9e6855-cadc1f8577adaf74babaa2deca6241b7-v2","","","","(Group: 'CharacterChatterData_UmbraMorselManChatterData')
@@ -6259,9 +6298,13 @@ Gender: Male"
 Gender: Female"
 "CharacterChatterData_locKey-b66c6f21926125ae-7d7f67dff908a6e44a9d75f824e431c3-v2","CharacterChatterData_locKey-b66c6f21926125ae-7d7f67dff908a6e44a9d75f824e431c3-v2","Turn back now.","CharacterChatterData_locKey-b66c6f21926125ae-7d7f67dff908a6e44a9d75f824e431c3-v2","","","","(Group: 'CharacterChatterData_T2ShieldBossChatterData')
 Gender: Male"
+"CharacterChatterData_locKey-b705af9506010edc-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-b705af9506010edc-c8f939a0dd792aa4aad9fbee9363c709-v2","The more you tighten your grip...","CharacterChatterData_locKey-b705af9506010edc-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-b7186e22235023f5-af0da8e1e3ebe6843a53deda465ac040-v2","CharacterChatterData_locKey-b7186e22235023f5-af0da8e1e3ebe6843a53deda465ac040-v2","Meep Meep.","CharacterChatterData_locKey-b7186e22235023f5-af0da8e1e3ebe6843a53deda465ac040-v2","","","","(Group: 'CharacterChatterData_ImpChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-b74011065906caee-c22e22814c9c0c245b3167b6080dddf2-v2","CharacterChatterData_locKey-b74011065906caee-c22e22814c9c0c245b3167b6080dddf2-v2","Let's end this here.","CharacterChatterData_locKey-b74011065906caee-c22e22814c9c0c245b3167b6080dddf2-v2","","","","(Group: 'CharacterChatterData_T2EnemiesChatterData_Male')
+Gender: Male"
+"CharacterChatterData_locKey-b7ad1b3092b5011f-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-b7ad1b3092b5011f-c8f939a0dd792aa4aad9fbee9363c709-v2","We will not surrender!","CharacterChatterData_locKey-b7ad1b3092b5011f-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-b7c8a568a12ca66e-9cda3a4763fa90a47a23184523064890-v2","CharacterChatterData_locKey-b7c8a568a12ca66e-9cda3a4763fa90a47a23184523064890-v2","Do you feel pain?","CharacterChatterData_locKey-b7c8a568a12ca66e-9cda3a4763fa90a47a23184523064890-v2","","","","(Group: 'CharacterChatterData_T4JunkerBossChatterData')
 Gender: Male"
@@ -6288,6 +6331,8 @@ Gender: Male"
 "CharacterChatterData_locKey-b96559a23b96052f-81ac49dc701c40843af791c933b69a27-v2","CharacterChatterData_locKey-b96559a23b96052f-81ac49dc701c40843af791c933b69a27-v2","When Hell burns again, I won't mind if the cold remains...","CharacterChatterData_locKey-b96559a23b96052f-81ac49dc701c40843af791c933b69a27-v2","","","","(Group: 'CharacterChatterData_StygianSirenChatterData_Female')
 Gender: Female"
 "CharacterChatterData_locKey-b98a927647350917-f6f12c46584585c46ab2c876863b6c9e-v2","CharacterChatterData_locKey-b98a927647350917-f6f12c46584585c46ab2c876863b6c9e-v2","...consume....","CharacterChatterData_locKey-b98a927647350917-f6f12c46584585c46ab2c876863b6c9e-v2","","","","(Group: 'CharacterChatterData_AwokenHollowChatterData')
+Gender: Male"
+"CharacterChatterData_locKey-b9dad84b119185cd-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-b9dad84b119185cd-c8f939a0dd792aa4aad9fbee9363c709-v2","The more you tighten your grip...","CharacterChatterData_locKey-b9dad84b119185cd-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-b9f8575cac142111-81ac49dc701c40843af791c933b69a27-v2","CharacterChatterData_locKey-b9f8575cac142111-81ac49dc701c40843af791c933b69a27-v2","For the Sea!","CharacterChatterData_locKey-b9f8575cac142111-81ac49dc701c40843af791c933b69a27-v2","","","","(Group: 'CharacterChatterData_StygianSirenChatterData_Female')
 Gender: Female"
@@ -6447,6 +6492,8 @@ Gender: Neutral"
 Gender: Male"
 "CharacterChatterData_locKey-d1466ba8385addf4-d9a2a654ac8bb7f488608b054bfe5609-v2","CharacterChatterData_locKey-d1466ba8385addf4-d9a2a654ac8bb7f488608b054bfe5609-v2","This will be fun.","CharacterChatterData_locKey-d1466ba8385addf4-d9a2a654ac8bb7f488608b054bfe5609-v2","","","","(Group: 'CharacterChatterData_T7BossChatterData')
 Gender: Female"
+"CharacterChatterData_locKey-d1f0683f2ca1696d-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-d1f0683f2ca1696d-c8f939a0dd792aa4aad9fbee9363c709-v2","Haven't I been here before?","CharacterChatterData_locKey-d1f0683f2ca1696d-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-d22aa7ebf5d15c9d-de417a24e7156bc4891a6b688e9b77ec-v2","CharacterChatterData_locKey-d22aa7ebf5d15c9d-de417a24e7156bc4891a6b688e9b77ec-v2","Let this serve as my redemption.","CharacterChatterData_locKey-d22aa7ebf5d15c9d-de417a24e7156bc4891a6b688e9b77ec-v2","","","","(Group: 'CharacterChatterData_AwokenChampionChatterData_Exile')
 Gender: Male"
 "CharacterChatterData_locKey-d23fe12337dd01c7-40fd70251302c414d9202053223fb354-v2","CharacterChatterData_locKey-d23fe12337dd01c7-40fd70251302c414d9202053223fb354-v2","I can sympathize with the Traitor in some regard...","CharacterChatterData_locKey-d23fe12337dd01c7-40fd70251302c414d9202053223fb354-v2","","","","(Group: 'CharacterChatterData_RemnantChampionChatterData')
@@ -6537,12 +6584,16 @@ Gender: Neutral"
 Gender: Female"
 "CharacterChatterData_locKey-dc9a24e710f7e779-cb36dba79dc0ed64fb65b1f1b965d573-v2","CharacterChatterData_locKey-dc9a24e710f7e779-cb36dba79dc0ed64fb65b1f1b965d573-v2","Our wax is sharp!","CharacterChatterData_locKey-dc9a24e710f7e779-cb36dba79dc0ed64fb65b1f1b965d573-v2","","","","(Group: 'CharacterChatterData_RemnantWaxerChatterData_Female')
 Gender: Female"
+"CharacterChatterData_locKey-dd00218d053eb844-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-dd00218d053eb844-c8f939a0dd792aa4aad9fbee9363c709-v2","My life for Pyre.","CharacterChatterData_locKey-dd00218d053eb844-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-dd94289fa2494c47-740973495f7bfac4193c83c492e75b85-v2","CharacterChatterData_locKey-dd94289fa2494c47-740973495f7bfac4193c83c492e75b85-v2","There are much more important matter than Aqath'sss passsing. Be grateful for this kindnesssss.","CharacterChatterData_locKey-dd94289fa2494c47-740973495f7bfac4193c83c492e75b85-v2","","","","(Group: 'CharacterChatterData_StygianEelsChatterData')
 Gender: Neutral"
 "CharacterChatterData_locKey-dd9b16a15f464042-d5dfcfbea7781604ab963738aa36495f-v2","CharacterChatterData_locKey-dd9b16a15f464042-d5dfcfbea7781604ab963738aa36495f-v2","Fear Heaven's power!","CharacterChatterData_locKey-dd9b16a15f464042-d5dfcfbea7781604ab963738aa36495f-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Female')
 Gender: Female"
 "CharacterChatterData_locKey-ddc52983569f6427-524721b237e91b84cb0b44921732f270-v2","CharacterChatterData_locKey-ddc52983569f6427-524721b237e91b84cb0b44921732f270-v2","You will soon become nothing.","CharacterChatterData_locKey-ddc52983569f6427-524721b237e91b84cb0b44921732f270-v2","","","","(Group: 'CharacterChatterData_T2EnemiesChatterData_Female')
 Gender: Female"
+"CharacterChatterData_locKey-de3b69e1f9f1a772-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-de3b69e1f9f1a772-c8f939a0dd792aa4aad9fbee9363c709-v2","When I die, more will rise in my place.","CharacterChatterData_locKey-de3b69e1f9f1a772-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-de5ca226c88d3e0f-e58102acf51c2d64b9b4975d7c12cc9d-v2","CharacterChatterData_locKey-de5ca226c88d3e0f-e58102acf51c2d64b9b4975d7c12cc9d-v2","Don't cry, child.","CharacterChatterData_locKey-de5ca226c88d3e0f-e58102acf51c2d64b9b4975d7c12cc9d-v2","","","","(Group: 'CharacterChatterData_AwokenChannelerChatterData')
 Gender: Neutral"
 "CharacterChatterData_locKey-df68c67800f6b0da-73fe372b652a7e846ad64306144d294a-v2","CharacterChatterData_locKey-df68c67800f6b0da-73fe372b652a7e846ad64306144d294a-v2","Soon I will return to the Channelers.","CharacterChatterData_locKey-df68c67800f6b0da-73fe372b652a7e846ad64306144d294a-v2","","","","(Group: 'CharacterChatterData_AwokenAnimusChatterData')
@@ -6571,6 +6622,8 @@ Gender: Neutral"
 Gender: Female"
 "CharacterChatterData_locKey-e1214a5ca9803b4c-20c6a15b4ce8f3145bd5e17ca12d8beb-v2","CharacterChatterData_locKey-e1214a5ca9803b4c-20c6a15b4ce8f3145bd5e17ca12d8beb-v2","Where are my scales?","CharacterChatterData_locKey-e1214a5ca9803b4c-20c6a15b4ce8f3145bd5e17ca12d8beb-v2","","","","(Group: 'CharacterChatterData_StygianChampionChatterData')
 Gender: Female"
+"CharacterChatterData_locKey-e14ddb65eed756e5-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-e14ddb65eed756e5-c8f939a0dd792aa4aad9fbee9363c709-v2","We are abandoned no more.","CharacterChatterData_locKey-e14ddb65eed756e5-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-e15b2c0ecc4a03ea-db6282894af73ba41b6cdd8034be8104-v2","CharacterChatterData_locKey-e15b2c0ecc4a03ea-db6282894af73ba41b6cdd8034be8104-v2","For Seraph!","CharacterChatterData_locKey-e15b2c0ecc4a03ea-db6282894af73ba41b6cdd8034be8104-v2","","","","(Group: 'CharacterChatterData_T1EnemiesChatterData_Male')
 Gender: Male"
 "CharacterChatterData_locKey-e1874fed153670a5-3d80ee809c25eb34891afd30938a3c3a-v2","CharacterChatterData_locKey-e1874fed153670a5-3d80ee809c25eb34891afd30938a3c3a-v2","Hell has no hope left!","CharacterChatterData_locKey-e1874fed153670a5-3d80ee809c25eb34891afd30938a3c3a-v2","","","","(Group: 'CharacterChatterData_SeraphBossChatterData')
@@ -6608,6 +6661,8 @@ Gender: Neutral"
 "CharacterChatterData_locKey-e61743b47d4efd24-ce546150ffdd4ae4a8d95bc7672f05fc-v2","CharacterChatterData_locKey-e61743b47d4efd24-ce546150ffdd4ae4a8d95bc7672f05fc-v2","MMM!","CharacterChatterData_locKey-e61743b47d4efd24-ce546150ffdd4ae4a8d95bc7672f05fc-v2","","","","(Group: 'CharacterChatterData_RemnantTombChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-e68970fbc84f60e3-ee93daa03a303ac4bb4979fbb24e5987-v2","CharacterChatterData_locKey-e68970fbc84f60e3-ee93daa03a303ac4bb4979fbb24e5987-v2","You shall be extinguished!","CharacterChatterData_locKey-e68970fbc84f60e3-ee93daa03a303ac4bb4979fbb24e5987-v2","","","","(Group: 'CharacterChatterData_DefaultHeroCharacterChatterData')
+Gender: Male"
+"CharacterChatterData_locKey-e6af4659f400c8f1-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-e6af4659f400c8f1-c8f939a0dd792aa4aad9fbee9363c709-v2","The more you tighten your grip...","CharacterChatterData_locKey-e6af4659f400c8f1-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-e6bbfa87c8a6a11f-3a3b37382c998454c81a494e8870cabd-v2","CharacterChatterData_locKey-e6bbfa87c8a6a11f-3a3b37382c998454c81a494e8870cabd-v2","Aqath Be Praised!","CharacterChatterData_locKey-e6bbfa87c8a6a11f-3a3b37382c998454c81a494e8870cabd-v2","","","","(Group: 'CharacterChatterData_StygianChampionChatterData_Exile')
 Gender: Male"
@@ -6651,6 +6706,8 @@ Gender: Female"
 Gender: Male"
 "CharacterChatterData_locKey-ea0b256e535be3c7-cadc1f8577adaf74babaa2deca6241b7-v2","CharacterChatterData_locKey-ea0b256e535be3c7-cadc1f8577adaf74babaa2deca6241b7-v2","TASTY ONE HERE!","CharacterChatterData_locKey-ea0b256e535be3c7-cadc1f8577adaf74babaa2deca6241b7-v2","","","","(Group: 'CharacterChatterData_UmbraMorselManChatterData')
 Gender: Neutral"
+"CharacterChatterData_locKey-ea8276fb96cc66d2-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-ea8276fb96cc66d2-c8f939a0dd792aa4aad9fbee9363c709-v2","For the rebellion!","CharacterChatterData_locKey-ea8276fb96cc66d2-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-eb305cf4e1d3b79c-3d80ee809c25eb34891afd30938a3c3a-v2","CharacterChatterData_locKey-eb305cf4e1d3b79c-3d80ee809c25eb34891afd30938a3c3a-v2","I can't lose her again...","CharacterChatterData_locKey-eb305cf4e1d3b79c-3d80ee809c25eb34891afd30938a3c3a-v2","","","","(Group: 'CharacterChatterData_SeraphBossChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-ebb3f96b94d7e6f0-9cda3a4763fa90a47a23184523064890-v2","CharacterChatterData_locKey-ebb3f96b94d7e6f0-9cda3a4763fa90a47a23184523064890-v2","Take that!","CharacterChatterData_locKey-ebb3f96b94d7e6f0-9cda3a4763fa90a47a23184523064890-v2","","","","(Group: 'CharacterChatterData_T4JunkerBossChatterData')
@@ -6771,6 +6828,8 @@ Gender: Female"
 Gender: Male"
 "CharacterChatterData_locKey-fa4be89c6d2ecf5e-d5dfcfbea7781604ab963738aa36495f-v2","CharacterChatterData_locKey-fa4be89c6d2ecf5e-d5dfcfbea7781604ab963738aa36495f-v2","It's been too long since we've been home, but Hell is growing on us.","CharacterChatterData_locKey-fa4be89c6d2ecf5e-d5dfcfbea7781604ab963738aa36495f-v2","","","","(Group: 'CharacterChatterData_T3EnemiesChatterData_Female')
 Gender: Female"
+"CharacterChatterData_locKey-fa528b2bbeb5c608-c8f939a0dd792aa4aad9fbee9363c709-v2","CharacterChatterData_locKey-fa528b2bbeb5c608-c8f939a0dd792aa4aad9fbee9363c709-v2","For the rebellion!","CharacterChatterData_locKey-fa528b2bbeb5c608-c8f939a0dd792aa4aad9fbee9363c709-v2","","","","(Group: 'CharacterChatterData_FTGGUnitChatterData')
+Gender: Male"
 "CharacterChatterData_locKey-fb2da0e9ef070da1-bfd7fb9f7f884f446baeffede9f3fe8c-v2","CharacterChatterData_locKey-fb2da0e9ef070da1-bfd7fb9f7f884f446baeffede9f3fe8c-v2","For the Hellhorned!","CharacterChatterData_locKey-fb2da0e9ef070da1-bfd7fb9f7f884f446baeffede9f3fe8c-v2","","","","(Group: 'CharacterChatterData_HellhornedChampionChatterData')
 Gender: Male"
 "CharacterChatterData_locKey-fb3b024ef5b169db-a2638a15d59808d4aab8f209caf04ed1-v2","CharacterChatterData_locKey-fb3b024ef5b169db-a2638a15d59808d4aab8f209caf04ed1-v2","I'd much rather return to my Crucible.","CharacterChatterData_locKey-fb3b024ef5b169db-a2638a15d59808d4aab8f209caf04ed1-v2","","","","(Group: 'CharacterChatterData_UmbraChampionChatterData')
@@ -6872,6 +6931,7 @@ Gender: Male"
 "CharacterData_data-2ec7a30f4987b58a-fbdb9442f0ec2054caf79f7b7c646a87-v2","CharacterData_data-2ec7a30f4987b58a-fbdb9442f0ec2054caf79f7b7c646a87-v2","It was a surprise to learn that even the imps craft weapons and armor for the Hellhorned. Instead of hammers, they use their innate control of fire.","CharacterData_data-2ec7a30f4987b58a-fbdb9442f0ec2054caf79f7b7c646a87-v2","","","","(Group: 'CardData_WelderHelper')"
 "CharacterData_data-30ec378004b52bdb-6ebe55c9b3487be4480f1f71caa49930-v2","CharacterData_data-30ec378004b52bdb-6ebe55c9b3487be4480f1f71caa49930-v2","Rarely have those above benefited from the knowledge of those beneath them, but the invention of Conduit armor was widely adopted among the Clipped when Fel saw the power of my invention.","CharacterData_data-30ec378004b52bdb-6ebe55c9b3487be4480f1f71caa49930-v2","","","","(Group: 'CharacterData_EnchanterT2Speed')"
 "CharacterData_data-318c6b94e5e563d9-5e107b798f646454b9da085e88db99ff-v2","CharacterData_data-318c6b94e5e563d9-5e107b798f646454b9da085e88db99ff-v2","These demons, rumored to be the most ancient among the Hellhorned, do not speak in any known tongue. They don't appear to understand much, either, making any sort of relationship with them tricky to establish. Thankfully, they have a natural proclivity for fighting making communication unnecessary.","CharacterData_data-318c6b94e5e563d9-5e107b798f646454b9da085e88db99ff-v2","","","","(Group: 'CardData_Basher')"
+"CharacterData_data-3673ee6866868a78-210f6c973e7f66d41ad1a55969ceed12-v2","CharacterData_data-3673ee6866868a78-210f6c973e7f66d41ad1a55969ceed12-v2","The Knights of the Disciples were the first humans to charge into battle when our Covenant was broken. Now only one remains to uphold their ancient creed.","CharacterData_data-3673ee6866868a78-210f6c973e7f66d41ad1a55969ceed12-v2","","","","(Group: 'CharacterData_Boss_Level2ForTLD')"
 "CharacterData_data-3797ad5f0102fb94-140f50614a678a94c8f80092cc660fa5-v2","CharacterData_data-3797ad5f0102fb94-140f50614a678a94c8f80092cc660fa5-v2","A seasoned collector of Antumbra Morsels to the detriment of its own well-being. I've learned to steer clear of these creatures, as each new morsel they eat is a danger to all around them.","CharacterData_data-3797ad5f0102fb94-140f50614a678a94c8f80092cc660fa5-v2","","","","(Group: 'CardData_FeederPermanentAttackBoost')"
 "CharacterData_data-38de566bbe2fbd44-8be3987b12f5410469fc72f4cb2f3ee3-v2","CharacterData_data-38de566bbe2fbd44-8be3987b12f5410469fc72f4cb2f3ee3-v2","For the countless years that I trudged through the death and decay left above, there was no way I could’ve imagined the bustling life buzzing just underneath the surface. Isolation has given the Wurmkin time to innovate. Time to fly! And now their work within their cairns is completed without any need for outside assistance.","CharacterData_data-38de566bbe2fbd44-8be3987b12f5410469fc72f4cb2f3ee3-v2","","","","(Group: 'CardData_BogFly')"
 "CharacterData_data-3a1a0553e323dd4a-d0d1a4cf6b48ee543b389e567519508b-v2","CharacterData_data-3a1a0553e323dd4a-d0d1a4cf6b48ee543b389e567519508b-v2","Fel spoke of another sibling only once, saying he was both dark of wing and of mind. Seraph has also alluded to the imprisonment of their “forsaken brother,” but my memory fails to provide more details on the mysterious Archus.","CharacterData_data-3a1a0553e323dd4a-d0d1a4cf6b48ee543b389e567519508b-v2","","","","(Group: 'CharacterData_Boss_Level6ArchusTrapATrapB_Harder')"
@@ -6889,12 +6949,14 @@ Gender: Male"
 "CharacterData_data-44ab366f203b7fe7-f5f4b81d8412b634db4570217c39c5b9-v2","CharacterData_data-44ab366f203b7fe7-f5f4b81d8412b634db4570217c39c5b9-v2","The stones the Wurmkin carry, simply called Kinstones, represent their life’s work. A single line of inquiry that they utilize the Echoes’ knowledge to complete. Kinstones aren’t often completed by a single Wurmkin, but passed down over time. When they are completed, the Wurmkin retire into a position as a custodian of Echoes and eggs.","CharacterData_data-44ab366f203b7fe7-f5f4b81d8412b634db4570217c39c5b9-v2","","","","(Group: 'CardData_KeeperOfEchoes')"
 "CharacterData_data-44cfa162a15f49a4-3d3fca5d24f619045919e26bab94eaf6-v2","CharacterData_data-44cfa162a15f49a4-3d3fca5d24f619045919e26bab94eaf6-v2","Some Marksman choose to stay hidden, rejecting the traditional spear of the Guardians and sticking with their accurate feathers of steel. Their agility and dark coating have made them nearly impossible for us to see.","CharacterData_data-44cfa162a15f49a4-3d3fca5d24f619045919e26bab94eaf6-v2","","","","(Group: 'CharacterData_AttackerT2Stealth')"
 "CharacterData_data-450dda5cc549345b-ff326df83cc365b4a90e2437d1dbb013-v2","CharacterData_data-450dda5cc549345b-ff326df83cc365b4a90e2437d1dbb013-v2","The dreaded patrols of the Crucible Mines, wandering the long pathways in search of slacking Morsels and idle researchers. Though originally a mark of their lowly status, the Void that protrudes from their shadowed torso serves as a useful guard against worker uprisings.","CharacterData_data-450dda5cc549345b-ff326df83cc365b4a90e2437d1dbb013-v2","","","","(Group: 'CardData_CrucibleWarden')"
+"CharacterData_data-455c43bf5d89768b-f12806a446f481243a000c11d800c897-v2","CharacterData_data-455c43bf5d89768b-f12806a446f481243a000c11d800c897-v2","Most important of the Reconcilers, Chains personally imprisoned most of the Hellborne lost during Armageddon, many of them my friends. As a gift of thanks, Seraph gifted the blind man with the power to see through Light.","CharacterData_data-455c43bf5d89768b-f12806a446f481243a000c11d800c897-v2","","","","(Group: 'CharacterData_Boss_Level1JunkerForTLD')"
 "CharacterData_data-45781d5b30856587-79ee3af5fd5059848b46bcb39744ef2a-v2","CharacterData_data-45781d5b30856587-79ee3af5fd5059848b46bcb39744ef2a-v2","Even Heaven has darkness and those that live in it. The Shadewings gain power from death, making Hell a pleasant new home for them. We'd be happy to welcome them under different circumstances, but we could do without the freezing cold they brought with them.","CharacterData_data-45781d5b30856587-79ee3af5fd5059848b46bcb39744ef2a-v2","","","","(Group: 'CharacterData_AttackerT3Reaper')"
 "CharacterData_data-45c688bd14163de2-ec8cfc225ad8d164682a7ed4fe818fc6-v2","CharacterData_data-45c688bd14163de2-ec8cfc225ad8d164682a7ed4fe818fc6-v2","Breaker of the Covenant. Invader of Hell. Once a savior of Hell and Guardian of Heaven, he worked with me to build the Rail. Now he's a worse monster than I ever could have imagined.","CharacterData_data-45c688bd14163de2-ec8cfc225ad8d164682a7ed4fe818fc6-v2","","","","(Group: 'CharacterData_Boss_Level8SpellConsume_Harder')"
 "CharacterData_data-45d5fce2a8b66f1a-08a6a4f2f181c47428294cb79422a0d8-v2","CharacterData_data-45d5fce2a8b66f1a-08a6a4f2f181c47428294cb79422a0d8-v2","These entrepreneurial Winged scavengers don't subscribe to the traitorous ways of their flying brethren, but that doesn't mean they don't intend to profit off of it! They often find their way onto our train, looking for loose valuables, but if we trap them inside they'll give up whatever they've found.","CharacterData_data-45d5fce2a8b66f1a-08a6a4f2f181c47428294cb79422a0d8-v2","","","","(Group: 'CharacterData_TreasureBagLvl1Gold')"
 "CharacterData_data-467642553024313b-2f0e1bacde7e95c4e8b84e3c3be358d7-v2","CharacterData_data-467642553024313b-2f0e1bacde7e95c4e8b84e3c3be358d7-v2","In a move towards self-fulfillment, these Waxers have become part of the Reformed, seeking wealth in the spirit. Despite their high spiritual ranking, I can't say that they are the most welcoming of Hellborne.","CharacterData_data-467642553024313b-2f0e1bacde7e95c4e8b84e3c3be358d7-v2","","","","(Group: 'CardData_LadyOfTheReformed')"
 "CharacterData_data-469889fa2c1e9c3c-f0f66451fd85646449c9aa1979266f97-v2","CharacterData_data-469889fa2c1e9c3c-f0f66451fd85646449c9aa1979266f97-v2","It takes certain insanity to volunteer for the defensive front lines, but Seraph instills that level of devotion in his Disciples. Having spent much time with the Traitor, I can say that he does demand a certain loyalty that can be hard to break.","CharacterData_data-469889fa2c1e9c3c-f0f66451fd85646449c9aa1979266f97-v2","","","","(Group: 'CharacterData_ShieldGuardT1')"
 "CharacterData_data-46c2d9842b4e5338-aa82776c51ec63743bf477e75529c921-v2","CharacterData_data-46c2d9842b4e5338-aa82776c51ec63743bf477e75529c921-v2","In my dreams, I see a demon more powerful than any of the Hellhorned. One with sharded tail and command over all imps. Did she save the Hellhorned from total destruction, this forgotten Queen?","CharacterData_data-46c2d9842b4e5338-aa82776c51ec63743bf477e75529c921-v2","","","","(Group: 'CardData_ImpQueenChampion')"
+"CharacterData_data-4b0b12787019bfa5-52aeb9a3c9bf2f74ab8a2f652be33cd3-v2","CharacterData_data-4b0b12787019bfa5-52aeb9a3c9bf2f74ab8a2f652be33cd3-v2","A high-ranking officer within the combative ranks of the Disciples. The humans that had been admitted into Heaven banded together under the Inquisitor to join Seraph's cause when they broke our Rail.","CharacterData_data-4b0b12787019bfa5-52aeb9a3c9bf2f74ab8a2f652be33cd3-v2","","","","(Group: 'CharacterData_Boss_Level1ForTLD')"
 "CharacterData_data-4c1ef0538597adbf-4ad178dee60fe804ba1599d86dda9757-v2","CharacterData_data-4c1ef0538597adbf-4ad178dee60fe804ba1599d86dda9757-v2","These sludge behemoths have crawled through the Bogs for eons, absorbing and digesting whatever remained trapped. I pride myself on being observant, so imagine the sting to my ego when I found these piles of filth feign stupidity to keep the Wurmkin and their cairns hidden.","CharacterData_data-4c1ef0538597adbf-4ad178dee60fe804ba1599d86dda9757-v2","","","","(Group: 'CardData_Glugsider')"
 "CharacterData_data-501904d73129cf9e-61a8aacd91c3c0243a80f8899d389170-v2","CharacterData_data-501904d73129cf9e-61a8aacd91c3c0243a80f8899d389170-v2","Original engineer of the armor and weapons used by the Disciples, with specific knowledge of Seraph's Light and how to harness its energy. He was a chief contributor to the breaking of the Rail, something that impresses me almost as much as it angers me.","CharacterData_data-501904d73129cf9e-61a8aacd91c3c0243a80f8899d389170-v2","","","","(Group: 'CharacterData_Boss_Level3Explosive')"
 "CharacterData_data-539777d650a42f40-6516db0c15d7daf49a506d35e5779a2f-v2","CharacterData_data-539777d650a42f40-6516db0c15d7daf49a506d35e5779a2f-v2","“Not of us, but of the Mother,” as the Edge Priory says of Steelsingers. I often just nod at their rambling words, accepting them for the insanity they are, but their strange mention of the Mother — a Divinity no doubt — adds an air of validity to this crazy claim. ","CharacterData_data-539777d650a42f40-6516db0c15d7daf49a506d35e5779a2f-v2","","","","(Group: 'CardData_Steelsinger')"
@@ -6936,7 +6998,7 @@ Gender: Male"
 "CharacterData_data-8cd443f0e05c5477-d72003bdcddf847408c7e2636a6ce623-v2","CharacterData_data-8cd443f0e05c5477-d72003bdcddf847408c7e2636a6ce623-v2","These wealthy residents of Hell are considered among the few to reside in the upper echelon of Remnant Society. They pay the bills for the endeavors of the Wickless, partial to the benefits it allows them. And since the Rail has brought them much business, some of that coin has made its way to our train.","CharacterData_data-8cd443f0e05c5477-d72003bdcddf847408c7e2636a6ce623-v2","","","","(Group: 'CardData_WicklessTycoon')"
 "CharacterData_data-8e300a59c048d5bb-c0959083bc36955498e139131d33a354-v2","CharacterData_data-8e300a59c048d5bb-c0959083bc36955498e139131d33a354-v2","These former Wardens have left their post as an overseer of Morsel workers to become a collector of all variety of gems. They’ve found that ingesting the metals of the Crucible gives them strength they’ve never known otherwise. The rest of the Umbra Shroud, however, does not seem to appreciate their newfound independence as much as I do.","CharacterData_data-8e300a59c048d5bb-c0959083bc36955498e139131d33a354-v2","","","","(Group: 'CardData_CrucibleCollector')"
 "CharacterData_data-8f535ac87fbe685a-42c38ef504e15af428455c5e06db7f24-v2","CharacterData_data-8f535ac87fbe685a-42c38ef504e15af428455c5e06db7f24-v2","Using Wildwood sap to expedite the growth of their vines, these Animus inhabit the remains of their armor. Their larger vines allow them to strike multiple enemies at once, while still being able to retreat into their shell if necessary.","CharacterData_data-8f535ac87fbe685a-42c38ef504e15af428455c5e06db7f24-v2","","","","(Group: 'CardData_HuskHermit')"
-"CharacterData_data-902eff6a56391d73-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","CharacterData_data-902eff6a56391d73-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","A Divinity still exists, one of space and time. If you are ever to threaten it, it will likely use those powers against you, never allowing you to truly reach your goal, instead repeating your struggle over and over and over. I’ve looked for a way to broker peace, I’ve studied all I can, but I’ve still yet to come up with a solution. And if history is any guide, it may be best that I am not the one to find it.","CharacterData_data-902eff6a56391d73-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","","","",""
+"CharacterData_data-902eff6a56391d73-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","CharacterData_data-902eff6a56391d73-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","A Divinity still exists, one of space and time. If you are ever to threaten it, it will likely use those powers against you, never allowing you to truly reach your goal, instead repeating your struggle over and over and over. I’ve looked for a way to broker peace, I’ve studied all I can, but I’ve still yet to come up with a solution. And if history is any guide, it may be best that I am not the one to find it.","CharacterData_data-902eff6a56391d73-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","","","","(Group: 'CharacterData_Boss_Level9_Display')"
 "CharacterData_data-91e99118d072cc2c-4834dd190672177429a719136c12d90d-v2","CharacterData_data-91e99118d072cc2c-4834dd190672177429a719136c12d90d-v2","When Husk Hermits grow too large for their already restrictive shell, they keep the shattered steel pieces for offensive use. Against my wishes, the Channelers have hoarded Pyre shards to further enhance the power of these creatures.","CharacterData_data-91e99118d072cc2c-4834dd190672177429a719136c12d90d-v2","","","","(Group: 'CardData_ShatteredShell')"
 "CharacterData_data-9273854660187f6e-8fb96538453aa4c4898a60e8fe8bc628-v2","CharacterData_data-9273854660187f6e-8fb96538453aa4c4898a60e8fe8bc628-v2","As more experienced students of Seraph's Light and its power, these Clipped can use it to gain strength with each victory in battle. How they've achieved this effect, I have no idea, but it can be deadly.","CharacterData_data-9273854660187f6e-8fb96538453aa4c4898a60e8fe8bc628-v2","","","","(Group: 'CharacterData_HeavyT2GrowOnKill')"
 "CharacterData_data-93f02e2362c935b7-aeaaf31b62556d54fb47acbc2981644f-v2","CharacterData_data-93f02e2362c935b7-aeaaf31b62556d54fb47acbc2981644f-v2","Waxers believe that once they’ve melted away their bodies, they will be released from Hell. Unfortunately, there seems to be little evidence to support this belief, though I will not be the one to tell them that.","CharacterData_data-93f02e2362c935b7-aeaaf31b62556d54fb47acbc2981644f-v2","","","","(Group: 'CardData_StarterDreg')"
@@ -6949,6 +7011,8 @@ Gender: Male"
 "CharacterData_data-a1b3503436037b78-0b15ea59d59e1e44a949e54d7274fb65-v2","CharacterData_data-a1b3503436037b78-0b15ea59d59e1e44a949e54d7274fb65-v2","These souls, imprisoned in steel, try to break free before they lose their minds to the Wildwood. I had no idea of this until the Channelers told me. It took me some time to trust them again after that revelation. ","CharacterData_data-a1b3503436037b78-0b15ea59d59e1e44a949e54d7274fb65-v2","","","","(Group: 'CardData_AwokenHollow')"
 "CharacterData_data-a4423da1b433247d-b203fe2170f931e4e8c63ddda9249774-v2","CharacterData_data-a4423da1b433247d-b203fe2170f931e4e8c63ddda9249774-v2","To further improve the shield he bears, the Slate melts down and reforges it after every battle using whatever metal remains of the fallen. Once his shield shuts in protection, it's almost impossible to open again. Almost.","CharacterData_data-a4423da1b433247d-b203fe2170f931e4e8c63ddda9249774-v2","","","","(Group: 'CharacterData_Boss_Level2ShieldGuy')"
 "CharacterData_data-a486c197ff8bafc8-6cfd716ef6cdf6d46b48d23b4441100c-v2","CharacterData_data-a486c197ff8bafc8-6cfd716ef6cdf6d46b48d23b4441100c-v2","Those that enter the resting place of the Titan rarely emerge. But those that do are permanently imbued with some of its power, relinquishing their names as part of this new communion. While I've tried to wring an account from them on their time with the Titan, their minds seem to have expelled any contact with this Unnamed power. ","CharacterData_data-a486c197ff8bafc8-6cfd716ef6cdf6d46b48d23b4441100c-v2","","","","(Group: 'CardData_EnlightenedSiren')"
+"CharacterData_data-a50aa29c037737fc-bb64dd137c2c819468a3a22efce6717e-v2","CharacterData_data-a50aa29c037737fc-bb64dd137c2c819468a3a22efce6717e-v2","These Clipped ensure that no feather is left discarded. Creating their garments from the various clippings they find, they use them to heal their fellow wingless. ","CharacterData_data-a50aa29c037737fc-bb64dd137c2c819468a3a22efce6717e-v2","","","","(Group: 'CharacterData_ClericT2_Rebel')"
+"CharacterData_data-a6e504ec2fa8e9bc-93149c15e84d7024e8af7c09f52f9497-v2","CharacterData_data-a6e504ec2fa8e9bc-93149c15e84d7024e8af7c09f52f9497-v2","Disciple in training. They’ve heeded the call to invade our lands, and now they support Seraph and his Disciples through aggressive prayer.","CharacterData_data-a6e504ec2fa8e9bc-93149c15e84d7024e8af7c09f52f9497-v2","","","","(Group: 'CharacterData_HordeT1_Rebel')"
 "CharacterData_data-ab22b1b146347833-3546b48934febda4f9b519cc804c9eb4-v2","CharacterData_data-ab22b1b146347833-3546b48934febda4f9b519cc804c9eb4-v2","A Divinity still exists, one of space and time. If you are ever to threaten it, it will likely use those powers against you, never allowing you to truly reach your goal, instead repeating your struggle over and over and over. I’ve looked for a way to broker peace, I’ve studied all I can, but I’ve still yet to come up with a solution. And if history is any guide, it may be best that I am not the one to find it.","CharacterData_data-ab22b1b146347833-3546b48934febda4f9b519cc804c9eb4-v2","","","","(Group: 'CharacterData_Boss_Level9_Feet')"
 "CharacterData_data-abadaf38ec0fef37-aaf6ff6dc9da03a48985f18b3310db9e-v2","CharacterData_data-abadaf38ec0fef37-aaf6ff6dc9da03a48985f18b3310db9e-v2","While most of the Stygian Guard is magic focused, these Sirens form a melee contingent of the clan. I've still helped them to enchant their blades to reap the benefits of the Titan's power.","CharacterData_data-abadaf38ec0fef37-aaf6ff6dc9da03a48985f18b3310db9e-v2","","","","(Group: 'CardData_CombativeSiren')"
 "CharacterData_data-accc647d27af31d7-6a49bdf13403376439bc6301d3780dca-v2","CharacterData_data-accc647d27af31d7-6a49bdf13403376439bc6301d3780dca-v2","Formerly a Light Harnesser, this curious Clipped recrafted his wings with an unholy combination made from shards of the Pyre and of Seraph's Light. The terrible result helped solidify the former Harnesser as a leader among Clipped and terror among Hellborne.   ","CharacterData_data-accc647d27af31d7-6a49bdf13403376439bc6301d3780dca-v2","","","","(Group: 'CharacterData_Boss_Level4Growth')"
@@ -6971,10 +7035,12 @@ Gender: Male"
 "CharacterData_data-c02d67e83afdaf37-2327020f80e424847ac8ee86603ac764-v2","CharacterData_data-c02d67e83afdaf37-2327020f80e424847ac8ee86603ac764-v2","A piece of the Umbra Shroud, blindly searching for morsels and metals to collect, returning them to the collective Shroud consciousness. Though when I say collect, I really mean eat them whole.","CharacterData_data-c02d67e83afdaf37-2327020f80e424847ac8ee86603ac764-v2","","","","(Group: 'CardData_FeederDamageEnemiesUnit')"
 "CharacterData_data-c0c46a883deb6564-c69cddeb0babc984785ff8e705dd1102-v2","CharacterData_data-c0c46a883deb6564-c69cddeb0babc984785ff8e705dd1102-v2","In these visions, I’ve seen crystals used as prisons for souls. “Shardsouls”, they’ve been called. It seems their creator, a human of some ancient renown, created them to split the Divine Titans, but it’s unclear why this happened, what became of the human Exile, or the importance of humans in this forgotten tragedy.","CharacterData_data-c0c46a883deb6564-c69cddeb0babc984785ff8e705dd1102-v2","","","","(Group: 'CharacterData_Boss_Level3TalosPush')"
 "CharacterData_data-c0dbd222879aadff-e028b17d978d26648b22449636fd9172-v2","CharacterData_data-c0dbd222879aadff-e028b17d978d26648b22449636fd9172-v2","For ages, the Clipped were the weakest of those in Heaven. Now, the head of the Clipped Shamans preys upon the even weaker by reconcentrating his healing power into something much more sinister.","CharacterData_data-c0dbd222879aadff-e028b17d978d26648b22449636fd9172-v2","","","","(Group: 'CharacterData_Boss_Level5Caster')"
+"CharacterData_data-c31c6860ca204371-a93c99507dde8cf45825d7f145f84fd0-v2","CharacterData_data-c31c6860ca204371-a93c99507dde8cf45825d7f145f84fd0-v2","Some Marksman choose to stay hidden, rejecting the traditional spear of the Guardians and sticking with their accurate feathers of steel. Their agility and dark coating have made them nearly impossible for us to see.","CharacterData_data-c31c6860ca204371-a93c99507dde8cf45825d7f145f84fd0-v2","","","","(Group: 'CharacterData_AttackerT2Stealth_Rebel')"
 "CharacterData_data-c3839a32c11e62e7-9435452254c7d384ba916fe4f3053511-v2","CharacterData_data-c3839a32c11e62e7-9435452254c7d384ba916fe4f3053511-v2","These impish Hellhorned have just molted into their new forms, as evidenced by their tiny wings and heavy tail. Their horns will continue to grow with each molting cycle, as will their love of their volcanic homelands.","CharacterData_data-c3839a32c11e62e7-9435452254c7d384ba916fe4f3053511-v2","","","","(Group: 'CardData_AggressiveImp')"
 "CharacterData_data-c45e1acf932419fc-380369b69e6b2aa478c2d40ad56b910e-v2","CharacterData_data-c45e1acf932419fc-380369b69e6b2aa478c2d40ad56b910e-v2","The personal guard of Seraph. Protectors of his Light. Their blinding wings distract the less focused among us from their razor-sharp edges.","CharacterData_data-c45e1acf932419fc-380369b69e6b2aa478c2d40ad56b910e-v2","","","","(Group: 'CharacterData_AttackerT3')"
 "CharacterData_data-c6164b2378525322-ba8f8e05de9e05345bbe612def7145a6-v2","CharacterData_data-c6164b2378525322-ba8f8e05de9e05345bbe612def7145a6-v2","Children are rarely seen in the Melting Remnant, but they're easy to spot by their transparent wax and inner glow. However, this unusual phenomenon makes these children less mobile, as this glass-like wax isn’t very flexible.","CharacterData_data-c6164b2378525322-ba8f8e05de9e05345bbe612def7145a6-v2","","","","(Group: 'CardData_FormlessChild')"
 "CharacterData_data-c688b022fde11493-25365bc450280f94990bee9c94044530-v2","CharacterData_data-c688b022fde11493-25365bc450280f94990bee9c94044530-v2","Original engineer of the armor and weapons used by the Disciples, with specific knowledge of Seraph's Light and how to harness its energy. He was a chief contributor to the breaking of the Rail, something that impresses me almost as much as it angers me.","CharacterData_data-c688b022fde11493-25365bc450280f94990bee9c94044530-v2","","","","(Group: 'CharacterData_Boss_Level3StrongerBarrels')"
+"CharacterData_data-c714fde81117fc36-d6b89273b595c5644912192bdead4089-v2","CharacterData_data-c714fde81117fc36-d6b89273b595c5644912192bdead4089-v2","Only a select few Disciple Priests have ever been admitted into Seraph's retinue. Ever eager to be the only one with Seraph's ear, the Highpriest discredited the others through well-placed lies or, in some cases, untimely deaths.","CharacterData_data-c714fde81117fc36-d6b89273b595c5644912192bdead4089-v2","","","","(Group: 'CharacterData_Boss_Level2AEMageForTLD')"
 "CharacterData_data-c7230d62296a5c20-8686235b31131b643973e859c87a5caa-v2","CharacterData_data-c7230d62296a5c20-8686235b31131b643973e859c87a5caa-v2","The Knights of the Disciples were the first humans to charge into battle when our Covenant was broken. Now only one remains to uphold their ancient creed.","CharacterData_data-c7230d62296a5c20-8686235b31131b643973e859c87a5caa-v2","","","","(Group: 'CharacterData_Boss_Level2')"
 "CharacterData_data-c7500f3999c3e129-70952ffb07782ff4ba5ba8f1838c1586-v2","CharacterData_data-c7500f3999c3e129-70952ffb07782ff4ba5ba8f1838c1586-v2","When Waxers are reduced to almost nothing, but still cling to what life is left within, they will sometimes band together for protection. This creates a new form that is collectively controlled by this collection of dying Waxers.","CharacterData_data-c7500f3999c3e129-70952ffb07782ff4ba5ba8f1838c1586-v2","","","","(Group: 'CardData_SplitterUnit')"
 "CharacterData_data-c7924baae6f87068-289dd94ae2111df4a9a9eb976321380b-v2","CharacterData_data-c7924baae6f87068-289dd94ae2111df4a9a9eb976321380b-v2","In these visions, I’ve seen crystals used as prisons for souls. “Shardsouls”, they’ve been called. It seems their creator, a human of some ancient renown, created them to split the Divine Titans, but it’s unclear why this happened, what became of the human Exile, or the importance of humans in this forgotten tragedy.","CharacterData_data-c7924baae6f87068-289dd94ae2111df4a9a9eb976321380b-v2","","","","(Group: 'CharacterData_Boss_Level3TalosArmorOnKill_Harder')"
@@ -7015,6 +7081,7 @@ Gender: Male"
 "CharacterData_data-ed1d9d179f6906a6-a7278daf077c4e44096fc92f422cdbc2-v2","CharacterData_data-ed1d9d179f6906a6-a7278daf077c4e44096fc92f422cdbc2-v2","For all of their obsession with knowledge and Titanlore, the Wurmkin are focused to a fault, worrying only about the study in front of them. As such, they’ve appointed a Chief as both protector and leader. This Chief’s experience with combat is limited, but his wits must be sharp to have kept the clan hidden for so long. Thankfully, Wurmkin claws are as deadly as they are functional, so should the Chief ever really need to fight it won’t be totally unprepared.","CharacterData_data-ed1d9d179f6906a6-a7278daf077c4e44096fc92f422cdbc2-v2","","","","(Group: 'CardData_WurmChamp1')"
 "CharacterData_data-ed283a8b66604b8c-9d6838a0070331c46a6f355ef5e5e77e-v2","CharacterData_data-ed283a8b66604b8c-9d6838a0070331c46a6f355ef5e5e77e-v2","Some Light Apprentices are not as strict with their reverence of the Light shards they’ve been granted, tampering with them to gain improved effects. I did agree to assist in the creation of this armor, but only to sabotage its construction, making this increased effect only last for short amounts of time. ","CharacterData_data-ed283a8b66604b8c-9d6838a0070331c46a6f355ef5e5e77e-v2","","","","(Group: 'CharacterData_HeavyT1GainAttackOnSpellcast')"
 "CharacterData_data-effe665977c02103-9a735b0e897f3f4428d6c6b47309dff2-v2","CharacterData_data-effe665977c02103-9a735b0e897f3f4428d6c6b47309dff2-v2","Both priest and gang leader, Rector Flicker has taken advantage of the Armageddon at hand and played the Reformed and the Wickless off each other, creating an endless cycle of profit through deceit. I don't agree much with his methods, but his charm is hard to ignore.","CharacterData_data-effe665977c02103-9a735b0e897f3f4428d6c6b47309dff2-v2","","","","(Group: 'CardData_RemnantChampion')"
+"CharacterData_data-f0513274f74dbc1c-e9e7004c45621824a9a2232f691dba84-v2","CharacterData_data-f0513274f74dbc1c-e9e7004c45621824a9a2232f691dba84-v2","Younger Clipped coat their severed feathers in steel and sharpen them to use as hyper-accurate throwing knives. By the time they run out, they are usually old enough to pick up a spear and serve their duty as a Guardian.","CharacterData_data-f0513274f74dbc1c-e9e7004c45621824a9a2232f691dba84-v2","","","","(Group: 'CharacterData_AttackerT2_Rebel')"
 "CharacterData_data-f0bcbb3e02514bce-fe5700c5ae5cb3748b75664054ef575e-v2","CharacterData_data-f0bcbb3e02514bce-fe5700c5ae5cb3748b75664054ef575e-v2","A Divinity still exists, one of space and time. If you are ever to threaten it, it will likely use those powers against you, never allowing you to truly reach your goal, instead repeating your struggle over and over and over. I’ve looked for a way to broker peace, I’ve studied all I can, but I’ve still yet to come up with a solution. And if history is any guide, it may be best that I am not the one to find it.","CharacterData_data-f0bcbb3e02514bce-fe5700c5ae5cb3748b75664054ef575e-v2","","","","(Group: 'CharacterData_Boss_Level9_Head')"
 "CharacterData_data-f241f04a2dabf9c4-e463b9805c203784bb74006b5fd36a22-v2","CharacterData_data-f241f04a2dabf9c4-e463b9805c203784bb74006b5fd36a22-v2","Together with the Cold Sirens, these Stygian were amongst the first to embrace the freeze, becoming crucial in the Ring’s survival post-Armageddon and our mounting resistance.","CharacterData_data-f241f04a2dabf9c4-e463b9805c203784bb74006b5fd36a22-v2","","","","(Group: 'CardData_HoardAcolyte')"
 "CharacterData_data-f24f0c298589e564-7de12958b44f0c64488817931f4aac28-v2","CharacterData_data-f24f0c298589e564-7de12958b44f0c64488817931f4aac28-v2","I knew I couldn’t rely on anyone to build the Rail for me, so I set off to do it myself, creating automatic creatures to drive rail spikes into the ground and lay the track that would later be broken.","CharacterData_data-f24f0c298589e564-7de12958b44f0c64488817931f4aac28-v2","","","","(Group: 'CardData_ReplicatingUnit')"
@@ -7024,6 +7091,7 @@ Gender: Male"
 "CharacterData_data-f5c5f39310bdb22c-64ad234bf77ec8b41ad42fc905c71920-v2","CharacterData_data-f5c5f39310bdb22c-64ad234bf77ec8b41ad42fc905c71920-v2","This Hollow was able to sever her connection to the Wildwood, slowly awakening to the prison her soul was trapped in, but still agreeing to champion our Covenant. Now she has repurposed her armor as makeshift shields to keep the rest of the vines at bay, becoming more aggressive with each attempt at recapture.","CharacterData_data-f5c5f39310bdb22c-64ad234bf77ec8b41ad42fc905c71920-v2","","","","(Group: 'CardData_AwokenChampionSentient')"
 "CharacterData_data-f70ae070295f6239-5291c8ecc9a1bd5418e5d32c3e8dda54-v2","CharacterData_data-f70ae070295f6239-5291c8ecc9a1bd5418e5d32c3e8dda54-v2","Once my closest ally, this Clipped legend has been able to create new wings out of the Light that Heaven uses. I admire her ingenuity, but I'll never be able to forgive her for abandoning the two of us.","CharacterData_data-f70ae070295f6239-5291c8ecc9a1bd5418e5d32c3e8dda54-v2","","","","(Group: 'CharacterData_Boss_Level6Armor_Harder')"
 "CharacterData_data-f86b47e341830ac9-5dd4342e9dba3834a8b93cccafbc6234-v2","CharacterData_data-f86b47e341830ac9-5dd4342e9dba3834a8b93cccafbc6234-v2","These Clipped ensure that no feather is left discarded. Creating their garments from the various clippings they find, they use them to heal their fellow wingless. ","CharacterData_data-f86b47e341830ac9-5dd4342e9dba3834a8b93cccafbc6234-v2","","","","(Group: 'CharacterData_ClericT2')"
+"CharacterData_data-f98d794ab379a095-557bd0a4143dca94caf24a07e1ae417f-v2","CharacterData_data-f98d794ab379a095-557bd0a4143dca94caf24a07e1ae417f-v2","To further improve the shield he bears, the Slate melts down and reforges it after every battle using whatever metal remains of the fallen. Once his shield shuts in protection, it's almost impossible to open again. Almost.","CharacterData_data-f98d794ab379a095-557bd0a4143dca94caf24a07e1ae417f-v2","","","","(Group: 'CharacterData_Boss_Level2ShieldGuyForTLD')"
 "CharacterData_data-fad341ecb84fb3e1-ddc95f1af17f5474fb633fb45564bb50-v2","CharacterData_data-fad341ecb84fb3e1-ddc95f1af17f5474fb633fb45564bb50-v2","A Divinity still exists, one of space and time. If you are ever to threaten it, it will likely use those powers against you, never allowing you to truly reach your goal, instead repeating your struggle over and over and over. I’ve looked for a way to broker peace, I’ve studied all I can, but I’ve still yet to come up with a solution. And if history is any guide, it may be best that I am not the one to find it.","CharacterData_data-fad341ecb84fb3e1-ddc95f1af17f5474fb633fb45564bb50-v2","","","","(Group: 'CharacterData_Boss_Level9_Torso')"
 "CharacterData_data-fb0e80ed7e5e3743-e82109d76e258f441afd5cc9b0a95bfe-v2","CharacterData_data-fb0e80ed7e5e3743-e82109d76e258f441afd5cc9b0a95bfe-v2","In these visions, I’ve seen crystals used as prisons for souls. “Shardsouls”, they’ve been called. It seems their creator, a human of some ancient renown, created them to split the Divine Titans, but it’s unclear why this happened, what became of the human Exile, or the importance of Humans in this forgotten tragedy.","CharacterData_data-fb0e80ed7e5e3743-e82109d76e258f441afd5cc9b0a95bfe-v2","","","","(Group: 'CharacterData_Boss_Level3TalosPush_Harder')"
 "CharacterData_data-fb73faa23ae7d6b1-0928a2d5f64fb0c42a803b9f56adf7f3-v2","CharacterData_data-fb73faa23ae7d6b1-0928a2d5f64fb0c42a803b9f56adf7f3-v2","Fel spoke of another sibling only once, saying he was both dark of wing and of mind. Seraph has also alluded to the imprisonment of their “forsaken brother,” but my memory fails to provide more details on the mysterious Archus.","CharacterData_data-fb73faa23ae7d6b1-0928a2d5f64fb0c42a803b9f56adf7f3-v2","","","","(Group: 'CharacterData_Boss_Level6ArchusTrapATrapC_Harder')"
@@ -7149,6 +7217,10 @@ This triggers on Strike
 This triggers on Extinguish
 [stealth]: <b>Stealth</b>
 [effect0.status0.power]: A number"
+"CharacterData_descriptionKey-26975ba04f834e66-a93c99507dde8cf45825d7f145f84fd0-v2","CharacterData_descriptionKey-26975ba04f834e66-a93c99507dde8cf45825d7f145f84fd0-v2","Friendly units gain [stealth] 1.","CharacterData_descriptionKey-26975ba04f834e66-a93c99507dde8cf45825d7f145f84fd0-v2","","","","(Group: 'CharacterData_AttackerT2Stealth_Rebel')
+
+This triggers on Summon
+[stealth]: <b>Stealth</b>"
 "CharacterData_descriptionKey-29f8bb4c6ebf9c0a-626e922b3e0a1f444a80bea6007b495a-v2","CharacterData_descriptionKey-29f8bb4c6ebf9c0a-626e922b3e0a1f444a80bea6007b495a-v2","Grant [multistrike] [effect0.status0.power].","CharacterData_descriptionKey-29f8bb4c6ebf9c0a-626e922b3e0a1f444a80bea6007b495a-v2","","","","(Group: 'CharacterData_EnchanterT3Multistrike_Shard')
 
 This triggers on Enchant
@@ -7157,9 +7229,17 @@ This triggers on Enchant
 "CharacterData_descriptionKey-2b9f0a20c4d8d9e2-92c3e0fbcdc57b441ae72be7873e503d-v2","CharacterData_descriptionKey-2b9f0a20c4d8d9e2-92c3e0fbcdc57b441ae72be7873e503d-v2","Summon Kinhost Pupa.","CharacterData_descriptionKey-2b9f0a20c4d8d9e2-92c3e0fbcdc57b441ae72be7873e503d-v2","","","","(Group: 'CardData_KinhostVessel')
 
 This triggers on <b>Hatch</b>"
+"CharacterData_descriptionKey-2c493788b8aca80e-93149c15e84d7024e8af7c09f52f9497-v2","CharacterData_descriptionKey-2c493788b8aca80e-93149c15e84d7024e8af7c09f52f9497-v2","Enemy units gain [meleeweakness] 1.","CharacterData_descriptionKey-2c493788b8aca80e-93149c15e84d7024e8af7c09f52f9497-v2","","","","(Group: 'CharacterData_HordeT1_Rebel')
+
+This triggers on Extinguish
+[meleeweakness]: <nobr><b>Melee Weakness</b></nobr>"
 "CharacterData_descriptionKey-2f91707e94d9b7c8-c69cddeb0babc984785ff8e705dd1102-v2","CharacterData_descriptionKey-2f91707e94d9b7c8-c69cddeb0babc984785ff8e705dd1102-v2","Push the attacked unit to the back.","CharacterData_descriptionKey-2f91707e94d9b7c8-c69cddeb0babc984785ff8e705dd1102-v2","","","","(Group: 'CharacterData_Boss_Level3TalosPush')
 
 This triggers on Strike"
+"CharacterData_descriptionKey-308b10f461bc1936-549965c69ea54de419d30547d76060f7-v2","CharacterData_descriptionKey-308b10f461bc1936-549965c69ea54de419d30547d76060f7-v2","Friendly units gain [spikes] 3.","CharacterData_descriptionKey-308b10f461bc1936-549965c69ea54de419d30547d76060f7-v2","","","","(Group: 'CharacterData_EnchanterT1Spikes_Rebel')
+
+This triggers on Summon
+[spikes]: <b>Spikes</b>"
 "CharacterData_descriptionKey-31ea82bf8d13322b-8fe33a976b2baa442ae9b392e40d4212-v2","CharacterData_descriptionKey-31ea82bf8d13322b-8fe33a976b2baa442ae9b392e40d4212-v2","Remove all status effects.","CharacterData_descriptionKey-31ea82bf8d13322b-8fe33a976b2baa442ae9b392e40d4212-v2","","","","(Group: 'CardData_EelGorgon')
 
 This triggers on Resolve"
@@ -7278,6 +7358,11 @@ This triggers on Incant
 "CharacterData_descriptionKey-4c3816bde9b7d1f1-70952ffb07782ff4ba5ba8f1838c1586-v2","CharacterData_descriptionKey-4c3816bde9b7d1f1-70952ffb07782ff4ba5ba8f1838c1586-v2","Summon 2 <nobr><b>Twin of Wax</b></nobr> and apply this unit's upgrades and stat changes.","CharacterData_descriptionKey-4c3816bde9b7d1f1-70952ffb07782ff4ba5ba8f1838c1586-v2","","","","(Group: 'CardData_SplitterUnit')
 
 This triggers on Extinguish"
+"CharacterData_descriptionKey-4c39f1a0c606f3da-d6fd6eba624e4924ab30230f90f02a1d-v2","CharacterData_descriptionKey-4c39f1a0c606f3da-d6fd6eba624e4924ab30230f90f02a1d-v2","Friendly units gain +[effect0.power][attack].","CharacterData_descriptionKey-4c39f1a0c606f3da-d6fd6eba624e4924ab30230f90f02a1d-v2","","","","(Group: 'CharacterData_HordeT2DeathGivesAttack_Rebel')
+
+This triggers on Extinguish
+[effect0.power]: A number
+[attack]: <sprite name=""Attack"">"
 "CharacterData_descriptionKey-4c89ffab8280f20c-585e1205f6cc16144a303d0d7196ac7b-v2[Zero]","CharacterData_descriptionKey-4c89ffab8280f20c-585e1205f6cc16144a303d0d7196ac7b-v2[Zero]","Deal [effect0.power] damage to the front enemy unit.","CharacterData_descriptionKey-4c89ffab8280f20c-585e1205f6cc16144a303d0d7196ac7b-v2[Zero]","","","","(Group: 'CardData_EntombedExplosive')
 (Plural form: 'Zero')
 
@@ -8074,6 +8159,9 @@ This triggers on Resolve
 This triggers on Strike
 [sap]: <b>Sap</b>
 [effect0.status0.power]: A number"
+"CharacterData_descriptionKey-fd83c12185017e9f-bb64dd137c2c819468a3a22efce6717e-v2","CharacterData_descriptionKey-fd83c12185017e9f-bb64dd137c2c819468a3a22efce6717e-v2","Restore friendly units to full health.","CharacterData_descriptionKey-fd83c12185017e9f-bb64dd137c2c819468a3a22efce6717e-v2","","","","(Group: 'CharacterData_ClericT2_Rebel')
+
+This triggers on Extinguish"
 "CharacterData_descriptionKey-fd926ba1432a7f9e-177d4572e5dbc3846bb7f3196bacf680-v2","CharacterData_descriptionKey-fd926ba1432a7f9e-177d4572e5dbc3846bb7f3196bacf680-v2","Gain [effect0.power] max health.","CharacterData_descriptionKey-fd926ba1432a7f9e-177d4572e5dbc3846bb7f3196bacf680-v2","","","","(Group: 'CardData_PushGolem')
 
 This triggers on Summon
@@ -8114,7 +8202,7 @@ This triggers on Resolve"
 "CharacterData_nameKey-0f799ad5918968f4-9de75cc6d24e90049840f21cec969bc3-v2","CharacterData_nameKey-0f799ad5918968f4-9de75cc6d24e90049840f21cec969bc3-v2","Seraph the Diligent","CharacterData_nameKey-0f799ad5918968f4-9de75cc6d24e90049840f21cec969bc3-v2","","","","(Group: 'CharacterData_Boss_Level8SpellConsume')"
 "CharacterData_nameKey-10a9d2c32f94b18a-2ccdf6e39344d244b95db43658a5a8ea-v2","CharacterData_nameKey-10a9d2c32f94b18a-2ccdf6e39344d244b95db43658a5a8ea-v2","Highpriest to the Light","CharacterData_nameKey-10a9d2c32f94b18a-2ccdf6e39344d244b95db43658a5a8ea-v2","","","","(Group: 'CharacterData_Boss_Level2AEMage')"
 "CharacterData_nameKey-12de9ff6ae24442e-df9db873cb68978489183d73421d5d90-v2","CharacterData_nameKey-12de9ff6ae24442e-df9db873cb68978489183d73421d5d90-v2","Reconciler","CharacterData_nameKey-12de9ff6ae24442e-df9db873cb68978489183d73421d5d90-v2","","","","(Group: 'CharacterData_MageT1Junker')"
-"CharacterData_nameKey-17f667d969439c09-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","CharacterData_nameKey-17f667d969439c09-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","The Last Divinity","CharacterData_nameKey-17f667d969439c09-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","","","",""
+"CharacterData_nameKey-17f667d969439c09-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","CharacterData_nameKey-17f667d969439c09-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","The Last Divinity","CharacterData_nameKey-17f667d969439c09-ada8a9a8aea68eb42b9c76bae4a7afc4-v2","","","","(Group: 'CharacterData_Boss_Level9_Display')"
 "CharacterData_nameKey-18710078b1ac1b9a-76133b80e16423d48b8c011dd15f276b-v2","CharacterData_nameKey-18710078b1ac1b9a-76133b80e16423d48b8c011dd15f276b-v2","Paraffin Enforcer","CharacterData_nameKey-18710078b1ac1b9a-76133b80e16423d48b8c011dd15f276b-v2","","","","(Group: 'CardData_ParrafinEnforcer')"
 "CharacterData_nameKey-19061d605a114f77-e1fd2f19c4490be48bc61feb628780d2-v2","CharacterData_nameKey-19061d605a114f77-e1fd2f19c4490be48bc61feb628780d2-v2","Glareminder","CharacterData_nameKey-19061d605a114f77-e1fd2f19c4490be48bc61feb628780d2-v2","","","","(Group: 'CardData_Glareminder')"
 "CharacterData_nameKey-19145def485cd5db-eba52d8197695e34b9fa42c19073fa61-v2","CharacterData_nameKey-19145def485cd5db-eba52d8197695e34b9fa42c19073fa61-v2","Constructed Explosive","CharacterData_nameKey-19145def485cd5db-eba52d8197695e34b9fa42c19073fa61-v2","","","","(Group: 'CharacterData_BarrelExplosive')"
@@ -8165,6 +8253,7 @@ This triggers on Resolve"
 "CharacterData_nameKey-4f0662430bab7e03-3c651af29c8547643b6cad6c548d7ca1-v2","CharacterData_nameKey-4f0662430bab7e03-3c651af29c8547643b6cad6c548d7ca1-v2","Heph the Blacksmith","CharacterData_nameKey-4f0662430bab7e03-3c651af29c8547643b6cad6c548d7ca1-v2","","","","(Group: 'CardData_HephUnit')"
 "CharacterData_nameKey-4f4770de4b96da00-140f50614a678a94c8f80092cc660fa5-v2","CharacterData_nameKey-4f4770de4b96da00-140f50614a678a94c8f80092cc660fa5-v2","Overgorger","CharacterData_nameKey-4f4770de4b96da00-140f50614a678a94c8f80092cc660fa5-v2","","","","(Group: 'CardData_FeederPermanentAttackBoost')"
 "CharacterData_nameKey-501d4b9cb7035256-d72003bdcddf847408c7e2636a6ce623-v2","CharacterData_nameKey-501d4b9cb7035256-d72003bdcddf847408c7e2636a6ce623-v2","Wickless Tycoon","CharacterData_nameKey-501d4b9cb7035256-d72003bdcddf847408c7e2636a6ce623-v2","","","","(Group: 'CardData_WicklessTycoon')"
+"CharacterData_nameKey-511d4d189a8fbecb-bb64dd137c2c819468a3a22efce6717e-v2","CharacterData_nameKey-511d4d189a8fbecb-bb64dd137c2c819468a3a22efce6717e-v2","Clipped Shaman","CharacterData_nameKey-511d4d189a8fbecb-bb64dd137c2c819468a3a22efce6717e-v2","","","","(Group: 'CharacterData_ClericT2_Rebel')"
 "CharacterData_nameKey-51e3c11923e2e7a3-a2409cdddc4d3a143b0a25ba002adaf9-v2","CharacterData_nameKey-51e3c11923e2e7a3-a2409cdddc4d3a143b0a25ba002adaf9-v2","Living Armor","CharacterData_nameKey-51e3c11923e2e7a3-a2409cdddc4d3a143b0a25ba002adaf9-v2","","","","(Group: 'CharacterData_Boss_Level7Shield')"
 "CharacterData_nameKey-58f78255e06f0f66-380369b69e6b2aa478c2d40ad56b910e-v2","CharacterData_nameKey-58f78255e06f0f66-380369b69e6b2aa478c2d40ad56b910e-v2","Lightwings","CharacterData_nameKey-58f78255e06f0f66-380369b69e6b2aa478c2d40ad56b910e-v2","","","","(Group: 'CharacterData_AttackerT3')"
 "CharacterData_nameKey-595434482a512b26-bd1537d8334505242b4cc80d1b6a9469-v2","CharacterData_nameKey-595434482a512b26-bd1537d8334505242b4cc80d1b6a9469-v2","Shattering Darkshard","CharacterData_nameKey-595434482a512b26-bd1537d8334505242b4cc80d1b6a9469-v2","","","","(Group: 'CharacterData_TrapC')"
@@ -8178,6 +8267,7 @@ This triggers on Resolve"
 "CharacterData_nameKey-5e5aec1c3fd0df43-3546b48934febda4f9b519cc804c9eb4-v2","CharacterData_nameKey-5e5aec1c3fd0df43-3546b48934febda4f9b519cc804c9eb4-v2","The Last Divinity","CharacterData_nameKey-5e5aec1c3fd0df43-3546b48934febda4f9b519cc804c9eb4-v2","","","","(Group: 'CharacterData_Boss_Level9_Feet')"
 "CharacterData_nameKey-5f875ca650bd3a25-0928a2d5f64fb0c42a803b9f56adf7f3-v2","CharacterData_nameKey-5f875ca650bd3a25-0928a2d5f64fb0c42a803b9f56adf7f3-v2","Archus, Darkness Incarnate","CharacterData_nameKey-5f875ca650bd3a25-0928a2d5f64fb0c42a803b9f56adf7f3-v2","","","","(Group: 'CharacterData_Boss_Level6ArchusTrapATrapC_Harder')"
 "CharacterData_nameKey-5ff155a95a9fd891-a914d27409d2b3d4b8c679dd4a8ca911-v2","CharacterData_nameKey-5ff155a95a9fd891-a914d27409d2b3d4b8c679dd4a8ca911-v2","Thoughtbinder","CharacterData_nameKey-5ff155a95a9fd891-a914d27409d2b3d4b8c679dd4a8ca911-v2","","","","(Group: 'CharacterData_Boss_Level4JunkerBoss')"
+"CharacterData_nameKey-614fa61ecdcff4f6-a93c99507dde8cf45825d7f145f84fd0-v2","CharacterData_nameKey-614fa61ecdcff4f6-a93c99507dde8cf45825d7f145f84fd0-v2","Silent Marksman","CharacterData_nameKey-614fa61ecdcff4f6-a93c99507dde8cf45825d7f145f84fd0-v2","","","","(Group: 'CharacterData_AttackerT2Stealth_Rebel')"
 "CharacterData_nameKey-61c36f1ee44ef263-e440732c1c6913444aa14863ce8caaed-v2","CharacterData_nameKey-61c36f1ee44ef263-e440732c1c6913444aa14863ce8caaed-v2","Morselmaster","CharacterData_nameKey-61c36f1ee44ef263-e440732c1c6913444aa14863ce8caaed-v2","","","","(Group: 'CardData_CopyMorselsUnit')"
 "CharacterData_nameKey-624ffe77cfb13b4f-734805f581b212f4499438af70e1fae4-v2","CharacterData_nameKey-624ffe77cfb13b4f-734805f581b212f4499438af70e1fae4-v2","Winged Conduit","CharacterData_nameKey-624ffe77cfb13b4f-734805f581b212f4499438af70e1fae4-v2","","","","(Group: 'CharacterData_EnchanterT3Multistrike')"
 "CharacterData_nameKey-62e6ee060fa203ee-08a6a4f2f181c47428294cb79422a0d8-v2","CharacterData_nameKey-62e6ee060fa203ee-08a6a4f2f181c47428294cb79422a0d8-v2","Collector","CharacterData_nameKey-62e6ee060fa203ee-08a6a4f2f181c47428294cb79422a0d8-v2","","","","(Group: 'CharacterData_TreasureBagLvl1Gold')"
@@ -8195,6 +8285,7 @@ This triggers on Resolve"
 "CharacterData_nameKey-766daded001111e6-5ea0328fb52d79d4cad8a658a82feb03-v2","CharacterData_nameKey-766daded001111e6-5ea0328fb52d79d4cad8a658a82feb03-v2","Apex Imp","CharacterData_nameKey-766daded001111e6-5ea0328fb52d79d4cad8a658a82feb03-v2","","","","(Group: 'CardData_ApexImp')"
 "CharacterData_nameKey-766f3e1699d2fdad-7979c0abfaf2c5845bc5211f4ef16c70-v2","CharacterData_nameKey-766f3e1699d2fdad-7979c0abfaf2c5845bc5211f4ef16c70-v2","Alabaster Guardian","CharacterData_nameKey-766f3e1699d2fdad-7979c0abfaf2c5845bc5211f4ef16c70-v2","","","","(Group: 'CharacterData_AlabasterGuardian')"
 "CharacterData_nameKey-784f4082443dd52f-f12806a446f481243a000c11d800c897-v2","CharacterData_nameKey-784f4082443dd52f-f12806a446f481243a000c11d800c897-v2","Chains the Sighted","CharacterData_nameKey-784f4082443dd52f-f12806a446f481243a000c11d800c897-v2","","","","(Group: 'CharacterData_Boss_Level1JunkerForTLD')"
+"CharacterData_nameKey-7a214acd4b2dcd89-93149c15e84d7024e8af7c09f52f9497-v2","CharacterData_nameKey-7a214acd4b2dcd89-93149c15e84d7024e8af7c09f52f9497-v2","Clergyman","CharacterData_nameKey-7a214acd4b2dcd89-93149c15e84d7024e8af7c09f52f9497-v2","","","","(Group: 'CharacterData_HordeT1_Rebel')"
 "CharacterData_nameKey-7a6fa0cfbe1ecb14-5dd4342e9dba3834a8b93cccafbc6234-v2","CharacterData_nameKey-7a6fa0cfbe1ecb14-5dd4342e9dba3834a8b93cccafbc6234-v2","Clipped Shaman","CharacterData_nameKey-7a6fa0cfbe1ecb14-5dd4342e9dba3834a8b93cccafbc6234-v2","","","","(Group: 'CharacterData_ClericT2')"
 "CharacterData_nameKey-7ad320d5ef092158-25365bc450280f94990bee9c94044530-v2","CharacterData_nameKey-7ad320d5ef092158-25365bc450280f94990bee9c94044530-v2","Daedalus, the Professor","CharacterData_nameKey-7ad320d5ef092158-25365bc450280f94990bee9c94044530-v2","","","","(Group: 'CharacterData_Boss_Level3StrongerBarrels')"
 "CharacterData_nameKey-7b48861dba3eb3fc-87c5c6d55f7a2a34e9538b943e1a236b-v2","CharacterData_nameKey-7b48861dba3eb3fc-87c5c6d55f7a2a34e9538b943e1a236b-v2","Fused Slagger","CharacterData_nameKey-7b48861dba3eb3fc-87c5c6d55f7a2a34e9538b943e1a236b-v2","","","","(Group: 'CharacterData_MonsterFusedSlagger')"
@@ -8241,6 +8332,7 @@ This triggers on Resolve"
 "CharacterData_nameKey-b3c3a0aa8b180f02-1a7dfd777b4d1e84eac029618b50d8d0-v2","CharacterData_nameKey-b3c3a0aa8b180f02-1a7dfd777b4d1e84eac029618b50d8d0-v2","Fel, the Wings of Light","CharacterData_nameKey-b3c3a0aa8b180f02-1a7dfd777b4d1e84eac029618b50d8d0-v2","","","","(Group: 'CharacterData_Boss_Level6Junk_Harder')"
 "CharacterData_nameKey-b466fb1221595497-207bc586be04f2f40b7d1660dfcdb4ea-v2","CharacterData_nameKey-b466fb1221595497-207bc586be04f2f40b7d1660dfcdb4ea-v2","Railbeater","CharacterData_nameKey-b466fb1221595497-207bc586be04f2f40b7d1660dfcdb4ea-v2","","","","(Group: 'CardData_Railbeater')"
 "CharacterData_nameKey-b637953c3591b379-70952ffb07782ff4ba5ba8f1838c1586-v2","CharacterData_nameKey-b637953c3591b379-70952ffb07782ff4ba5ba8f1838c1586-v2","Legion of Wax","CharacterData_nameKey-b637953c3591b379-70952ffb07782ff4ba5ba8f1838c1586-v2","","","","(Group: 'CardData_SplitterUnit')"
+"CharacterData_nameKey-b8504eae1880b9ce-d6fd6eba624e4924ab30230f90f02a1d-v2","CharacterData_nameKey-b8504eae1880b9ce-d6fd6eba624e4924ab30230f90f02a1d-v2","Sycophant","CharacterData_nameKey-b8504eae1880b9ce-d6fd6eba624e4924ab30230f90f02a1d-v2","","","","(Group: 'CharacterData_HordeT2DeathGivesAttack_Rebel')"
 "CharacterData_nameKey-baa3178c1a8ca2bc-a684b7dad566ef44a8a4a078dc5854ce-v2","CharacterData_nameKey-baa3178c1a8ca2bc-a684b7dad566ef44a8a4a078dc5854ce-v2","Light Harnesser","CharacterData_nameKey-baa3178c1a8ca2bc-a684b7dad566ef44a8a4a078dc5854ce-v2","","","","(Group: 'CharacterData_HeavyT2GrowOnAscend')"
 "CharacterData_nameKey-be46fd89b6603e3b-90b3253ccd2a5314588b252c9dc347cf-v2","CharacterData_nameKey-be46fd89b6603e3b-90b3253ccd2a5314588b252c9dc347cf-v2","Queen's Impling","CharacterData_nameKey-be46fd89b6603e3b-90b3253ccd2a5314588b252c9dc347cf-v2","","","","(Group: 'CardData_StarterImp')"
 "CharacterData_nameKey-bea799cc72bdddd1-4662d8efeb786184986f83a6da8d07e7-v2","CharacterData_nameKey-bea799cc72bdddd1-4662d8efeb786184986f83a6da8d07e7-v2","Coldcaelia","CharacterData_nameKey-bea799cc72bdddd1-4662d8efeb786184986f83a6da8d07e7-v2","","","","(Group: 'CardData_ColdstingSiren')"
@@ -8256,6 +8348,7 @@ This triggers on Resolve"
 "CharacterData_nameKey-c87606535bedccce-ebd31838e68ddb64d9e059209ef07fe7-v2","CharacterData_nameKey-c87606535bedccce-ebd31838e68ddb64d9e059209ef07fe7-v2","Transcendimp","CharacterData_nameKey-c87606535bedccce-ebd31838e68ddb64d9e059209ef07fe7-v2","","","","(Group: 'CardData_TranscendImp')"
 "CharacterData_nameKey-c8781bc88de8d07a-af58fcb8e220eab47bd81124d84b1041-v2","CharacterData_nameKey-c8781bc88de8d07a-af58fcb8e220eab47bd81124d84b1041-v2","Talos, the Architect","CharacterData_nameKey-c8781bc88de8d07a-af58fcb8e220eab47bd81124d84b1041-v2","","","","(Group: 'CharacterData_Boss_Level3TalosDaze')"
 "CharacterData_nameKey-c8974e656cd84d1e-f83d8a195ea0adf4697455f4280b567c-v2","CharacterData_nameKey-c8974e656cd84d1e-f83d8a195ea0adf4697455f4280b567c-v2","Kinhost Pupa","CharacterData_nameKey-c8974e656cd84d1e-f83d8a195ea0adf4697455f4280b567c-v2","","","","(Group: 'CardData_KinhostPupa')"
+"CharacterData_nameKey-cba6aca335a8969e-549965c69ea54de419d30547d76060f7-v2","CharacterData_nameKey-cba6aca335a8969e-549965c69ea54de419d30547d76060f7-v2","Conduit Redirector","CharacterData_nameKey-cba6aca335a8969e-549965c69ea54de419d30547d76060f7-v2","","","","(Group: 'CharacterData_EnchanterT1Spikes_Rebel')"
 "CharacterData_nameKey-d06e49cad2006d23-c5fb54b6c2cb6b44eb87dd468e302e7b-v2","CharacterData_nameKey-d06e49cad2006d23-c5fb54b6c2cb6b44eb87dd468e302e7b-v2","Devourer of Death","CharacterData_nameKey-d06e49cad2006d23-c5fb54b6c2cb6b44eb87dd468e302e7b-v2","","","","(Group: 'CardData_DeathEater')"
 "CharacterData_nameKey-d19e229ee7e15d33-1323c86550e408d43aa87fc1cd078ba6-v2","CharacterData_nameKey-d19e229ee7e15d33-1323c86550e408d43aa87fc1cd078ba6-v2","Dante the Deceptive","CharacterData_nameKey-d19e229ee7e15d33-1323c86550e408d43aa87fc1cd078ba6-v2","","","","(Group: 'CardData_DanteUnit')"
 "CharacterData_nameKey-d2186921e2684acd-ba8f8e05de9e05345bbe612def7145a6-v2","CharacterData_nameKey-d2186921e2684acd-ba8f8e05de9e05345bbe612def7145a6-v2","Formless Child","CharacterData_nameKey-d2186921e2684acd-ba8f8e05de9e05345bbe612def7145a6-v2","","","","(Group: 'CardData_FormlessChild')"
@@ -8291,6 +8384,7 @@ This triggers on Resolve"
 "CharacterData_nameKey-ec9ef2f3735a843c-5b60854f2562566449b0f132e23e1352-v2","CharacterData_nameKey-ec9ef2f3735a843c-5b60854f2562566449b0f132e23e1352-v2","Morsel Miner","CharacterData_nameKey-ec9ef2f3735a843c-5b60854f2562566449b0f132e23e1352-v2","","","","(Group: 'CardData_MorselMiner')"
 "CharacterData_nameKey-ede5e6c36047e447-6cc13f467b648cb4dba95d703c6db4f9-v2","CharacterData_nameKey-ede5e6c36047e447-6cc13f467b648cb4dba95d703c6db4f9-v2","Alloyed Savage","CharacterData_nameKey-ede5e6c36047e447-6cc13f467b648cb4dba95d703c6db4f9-v2","","","","(Group: 'CharacterData_MonsterAlloyedSavage')"
 "CharacterData_nameKey-f4617209c7eb96e9-289dd94ae2111df4a9a9eb976321380b-v2","CharacterData_nameKey-f4617209c7eb96e9-289dd94ae2111df4a9a9eb976321380b-v2","Talos, the Architect","CharacterData_nameKey-f4617209c7eb96e9-289dd94ae2111df4a9a9eb976321380b-v2","","","","(Group: 'CharacterData_Boss_Level3TalosArmorOnKill_Harder')"
+"CharacterData_nameKey-f46467a1347b78af-e9e7004c45621824a9a2232f691dba84-v2","CharacterData_nameKey-f46467a1347b78af-e9e7004c45621824a9a2232f691dba84-v2","Quill Marksman","CharacterData_nameKey-f46467a1347b78af-e9e7004c45621824a9a2232f691dba84-v2","","","","(Group: 'CharacterData_AttackerT2_Rebel')"
 "CharacterData_nameKey-f54b4f44b055dbf3-65161fe590599714cae1cd7135d737cb-v2","CharacterData_nameKey-f54b4f44b055dbf3-65161fe590599714cae1cd7135d737cb-v2","Daedalus, the Professor","CharacterData_nameKey-f54b4f44b055dbf3-65161fe590599714cae1cd7135d737cb-v2","","","","(Group: 'CharacterData_Boss_Level3Explosive_Harder')"
 "CharacterData_nameKey-f596f6cbc8dab639-7ac03f5eedc72f24287fc5c4bf811771-v2","CharacterData_nameKey-f596f6cbc8dab639-7ac03f5eedc72f24287fc5c4bf811771-v2","Seraph the Patient","CharacterData_nameKey-f596f6cbc8dab639-7ac03f5eedc72f24287fc5c4bf811771-v2","","","","(Group: 'CharacterData_Boss_Level8Attacker')"
 "CharacterData_nameKey-f71cc65df3354a5f-de076dcd44a0be44ba6137fc2a652c66-v2","CharacterData_nameKey-f71cc65df3354a5f-de076dcd44a0be44ba6137fc2a652c66-v2","Deranged Brute","CharacterData_nameKey-f71cc65df3354a5f-de076dcd44a0be44ba6137fc2a652c66-v2","","","","(Group: 'CardData_DerangedBrute')"
@@ -9840,7 +9934,7 @@ This refers to the subtype ""Steward"", not the unit ""Train Steward"" (although
 
 [lifesteal]: <b>Lifesteal</b>
 [effect0.status0.power]: A number"
-"CollectableRelicData_descriptionKey-f6b428cf8ce8db70-233714166daaebe418ce4681ca0ad5a5-v2","CollectableRelicData_descriptionKey-f6b428cf8ce8db70-233714166daaebe418ce4681ca0ad5a5-v2","Apply [endless] to the first friendly unit summoned each turn.","CollectableRelicData_descriptionKey-f6b428cf8ce8db70-233714166daaebe418ce4681ca0ad5a5-v2","","","","(Group: 'CollectableRelicData_StealthWaxers')
+"CollectableRelicData_descriptionKey-f6b428cf8ce8db70-233714166daaebe418ce4681ca0ad5a5-v2","CollectableRelicData_descriptionKey-f6b428cf8ce8db70-233714166daaebe418ce4681ca0ad5a5-v2","Apply [endless] to the first friendly unit played each turn.","CollectableRelicData_descriptionKey-f6b428cf8ce8db70-233714166daaebe418ce4681ca0ad5a5-v2","","","","(Group: 'CollectableRelicData_StealthWaxers')
 
 [endless]: <b>Endless</b>"
 "CollectableRelicData_descriptionKey-f8265aa7f0ac3297-29a913f401cb1534aa2c8b9e2c70f566-v2","CollectableRelicData_descriptionKey-f8265aa7f0ac3297-29a913f401cb1534aa2c8b9e2c70f566-v2","[rage] does not decay on friendly units.","CollectableRelicData_descriptionKey-f8265aa7f0ac3297-29a913f401cb1534aa2c8b9e2c70f566-v2","","","","(Group: 'CollectableRelicData_RagePreservedOnFriendlies')
@@ -10305,24 +10399,76 @@ This refers to the subtype ""Steward"", not the unit ""Train Steward"" (although
 "CreditsScreen_MusicBy","CreditsScreen_MusicBy","Music","CreditsScreen_MusicBy","","","",""
 "CreditsScreen_Programmers","CreditsScreen_Programmers","Engineers","CreditsScreen_Programmers","","","",""
 "CreditsScreen_Title","CreditsScreen_Title","Credits","CreditsScreen_Title","","","",""
-"CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2","Select up to 3 cards to remove and gain 10[crystal] per card.","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_3')
+"CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Zero]","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Zero]","Restore [codeint0] health and gain 15[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Zero]","","","","(Group: 'HealthRewardData_MalickaHeal_3')
+(Plural form: 'Zero')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[One]","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[One]","Restore [codeint0] health and gain 15[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[One]","","","","(Group: 'HealthRewardData_MalickaHeal_3')
+(Plural form: 'One')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Few]","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Few]","Restore [codeint0] health and gain 15[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Few]","","","","(Group: 'HealthRewardData_MalickaHeal_3')
+(Plural form: 'Few')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Plural]","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Plural]","Restore [codeint0] health and gain 15[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-03d14dd27828dbae-bf74f37b93be14149917c751824693eb-v2[Plural]","","","","(Group: 'HealthRewardData_MalickaHeal_3')
+(Plural form: 'Plural')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Zero]","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Zero]","Restore [codeint0] health and gain 5[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Zero]","","","","(Group: 'HealthRewardData_MalickaHeal_1')
+(Plural form: 'Zero')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[One]","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[One]","Restore [codeint0] health and gain 5[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[One]","","","","(Group: 'HealthRewardData_MalickaHeal_1')
+(Plural form: 'One')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Few]","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Few]","Restore [codeint0] health and gain 5[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Few]","","","","(Group: 'HealthRewardData_MalickaHeal_1')
+(Plural form: 'Few')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Plural]","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Plural]","Restore [codeint0] health and gain 5[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2[Plural]","","","","(Group: 'HealthRewardData_MalickaHeal_1')
+(Plural form: 'Plural')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardDescriptionKey-2b63505137fa451f-fa6c9efc01bff7947bffb3e8df284132-v2","CrystalPurgeRewardData__rewardDescriptionKey-2b63505137fa451f-fa6c9efc01bff7947bffb3e8df284132-v2","Restore all health and gain 20[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-2b63505137fa451f-fa6c9efc01bff7947bffb3e8df284132-v2","","","","(Group: 'HealthRewardData_MalickaHeal_4')
 
 [crystal]: <sprite name=""PactShards"">"
-"CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2","Select a card to remove and gain 10[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-12e2656bcb02a7b5-e1c6b7fe951ec3245a45303870530c51-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_1')
+"CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Zero]","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Zero]","Restore [codeint0] health and gain 10[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Zero]","","","","(Group: 'HealthRewardData_MalickaHeal_2')
+(Plural form: 'Zero')
 
+[codeint0]: A number
 [crystal]: <sprite name=""PactShards"">"
-"CrystalPurgeRewardData__rewardDescriptionKey-2b63505137fa451f-fa6c9efc01bff7947bffb3e8df284132-v2","CrystalPurgeRewardData__rewardDescriptionKey-2b63505137fa451f-fa6c9efc01bff7947bffb3e8df284132-v2","Select a card to remove and gain 10[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-2b63505137fa451f-fa6c9efc01bff7947bffb3e8df284132-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_4')
+"CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[One]","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[One]","Restore [codeint0] health and gain 10[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[One]","","","","(Group: 'HealthRewardData_MalickaHeal_2')
+(Plural form: 'One')
 
+[codeint0]: A number
 [crystal]: <sprite name=""PactShards"">"
-"CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2","Select up to 2 cards to remove and gain 10[crystal] per card.","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_2')
+"CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Few]","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Few]","Restore [codeint0] health and gain 10[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Few]","","","","(Group: 'HealthRewardData_MalickaHeal_2')
+(Plural form: 'Few')
 
+[codeint0]: A number
 [crystal]: <sprite name=""PactShards"">"
-"CrystalPurgeRewardData__rewardTitleKey-274a454b9fcc4ebd-bf74f37b93be14149917c751824693eb-v2","CrystalPurgeRewardData__rewardTitleKey-274a454b9fcc4ebd-bf74f37b93be14149917c751824693eb-v2","Malicka’s Determination","CrystalPurgeRewardData__rewardTitleKey-274a454b9fcc4ebd-bf74f37b93be14149917c751824693eb-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_3')"
-"CrystalPurgeRewardData__rewardTitleKey-5122249b2d8e44c7-e1c6b7fe951ec3245a45303870530c51-v2","CrystalPurgeRewardData__rewardTitleKey-5122249b2d8e44c7-e1c6b7fe951ec3245a45303870530c51-v2","The Mysterious Woman’s Terms","CrystalPurgeRewardData__rewardTitleKey-5122249b2d8e44c7-e1c6b7fe951ec3245a45303870530c51-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_1')"
-"CrystalPurgeRewardData__rewardTitleKey-5129e365af9ee924-b486a380ba997294fbcec0ec6d3941ab-v2","CrystalPurgeRewardData__rewardTitleKey-5129e365af9ee924-b486a380ba997294fbcec0ec6d3941ab-v2","Malicka’s Confidence","CrystalPurgeRewardData__rewardTitleKey-5129e365af9ee924-b486a380ba997294fbcec0ec6d3941ab-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_2')"
-"CrystalPurgeRewardData__rewardTitleKey-ba3641b735a1d2e9-fa6c9efc01bff7947bffb3e8df284132-v2","CrystalPurgeRewardData__rewardTitleKey-ba3641b735a1d2e9-fa6c9efc01bff7947bffb3e8df284132-v2","Malicka’s Sorrow","CrystalPurgeRewardData__rewardTitleKey-ba3641b735a1d2e9-fa6c9efc01bff7947bffb3e8df284132-v2","","","","(Group: 'CrystalPurgeRewardData_MalickaPurge_4')"
+"CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Plural]","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Plural]","Restore [codeint0] health and gain 10[crystal].","CrystalPurgeRewardData__rewardDescriptionKey-9ab650d87e050206-b486a380ba997294fbcec0ec6d3941ab-v2[Plural]","","","","(Group: 'HealthRewardData_MalickaHeal_2')
+(Plural form: 'Plural')
+
+[codeint0]: A number
+[crystal]: <sprite name=""PactShards"">"
+"CrystalPurgeRewardData__rewardTitleKey-274a454b9fcc4ebd-bf74f37b93be14149917c751824693eb-v2","CrystalPurgeRewardData__rewardTitleKey-274a454b9fcc4ebd-bf74f37b93be14149917c751824693eb-v2","Malicka’s Determination","CrystalPurgeRewardData__rewardTitleKey-274a454b9fcc4ebd-bf74f37b93be14149917c751824693eb-v2","","","","(Group: 'HealthRewardData_MalickaHeal_3')"
+"CrystalPurgeRewardData__rewardTitleKey-5122249b2d8e44c7-e1c6b7fe951ec3245a45303870530c51-v2","CrystalPurgeRewardData__rewardTitleKey-5122249b2d8e44c7-e1c6b7fe951ec3245a45303870530c51-v2","The Mysterious Woman’s Terms","CrystalPurgeRewardData__rewardTitleKey-5122249b2d8e44c7-e1c6b7fe951ec3245a45303870530c51-v2","","","","(Group: 'HealthRewardData_MalickaHeal_1')"
+"CrystalPurgeRewardData__rewardTitleKey-5129e365af9ee924-b486a380ba997294fbcec0ec6d3941ab-v2","CrystalPurgeRewardData__rewardTitleKey-5129e365af9ee924-b486a380ba997294fbcec0ec6d3941ab-v2","Malicka’s Confidence","CrystalPurgeRewardData__rewardTitleKey-5129e365af9ee924-b486a380ba997294fbcec0ec6d3941ab-v2","","","","(Group: 'HealthRewardData_MalickaHeal_2')"
+"CrystalPurgeRewardData__rewardTitleKey-ba3641b735a1d2e9-fa6c9efc01bff7947bffb3e8df284132-v2","CrystalPurgeRewardData__rewardTitleKey-ba3641b735a1d2e9-fa6c9efc01bff7947bffb3e8df284132-v2","Malicka’s Sorrow","CrystalPurgeRewardData__rewardTitleKey-ba3641b735a1d2e9-fa6c9efc01bff7947bffb3e8df284132-v2","","","","(Group: 'HealthRewardData_MalickaHeal_4')"
 "DLC_Hellforged","DLC_Hellforged","The Last Divinity","DLC_Hellforged","","","",""
 "DLC_Hellforged_Upsell","DLC_Hellforged_Upsell","The Last Divinity DLC now available!","DLC_Hellforged_Upsell","","","","The newline (<br>) in English is there to make two short, even lines. If your translation is shorter or doesn't break cleanly into two lines, you can just leave out the <br> and it will wrap automatically instead."
+"DLC_Hellforged_View_Label","DLC_Hellforged_View_Label","View","DLC_Hellforged_View_Label","","","",""
 "DeckModifierRewardData__rewardDescriptionKey-ee37b887c5d8f867-c2e01bc4b6034654292bbe7845a03070-v2","DeckModifierRewardData__rewardDescriptionKey-ee37b887c5d8f867-c2e01bc4b6034654292bbe7845a03070-v2","Duplicate a card.","DeckModifierRewardData__rewardDescriptionKey-ee37b887c5d8f867-c2e01bc4b6034654292bbe7845a03070-v2","","","","(Group: 'DeckModifierRewardData_DuplicateCardReward')"
 "DeckModifierRewardData__rewardTitleKey-ba4b752777521ddb-c2e01bc4b6034654292bbe7845a03070-v2","DeckModifierRewardData__rewardTitleKey-ba4b752777521ddb-c2e01bc4b6034654292bbe7845a03070-v2","Deck Reward","DeckModifierRewardData__rewardTitleKey-ba4b752777521ddb-c2e01bc4b6034654292bbe7845a03070-v2","","","","(Group: 'DeckModifierRewardData_DuplicateCardReward')"
 "DeckScreen_PrepaidWarning_DescriptionText","DeckScreen_PrepaidWarning_DescriptionText","You've already spent the gold for this upgrade. Are you sure you want to skip applying it to a card?","DeckScreen_PrepaidWarning_DescriptionText","","","",""
@@ -11017,13 +11163,13 @@ Hope to see you in Discord chat!","DiscordConfirmation","","","",""
 "EventChoice_Malicka_Mutator_2_ReturnAndLeave","EventChoice_Malicka_Mutator_2_ReturnAndLeave","Actually, I'm fine without these.","EventChoice_Malicka_Mutator_2_ReturnAndLeave","","","",""
 "EventChoice_Malicka_Mutator_2_ReturnAndLeave_Optional","EventChoice_Malicka_Mutator_2_ReturnAndLeave_Optional","Return remaining artifacts and leave.","EventChoice_Malicka_Mutator_2_ReturnAndLeave_Optional","","","",""
 "EventChoice_Malicka_Purge_2_Accept","EventChoice_Malicka_Purge_2_Accept","Keep ‘em coming.","EventChoice_Malicka_Purge_2_Accept","","","",""
-"EventChoice_Malicka_Purge_2_Accept_Optional","EventChoice_Malicka_Purge_2_Accept_Optional","Purge up to 2 Cards. Get 10 [crystal] per card purged.","EventChoice_Malicka_Purge_2_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
+"EventChoice_Malicka_Purge_2_Accept_Optional","EventChoice_Malicka_Purge_2_Accept_Optional","Restore 20 health and gain 10[crystal].","EventChoice_Malicka_Purge_2_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
 "EventChoice_Malicka_Purge_3_Accept","EventChoice_Malicka_Purge_3_Accept","Sure thing…","EventChoice_Malicka_Purge_3_Accept","","","",""
-"EventChoice_Malicka_Purge_3_Accept_Optional","EventChoice_Malicka_Purge_3_Accept_Optional","Purge up to 3 Cards. Get 10 [crystal] per card purged.","EventChoice_Malicka_Purge_3_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
+"EventChoice_Malicka_Purge_3_Accept_Optional","EventChoice_Malicka_Purge_3_Accept_Optional","Restore 30 health and gain 15[crystal].","EventChoice_Malicka_Purge_3_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
 "EventChoice_Malicka_Purge_4_Accept","EventChoice_Malicka_Purge_4_Accept","You can count on me.","EventChoice_Malicka_Purge_4_Accept","","","",""
-"EventChoice_Malicka_Purge_4_Accept_Optional","EventChoice_Malicka_Purge_4_Accept_Optional","Purge 1 card. Get 10 [crystal].","EventChoice_Malicka_Purge_4_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
+"EventChoice_Malicka_Purge_4_Accept_Optional","EventChoice_Malicka_Purge_4_Accept_Optional","Restore all health and gain 20[crystal].","EventChoice_Malicka_Purge_4_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
 "EventChoice_Malicka_Purge_Accept","EventChoice_Malicka_Purge_Accept","You know it!","EventChoice_Malicka_Purge_Accept","","","",""
-"EventChoice_Malicka_Purge_Accept_Optional","EventChoice_Malicka_Purge_Accept_Optional","Purge 1 Card. Get 10 [crystal].","EventChoice_Malicka_Purge_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
+"EventChoice_Malicka_Purge_Accept_Optional","EventChoice_Malicka_Purge_Accept_Optional","Restore 10 health and gain 5[crystal].","EventChoice_Malicka_Purge_Accept_Optional","","","","[crystal]: <sprite name=""PactShards"">"
 "EventChoice_MapSkip_Yes","EventChoice_MapSkip_Yes","Yes.","EventChoice_MapSkip_Yes","","","",""
 "EventChoice_MapSkip_Yes_Optional","EventChoice_MapSkip_Yes_Optional","Advance to the next Ring of Hell.","EventChoice_MapSkip_Yes_Optional","","","",""
 "EventChoice_MeltingRemnant","EventChoice_MeltingRemnant","Melting Remnant","EventChoice_MeltingRemnant","","","",""
@@ -11879,7 +12025,7 @@ Hope to see you in Discord chat!","DiscordConfirmation","","","",""
 "MerchantData_tooltipTitleKey-ffaae1f2529c6d08-102c4f629de0a6d46bc46156e2efc234-v2","MerchantData_tooltipTitleKey-ffaae1f2529c6d08-102c4f629de0a6d46bc46156e2efc234-v2","Merchant of Magic","MerchantData_tooltipTitleKey-ffaae1f2529c6d08-102c4f629de0a6d46bc46156e2efc234-v2","","","","(Group: 'MerchantData_SpellUpgradeMerchant')"
 "MergeSpell_FirstInstruction","MergeSpell_FirstInstruction","<i>Select a spell to infuse. This spell will remain in your deck.</i>","MergeSpell_FirstInstruction","","","",""
 "MergeSpell_NextInstruction","MergeSpell_NextInstruction","<i>Select another spell to infuse with <b>{0}</b>. This spell will remain in your deck.</i>","MergeSpell_NextInstruction","","","","{0}: The name of a spell.  For example: Branding Rite"
-"MergedSpell_CardEffect_Text","MergedSpell_CardEffect_Text","<nobr>Play {0}.</nobr>","MergedSpell_CardEffect_Text","","","","{0}:"
+"MergedSpell_CardEffect_Text","MergedSpell_CardEffect_Text","<nobr>Play {0}.</nobr>","MergedSpell_CardEffect_Text","","","","{0}: A card name such as ""Vine Grasp"""
 "Message_AutoBattle","Message_AutoBattle","Out of time! Auto battle!","Message_AutoBattle","","","",""
 "Message_BattleAlreadyStarted","Message_BattleAlreadyStarted","Unable to join - the challenge has already started.","Message_BattleAlreadyStarted","","","",""
 "Message_BattleComplete","Message_BattleComplete","Battle Complete!","Message_BattleComplete","","","",""
@@ -11922,6 +12068,8 @@ To fix the problem, either re-install the game or <link=""https://support.steamp
 {1}: An error code.  Example: 0x80070490"
 "Message_DlcMountFailed_XboxOne","Message_DlcMountFailed_XboxOne","{0}<br><br>Failed to load.<br><br>Retry?","Message_DlcMountFailed_XboxOne","","","","A dialog box that appears when the DLC package failed to be mounted.
 {0}: The name of the DLC.  Example: Monster Train: The Last Divinity"
+"Message_DlcMountFailed_XboxSeries","Message_DlcMountFailed_XboxSeries","{0}<br><br>Failed to load.<br><br>Retry?","Message_DlcMountFailed_XboxSeries","","","","A dialog box that appears when the DLC package failed to be mounted.
+{0}: The name of the DLC.  Example: Monster Train: The Last Divinity"
 "Message_ErrorCode","Message_ErrorCode","Error: {0}","Message_ErrorCode","","","","{0}: An error code.  Example: 4-0-1"
 "Message_LastWave","Message_LastWave","Final Wave!","Message_LastWave","","","",""
 "Message_LeaderboardLoadFailed","Message_LeaderboardLoadFailed","Failed to load leaderboard.","Message_LeaderboardLoadFailed","","","",""
@@ -11946,6 +12094,13 @@ To fix the problem, either re-install the game or <link=""https://support.steamp
 "Message_RunSummary_Uploading","Message_RunSummary_Uploading","Uploading Run Summary...","Message_RunSummary_Uploading","","","",""
 "Message_SafeZoneIntro","Message_SafeZoneIntro","Press Up / Down until the white border is visible","Message_SafeZoneIntro","","","",""
 "Message_SafeZoneIntro_XboxOne","Message_SafeZoneIntro_XboxOne","Use the left stick to adjust the screen size until the white border is visible.","Message_SafeZoneIntro_XboxOne","","","","Offical Xbox One term for left stick must be used:
+English: left stick
+Chinese Simplified: 左摇杆
+French: stick analogique gauche
+German: Linker Stick
+Portuguese (Brazil): direcional analógico esquerdo
+Russian: левый мини-джойстик"
+"Message_SafeZoneIntro_XboxSeries","Message_SafeZoneIntro_XboxSeries","Use the left stick to adjust the screen size until the white border is visible.","Message_SafeZoneIntro_XboxSeries","","","","Offical Xbox One term for left stick must be used:
 English: left stick
 Chinese Simplified: 左摇杆
 French: stick analogique gauche
@@ -12728,7 +12883,7 @@ This is the replacement text for: [pyrebound]"
 "RichPresenceManager_StateDescriptionKey_HellRoyale","RichPresenceManager_StateDescriptionKey_HellRoyale","Hell Rush","RichPresenceManager_StateDescriptionKey_HellRoyale","","","",""
 "RichPresenceManager_StateDescriptionKey_NoRun","RichPresenceManager_StateDescriptionKey_NoRun","Monster Train","RichPresenceManager_StateDescriptionKey_NoRun","","","",""
 "RichPresenceManager_StateDescriptionKey_NormalRun","RichPresenceManager_StateDescriptionKey_NormalRun","Single Player","RichPresenceManager_StateDescriptionKey_NormalRun","","","",""
-"RoomCapacityIndicator_MaxSize","RoomCapacityIndicator_MaxSize","Room has reached the 7 unit limit.","RoomCapacityIndicator_MaxSize","","","",""
+"RoomCapacityIndicator_MaxSize","RoomCapacityIndicator_MaxSize","Floor has reached the 7 unit limit.","RoomCapacityIndicator_MaxSize","","","",""
 "RoomData_nameKey-3cf72d5403ebd74a-aa9a255562cbb9b46a8e219a8f090eeb-v2","RoomData_nameKey-3cf72d5403ebd74a-aa9a255562cbb9b46a8e219a8f090eeb-v2","Pyre Room","RoomData_nameKey-3cf72d5403ebd74a-aa9a255562cbb9b46a8e219a8f090eeb-v2","","","","(Group: 'RoomData_RoomBasicTreasure')"
 "RoomData_nameKey-6d926bc89deea15c-7d71d606bac05cb4ba4936b09092c877-v2","RoomData_nameKey-6d926bc89deea15c-7d71d606bac05cb4ba4936b09092c877-v2","Basic Room","RoomData_nameKey-6d926bc89deea15c-7d71d606bac05cb4ba4936b09092c877-v2","","","","(Group: 'RoomData_RoomBasicBrick')"
 "RoomData_overrideRoomDescriptionKey-f5f78c50b9bcb063-aa9a255562cbb9b46a8e219a8f090eeb-v2","RoomData_overrideRoomDescriptionKey-f5f78c50b9bcb063-aa9a255562cbb9b46a8e219a8f090eeb-v2","<i>The heart of the train. Keep it safe!</i>","RoomData_overrideRoomDescriptionKey-f5f78c50b9bcb063-aa9a255562cbb9b46a8e219a8f090eeb-v2","","","","(Group: 'RoomData_RoomBasicTreasure')"
@@ -13206,7 +13361,7 @@ Evil Eye, Spellcraft, True Champion"
 "ScreenChecklist_MasteredCardsFormat","ScreenChecklist_MasteredCardsFormat","Mastered: {0}/{1}","ScreenChecklist_MasteredCardsFormat","","","","{0}: A number
 {1}: A number"
 "ScreenChecklist_MaxCovenantVictory","ScreenChecklist_MaxCovenantVictory","Max Covenant Rank Victory","ScreenChecklist_MaxCovenantVictory","","","",""
-"ScreenChecklist_NoClassComboDivineVictory","ScreenChecklist_NoClassComboDivineVictory","No {0}/{1} divine victories yet. Collect enough Pyre Shards and defeat The Last Divinity to achieve a divine victory.","ScreenChecklist_NoClassComboDivineVictory","","","","{0}: A number
+"ScreenChecklist_NoClassComboDivineVictory","ScreenChecklist_NoClassComboDivineVictory","No {0}/{1} divine victories yet. Collect enough Pact Shards and defeat The Last Divinity to achieve a divine victory.","ScreenChecklist_NoClassComboDivineVictory","","","","{0}: A number
 {1}: A number"
 "ScreenChecklist_NoClassComboVictory","ScreenChecklist_NoClassComboVictory","No {0}/{1} victories yet.","ScreenChecklist_NoClassComboVictory","","","","{0}: A number
 {1}: A number"
@@ -13651,6 +13806,7 @@ Evil Eye, Spellcraft, True Champion"
 "ScreenSettings_ColorBlindnessOption","ScreenSettings_ColorBlindnessOption","Colorblind Mode","ScreenSettings_ColorBlindnessOption","","","",""
 "ScreenSettings_ColorBlindnessOption_Tooltip","ScreenSettings_ColorBlindnessOption_Tooltip","Custom color accessibility settings can be edited in the preferences JSON file after selecting the Custom option.","ScreenSettings_ColorBlindnessOption_Tooltip","","","",""
 "ScreenSettings_ColorBlindnessOption_Tooltip_XboxOne","ScreenSettings_ColorBlindnessOption_Tooltip_XboxOne","Choose a color accessibility setting.","ScreenSettings_ColorBlindnessOption_Tooltip_XboxOne","","","",""
+"ScreenSettings_ColorBlindnessOption_Tooltip_XboxSeries","ScreenSettings_ColorBlindnessOption_Tooltip_XboxSeries","Choose a color accessibility setting.","ScreenSettings_ColorBlindnessOption_Tooltip_XboxSeries","","","",""
 "ScreenSettings_ColorBlindness_BlueYellow","ScreenSettings_ColorBlindness_BlueYellow","Tritanopia","ScreenSettings_ColorBlindness_BlueYellow","","","","Medical term for blue-yellow colorblindness"
 "ScreenSettings_ColorBlindness_Custom","ScreenSettings_ColorBlindness_Custom","Custom","ScreenSettings_ColorBlindness_Custom","","","",""
 "ScreenSettings_ColorBlindness_Default","ScreenSettings_ColorBlindness_Default","Default","ScreenSettings_ColorBlindness_Default","","","",""
@@ -13692,10 +13848,12 @@ Evil Eye, Spellcraft, True Champion"
 "ScreenSettings_Header_Other","ScreenSettings_Header_Other","Other","ScreenSettings_Header_Other","","","",""
 "ScreenSettings_HidePlayerNames","ScreenSettings_HidePlayerNames","Hide player names","ScreenSettings_HidePlayerNames","","","",""
 "ScreenSettings_HidePlayerNames_Tooltip","ScreenSettings_HidePlayerNames_Tooltip","When enabled, replaces player names and avatars in multiplayer with standardized, safe options.","ScreenSettings_HidePlayerNames_Tooltip","","","",""
-"ScreenSettings_HidePlayerNames_Tooltip_WindowsGdk","ScreenSettings_HidePlayerNames_Tooltip_WindowsGdk","When enabled, replaces gamertags/names and avatars in multiplayer with standardized, safe options.","ScreenSettings_HidePlayerNames_Tooltip_WindowsGdk","","","",""
-"ScreenSettings_HidePlayerNames_Tooltip_XboxOne","ScreenSettings_HidePlayerNames_Tooltip_XboxOne","When enabled, replaces gamertags/names and avatars in multiplayer with standardized, safe options.","ScreenSettings_HidePlayerNames_Tooltip_XboxOne","","","",""
+"ScreenSettings_HidePlayerNames_Tooltip_WindowsGdk","ScreenSettings_HidePlayerNames_Tooltip_WindowsGdk","When enabled, replaces gamertags/names and gamerpics in multiplayer with standardized, safe options.","ScreenSettings_HidePlayerNames_Tooltip_WindowsGdk","","","",""
+"ScreenSettings_HidePlayerNames_Tooltip_XboxOne","ScreenSettings_HidePlayerNames_Tooltip_XboxOne","When enabled, replaces gamertags/names and gamerpics in multiplayer with standardized, safe options.","ScreenSettings_HidePlayerNames_Tooltip_XboxOne","","","",""
+"ScreenSettings_HidePlayerNames_Tooltip_XboxSeries","ScreenSettings_HidePlayerNames_Tooltip_XboxSeries","When enabled, replaces gamertags/names and gamerpics in multiplayer with standardized, safe options.","ScreenSettings_HidePlayerNames_Tooltip_XboxSeries","","","",""
 "ScreenSettings_HidePlayerNames_WindowsGdk","ScreenSettings_HidePlayerNames_WindowsGdk","Hide gamertags/names","ScreenSettings_HidePlayerNames_WindowsGdk","","","",""
 "ScreenSettings_HidePlayerNames_XboxOne","ScreenSettings_HidePlayerNames_XboxOne","Hide gamertags/names","ScreenSettings_HidePlayerNames_XboxOne","","","",""
+"ScreenSettings_HidePlayerNames_XboxSeries","ScreenSettings_HidePlayerNames_XboxSeries","Hide gamertags/names","ScreenSettings_HidePlayerNames_XboxSeries","","","",""
 "ScreenSettings_KeyMappings","ScreenSettings_KeyMappings","Bind Keys","ScreenSettings_KeyMappings","","","",""
 "ScreenSettings_LanguageOption","ScreenSettings_LanguageOption","Language","ScreenSettings_LanguageOption","","","",""
 "ScreenSettings_LanguageOption_Locked","ScreenSettings_LanguageOption_Locked","You must return to the Main Menu in order to change the language.","ScreenSettings_LanguageOption_Locked","","","",""
@@ -13736,6 +13894,7 @@ Evil Eye, Spellcraft, True Champion"
 "ScreenStatsLeaderboard_Name","ScreenStatsLeaderboard_Name","Name","ScreenStatsLeaderboard_Name","","","",""
 "ScreenStatsLeaderboard_Name_WindowsGdk","ScreenStatsLeaderboard_Name_WindowsGdk","gamertag","ScreenStatsLeaderboard_Name_WindowsGdk","","","",""
 "ScreenStatsLeaderboard_Name_XboxOne","ScreenStatsLeaderboard_Name_XboxOne","gamertag","ScreenStatsLeaderboard_Name_XboxOne","","","",""
+"ScreenStatsLeaderboard_Name_XboxSeries","ScreenStatsLeaderboard_Name_XboxSeries","gamertag","ScreenStatsLeaderboard_Name_XboxSeries","","","",""
 "ScreenStatsLeaderboard_NoFriendsMessage","ScreenStatsLeaderboard_NoFriendsMessage","You can compare stats with friends who play Monster Train.","ScreenStatsLeaderboard_NoFriendsMessage","","","",""
 "ScreenStatsLeaderboard_NoFriendsMessage_GOG","ScreenStatsLeaderboard_NoFriendsMessage_GOG","You can compare stats with GOG Galaxy friends who play Monster Train.","ScreenStatsLeaderboard_NoFriendsMessage_GOG","","","",""
 "ScreenStatsLeaderboard_NoFriendsMessage_Steam","ScreenStatsLeaderboard_NoFriendsMessage_Steam","You can compare stats with Steam friends who play Monster Train.","ScreenStatsLeaderboard_NoFriendsMessage_Steam","","","",""
@@ -14768,7 +14927,7 @@ Note: the ""Resolve"" here should match Trigger_PostCombat_CardText. ""Action"" 
 "Trigger_OnHeal_CardText","Trigger_OnHeal_CardText","Rejuvenate","Trigger_OnHeal_CardText","","","",""
 "Trigger_OnHeal_TooltipText","Trigger_OnHeal_TooltipText","Triggers when healed, even at full health.","Trigger_OnHeal_TooltipText","","","",""
 "Trigger_OnHealed_CardText","Trigger_OnHealed_CardText","Rejuvenate","Trigger_OnHealed_CardText","","","",""
-"Trigger_OnHealed_TooltipText","Trigger_OnHealed_TooltipText","Triggers when a unit is healed.","Trigger_OnHealed_TooltipText","","","",""
+"Trigger_OnHealed_TooltipText","Trigger_OnHealed_TooltipText","Triggers when healed, even at full health.","Trigger_OnHealed_TooltipText","","","",""
 "Trigger_OnHit_CardText","Trigger_OnHit_CardText","Revenge","Trigger_OnHit_CardText","","","",""
 "Trigger_OnHit_TooltipText","Trigger_OnHit_TooltipText","Triggers when damaged.","Trigger_OnHit_TooltipText","","","",""
 "Trigger_OnKill_CardTriggerType_CardText","Trigger_OnKill_CardTriggerType_CardText","Slay","Trigger_OnKill_CardTriggerType_CardText","","","",""
