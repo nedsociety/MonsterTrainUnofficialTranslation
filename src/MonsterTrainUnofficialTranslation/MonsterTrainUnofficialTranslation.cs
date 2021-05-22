@@ -26,6 +26,7 @@ namespace MonsterTrainUnofficialTranslation
         public FontPatcher FontPatcher { get; private set; }
 
         const string DEFAULTLANGUAGE = "[Default (English)]";
+        const string BASELANGUAGETEXTDEF = "en.csv";
 
         IDictionary<string, JToken> ReadLanguageMap()
         {
@@ -45,7 +46,7 @@ namespace MonsterTrainUnofficialTranslation
 
         void SetupDummyPatchers()
         {
-            TextPatcher = new TextPatcher(null, OptionalFeatures.None, Logger);
+            TextPatcher = new TextPatcher(null, null, OptionalFeatures.None, Logger);
             FontPatcher = new FontPatcher(null, null, OptionalFeatures.None, Logger);
         }
 
@@ -68,10 +69,11 @@ namespace MonsterTrainUnofficialTranslation
             }
 
             var textPath = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", languageSetting["Texts"].ToString());
+            var textPathBase = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", BASELANGUAGETEXTDEF);
             var fontAssetBundlePath = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", languageSetting["FontAssetBundle"].ToString());
             var fontFallbacks = languageSetting["FontFallbacks"].ToObject<Dictionary<string, string>>();
             
-            TextPatcher = new TextPatcher(textPath, optionalFeatures, Logger);
+            TextPatcher = new TextPatcher(textPath, textPathBase, optionalFeatures, Logger);
             FontPatcher = new FontPatcher(fontAssetBundlePath, fontFallbacks, optionalFeatures, Logger);
         }
 

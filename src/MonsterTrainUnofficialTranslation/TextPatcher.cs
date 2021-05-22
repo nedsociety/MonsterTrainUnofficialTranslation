@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,15 +12,20 @@ namespace MonsterTrainUnofficialTranslation
         OptionalFeatures optionalFeatures;
         BepInEx.Logging.ManualLogSource Logger;
         bool active;
-        List<Dictionary<string, string>> textData;
+        OrderedDictionary textDataBase;
+        OrderedDictionary textDataTranslated;
         int localizationLoadCallFrameCount = 0;
         bool done = false;
 
-        public TextPatcher(string textPath, OptionalFeatures optionalFeatures, BepInEx.Logging.ManualLogSource logger)
+        int outdatedBaseEntryCount = 0;
+        int missingBaseEntryCount = 0;
+        int missingTranslationEntryCount = 0;
+
+        public TextPatcher(string textPathTranslated, string textPathBase, OptionalFeatures optionalFeatures, BepInEx.Logging.ManualLogSource logger)
         {
             this.optionalFeatures = optionalFeatures;
             Logger = logger;
-            active = !string.IsNullOrWhiteSpace(textPath);
+            active = !string.IsNullOrWhiteSpace(textPathTranslated);
 
             if (!active)
             {
@@ -27,7 +33,8 @@ namespace MonsterTrainUnofficialTranslation
                 return;
             }
 
-            textData = ReadWeblateCsvData(textPath);
+            textDataBase = ReadWeblateCsvData(textPathBase, OptionalFeatures.None);
+            textDataTranslated = ReadWeblateCsvData(textPathTranslated, optionalFeatures);
         }
 
         // From https://stackoverflow.com/a/28155130/3567518
@@ -102,9 +109,9 @@ namespace MonsterTrainUnofficialTranslation
             return builder.ToString();
         }
 
-        List<Dictionary<string, string>> ReadWeblateCsvData(string path)
+        OrderedDictionary ReadWeblateCsvData(string path, OptionalFeatures optionalFeatures)
         {
-            var ret = new List<Dictionary<string, string>>();
+            var ret = new OrderedDictionary();
 
             using (var streamreader = new StreamReader(path))
             using (var csv = new CsvHelper.CsvReader(streamreader, System.Globalization.CultureInfo.InvariantCulture))
@@ -128,35 +135,96 @@ namespace MonsterTrainUnofficialTranslation
                     if (optionalFeatures.HasFlag(OptionalFeatures.KoreanWordWrapping))
                         target = FixKoreanWordWrapping(target);
 
-                    var entry = new Dictionary<string, string>();
-
-                    entry["Key"] = source;
-                    entry["English [en-US]"] = target;
-
-                    ret.Add(entry);
+                    ret.Add(source, target);
                 }
             }
 
             return ret;
         }
 
-        dynamic DictToDynamic<K, V>(Dictionary<K, V> dict)
+        StreamReader StringToStreamReader(string str)
         {
-            var ret = new System.Dynamic.ExpandoObject();
-            foreach (var kvp in dict)
-                (ret as IDictionary<string, object>)[kvp.Key.ToString()] = kvp.Value;
-            
+            var stream = new MemoryStream();
+            var writer = new StreamWriter(stream);
+            writer.Write(str);
+            writer.Flush();
+            stream.Position = 0;
+            return new StreamReader(stream);
+        }
+
+        OrderedDictionary ReadI2LocData(I2.Loc.LanguageSourceData src)
+        {
+            var ret = new OrderedDictionary();
+
+            using (var streamreader = StringToStreamReader(src.Export_CSV(null)))
+            using (var csv = new CsvHelper.CsvReader(streamreader, System.Globalization.CultureInfo.InvariantCulture))
+            {
+                foreach (var record in csv.GetRecords<dynamic>()) {
+                    var dict = record as IDictionary<string, object>;
+                    ret.Add(dict["Key"] as string, dict["English [en-US]"] as string);
+                }
+            }
+
             return ret;
         }
 
-        string StringizeCSV(List<Dictionary<string, string>> data)
+        void MergeI2LocData(I2.Loc.LanguageSourceData src, OrderedDictionary data)
         {
+            var records = new List<dynamic>();
+            foreach (DictionaryEntry kvp in data)
+            {
+                var record = new System.Dynamic.ExpandoObject() as IDictionary<string, object>;
+                record["Key"] = kvp.Key;
+                record["English [en-US]"] = kvp.Value;
+
+                records.Add(record);
+            }
+
             using (var streamwriter = new StringWriter())
             using (var csv = new CsvHelper.CsvWriter(streamwriter, System.Globalization.CultureInfo.InvariantCulture))
             {
-                csv.WriteRecords(data.Select(x => DictToDynamic(x)));
-                return streamwriter.ToString();
+                csv.WriteRecords(records);
+                src.Import_CSV(null, streamwriter.ToString(), I2.Loc.eSpreadsheetUpdateMode.Merge);
             }
+        }
+        
+        OrderedDictionary FilterTextData(OrderedDictionary source, OrderedDictionary baseLanguage, OrderedDictionary translated)
+        {
+            OrderedDictionary ret = new OrderedDictionary();
+            foreach (DictionaryEntry kvp in source)
+            {
+                string sourceKey = kvp.Key as string;
+                string sourceString = kvp.Value as string;
+
+                if (!baseLanguage.Contains(sourceKey))
+                {
+                    missingBaseEntryCount += 1;
+                    continue;
+                }
+
+                if (!sourceString.Equals(baseLanguage[sourceKey]))
+                {
+                    outdatedBaseEntryCount += 1;
+                    continue;
+                }
+
+                if (!translated.Contains(sourceKey))
+                {
+                    missingTranslationEntryCount += 1;
+                    continue;
+                }
+
+                ret.Add(sourceKey, translated[sourceKey]);
+            }
+
+            return ret;
+        }
+
+        void PatchSource(I2.Loc.LanguageSourceData src)
+        {
+            var textDataSource = ReadI2LocData(src);
+            var textDataFiltered = FilterTextData(textDataSource, textDataBase, textDataTranslated);
+            MergeI2LocData(src, textDataFiltered);
         }
 
         public void OnLocalizationLoadCallBegin()
@@ -182,14 +250,32 @@ namespace MonsterTrainUnofficialTranslation
             if (sources.Count == 0)
             {
                 Logger.LogError(
-                    "The game didn't seem to load any language sources -- this might be caused from game update. Patch canceled."
+                    "The game didn't seem to load any language sources. Patch canceled."
                 );
                 return;
             }
 
-            string textDataAsCsvString = StringizeCSV(textData);
             foreach (var src in sources)
-                src.Import_CSV(null, textDataAsCsvString, I2.Loc.eSpreadsheetUpdateMode.Merge);
+                PatchSource(src);
+
+            if (missingBaseEntryCount > 0)
+            {
+                Logger.LogWarning(
+                    $"Cannot find {missingBaseEntryCount} entries in the English text definition. This might be caused from the game update."
+                );
+            }
+            if (outdatedBaseEntryCount > 0)
+            {
+                Logger.LogWarning(
+                    $"Mismatch occured for {outdatedBaseEntryCount} entries in the English text definition. This might be caused from the game update. Outdated translations will not be applied."
+                );
+            }
+            if (missingTranslationEntryCount > 0)
+            {
+                Logger.LogInfo(
+                    $"{missingTranslationEntryCount} strings currently have their translation missing for this language."
+                );
+            }
 
             Logger.LogInfo("Text patching done!");
         }
