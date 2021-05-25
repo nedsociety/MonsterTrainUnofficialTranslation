@@ -4,16 +4,20 @@ using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace MonsterTrainUnofficialTranslation
 {
     public class TextPatcher
     {
-        OptionalFeatures optionalFeatures;
         BepInEx.Logging.ManualLogSource Logger;
         bool active;
+        
         OrderedDictionary textDataBase;
         OrderedDictionary textDataTranslated;
+        OptionalFeatures optionalFeatures;
+        string italicSpacing = null;
+
         int localizationLoadCallFrameCount = 0;
         bool done = false;
 
@@ -21,9 +25,10 @@ namespace MonsterTrainUnofficialTranslation
         int missingBaseEntryCount = 0;
         int missingTranslationEntryCount = 0;
 
-        public TextPatcher(string textPathTranslated, string textPathBase, OptionalFeatures optionalFeatures, BepInEx.Logging.ManualLogSource logger)
+        public TextPatcher(string textPathTranslated, string textPathBase, OptionalFeatures optionalFeatures, string italicSpacing, BepInEx.Logging.ManualLogSource logger)
         {
             this.optionalFeatures = optionalFeatures;
+            this.italicSpacing = italicSpacing;
             Logger = logger;
             active = !string.IsNullOrWhiteSpace(textPathTranslated);
 
@@ -33,8 +38,8 @@ namespace MonsterTrainUnofficialTranslation
                 return;
             }
 
-            textDataBase = ReadWeblateCsvData(textPathBase, OptionalFeatures.None);
-            textDataTranslated = ReadWeblateCsvData(textPathTranslated, optionalFeatures);
+            textDataBase = ReadWeblateCsvData(textPathBase, false, optionalFeatures);
+            textDataTranslated = ReadWeblateCsvData(textPathTranslated, true, optionalFeatures);
         }
 
         // From https://stackoverflow.com/a/28155130/3567518
@@ -108,8 +113,19 @@ namespace MonsterTrainUnofficialTranslation
 
             return builder.ToString();
         }
+        
+        Regex regexApplyItalicSpacing = new Regex(@"(?<!\<i\>)\</i\>", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-        OrderedDictionary ReadWeblateCsvData(string path, OptionalFeatures optionalFeatures)
+        string ApplyItalicSpacing(string text)
+        {
+            // Since the game uses old TextMeshPro 1.4.0, it does not incorporate a proper Italic glyph adjustment feature introduced in 2.0.2.
+            // (See https://forum.unity.com/threads/italics-is-too-italicized-how-to-customize.688924/#post-4610032)
+            // This code will add a spacing at the end of italic string to compensate the intrusion.
+
+            return regexApplyItalicSpacing.Replace(text, $"<space={italicSpacing}></i>");
+        }
+
+        OrderedDictionary ReadWeblateCsvData(string path, bool postprocess, OptionalFeatures optionalFeatures)
         {
             var ret = new OrderedDictionary();
 
@@ -132,8 +148,14 @@ namespace MonsterTrainUnofficialTranslation
                     if (string.IsNullOrEmpty(target))
                         continue;
 
-                    if (optionalFeatures.HasFlag(OptionalFeatures.KoreanWordWrapping))
-                        target = FixKoreanWordWrapping(target);
+                    if (postprocess)
+                    {
+                        if (optionalFeatures.HasFlag(OptionalFeatures.KoreanWordWrapping))
+                            target = FixKoreanWordWrapping(target);
+
+                        if (!string.IsNullOrEmpty(italicSpacing))
+                            target = ApplyItalicSpacing(target);
+                    }
 
                     ret.Add(source, target);
                 }

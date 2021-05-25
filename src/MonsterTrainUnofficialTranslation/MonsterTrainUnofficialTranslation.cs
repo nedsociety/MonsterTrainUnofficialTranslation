@@ -14,7 +14,7 @@ namespace MonsterTrainUnofficialTranslation
     {
         None = 0,
         OverrideFontScalingAsFallbackOnes = 1,
-        KoreanWordWrapping = 2,
+        KoreanWordWrapping = 2
     };
 
     [BepInEx.BepInPlugin("com.nedsociety.monstertrainunofficialtranslation", "MonsterTrainUnofficialTranslation", "1.0.0.0")]
@@ -46,14 +46,12 @@ namespace MonsterTrainUnofficialTranslation
 
         void SetupDummyPatchers()
         {
-            TextPatcher = new TextPatcher(null, null, OptionalFeatures.None, Logger);
+            TextPatcher = new TextPatcher(null, null, OptionalFeatures.None, null, Logger);
             FontPatcher = new FontPatcher(null, null, OptionalFeatures.None, Logger);
         }
 
         void SetupLanguagePatchers(JObject languageSetting)
         {
-            languageSetting["Texts"].ToString();
-
             OptionalFeatures optionalFeatures = OptionalFeatures.None;
             string optionalFeaturesStr = languageSetting["OptionalFeatures"].ToString();
             if (optionalFeaturesStr != null)
@@ -72,8 +70,9 @@ namespace MonsterTrainUnofficialTranslation
             var textPathBase = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", BASELANGUAGETEXTDEF);
             var fontAssetBundlePath = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", languageSetting["FontAssetBundle"].ToString());
             var fontFallbacks = languageSetting["FontFallbacks"].ToObject<Dictionary<string, string>>();
-            
-            TextPatcher = new TextPatcher(textPath, textPathBase, optionalFeatures, Logger);
+            var italicSpacing = languageSetting["ItalicSpacing"].ToString();
+
+            TextPatcher = new TextPatcher(textPath, textPathBase, optionalFeatures, italicSpacing, Logger);
             FontPatcher = new FontPatcher(fontAssetBundlePath, fontFallbacks, optionalFeatures, Logger);
         }
 
