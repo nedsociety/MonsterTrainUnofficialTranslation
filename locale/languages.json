@@ -12,6 +12,6 @@
             "Journal SDF": "NanumBrushScript-Regular SDF"
         },
         "OptionalFeatures": "OverrideFontScalingAsFallbackOnes, KoreanWordWrapping",
-        "ItalicSpacing": "0.5em"
+        "ItalicSpacing": "0.25em"
     }
 }
