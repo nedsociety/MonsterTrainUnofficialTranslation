@@ -66,9 +66,11 @@ namespace MonsterTrainUnofficialTranslation
                 }
             }
 
-            var textPath = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", languageSetting["Texts"].ToString());
-            var textPathBase = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", BASELANGUAGETEXTDEF);
-            var fontAssetBundlePath = Path.Combine(Path.GetDirectoryName(Info.Location), "locale", languageSetting["FontAssetBundle"].ToString());
+            var baseDir = Path.GetDirectoryName(Info.Location);
+
+            var textPath = Path.Combine(baseDir, "locale", languageSetting["Texts"].ToString());
+            var textPathBase = Path.Combine(baseDir, "locale", BASELANGUAGETEXTDEF);
+            var fontAssetBundlePath = Path.Combine(baseDir, "locale", languageSetting["FontAssetBundle"].ToString());
             var fontFallbacks = languageSetting["FontFallbacks"].ToObject<Dictionary<string, string>>();
             var italicSpacing = languageSetting["ItalicSpacing"].ToString();
 
