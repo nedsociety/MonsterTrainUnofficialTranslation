@@ -69,80 +69,8 @@ namespace MonsterTrainUnofficialTranslation
                 }
             }
         }
-
-        // From https://stackoverflow.com/a/28155130/3567518
-        List<int> ToCodePoints(string str)
-        {
-            var codePoints = new List<int>(str.Length);
-            for (int i = 0; i < str.Length; i++)
-            {
-                codePoints.Add(char.ConvertToUtf32(str, i));
-                if (char.IsHighSurrogate(str[i]))
-                    i += 1;
-            }
-
-            return codePoints;
-        }
-
-        string FixKoreanWordWrapping(string text)
-        {
-            // Since the game uses old TextMeshPro 1.4.0, it does not incorporate a proper Korean wordwrapping feature introduced in 1.5.0.
-            // This code will simulate it as much as possible.
-
-            var builder = new StringBuilder();
-
-            bool isNoBrOpened = false;
-            foreach (var i in ToCodePoints(text))
-            {
-                // See https://stackoverflow.com/a/56314869/3567518
-                if (
-                    ((0x1100 <= i) && (i <= 0x11FF))
-                    || ((0x3001 <= i) && (i <= 0x3003))
-                    || ((0x3008 <= i) && (i <= 0x3011))
-                    || ((0x3013 <= i) && (i <= 0x301F))
-                    || ((0x302E <= i) && (i <= 0x3030))
-                    || ((0x3037 <= i) && (i <= 0x3037))
-                    || ((0x30FB <= i) && (i <= 0x30FB))
-                    || ((0x3131 <= i) && (i <= 0x318E))
-                    || ((0x3200 <= i) && (i <= 0x321E))
-                    || ((0x3260 <= i) && (i <= 0x327E))
-                    || ((0xA960 <= i) && (i <= 0xA97C))
-                    || ((0xAC00 <= i) && (i <= 0xD7A3))
-                    || ((0xD7B0 <= i) && (i <= 0xD7C6))
-                    || ((0xD7CB <= i) && (i <= 0xD7FB))
-                    || ((0xFE45 <= i) && (i <= 0xFE46))
-                    || ((0xFF61 <= i) && (i <= 0xFF65))
-                    || ((0xFFA0 <= i) && (i <= 0xFFBE))
-                    || ((0xFFC2 <= i) && (i <= 0xFFC7))
-                    || ((0xFFCA <= i) && (i <= 0xFFCF))
-                    || ((0xFFD2 <= i) && (i <= 0xFFD7))
-                    || ((0xFFDA <= i) && (i <= 0xFFDC))
-                )
-                {
-                    if (!isNoBrOpened)
-                    {
-                        builder.Append("<nobr>");
-                        isNoBrOpened = true;
-                    }
-                }
-                else
-                {
-                    if (isNoBrOpened)
-                    {
-                        builder.Append("</nobr>");
-                        isNoBrOpened = false;
-                    }
-                }
-                builder.Append(char.ConvertFromUtf32(i));
-            }
-
-            if (isNoBrOpened)
-                builder.Append("</nobr>");
-
-            return builder.ToString();
-        }
-        
-        Regex regexApplyItalicSpacing = new Regex(@"(?<!\<i\>)\</i\>", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+                
+        Regex regexItalicTagClosingWithNonemptyContent = new Regex(@"(?<!\<i\>)\</i\>", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         string ApplyItalicSpacing(string text)
         {
@@ -150,7 +78,7 @@ namespace MonsterTrainUnofficialTranslation
             // (See https://forum.unity.com/threads/italics-is-too-italicized-how-to-customize.688924/#post-4610032)
             // This code will add a spacing at the end of italic string to compensate the intrusion.
 
-            return regexApplyItalicSpacing.Replace(text, $"<space={italicSpacing}></i>");
+            return regexItalicTagClosingWithNonemptyContent.Replace(text, $"<space={italicSpacing}></i>");
         }
 
         OrderedDictionary ReadWeblateCsvData(string path, bool postprocess, OptionalFeatures optionalFeatures)
@@ -180,7 +108,7 @@ namespace MonsterTrainUnofficialTranslation
                     if (postprocess)
                     {
                         if (optionalFeatures.HasFlag(OptionalFeatures.KoreanWordWrapping))
-                            target = FixKoreanWordWrapping(target);
+                            target = LanguageKoreanSpecifics.FixWordWrapping(target);
 
                         if (!string.IsNullOrEmpty(italicSpacing))
                             target = ApplyItalicSpacing(target);
@@ -329,6 +257,14 @@ namespace MonsterTrainUnofficialTranslation
             }
 
             Logger.LogInfo("Text patching done!");
+        }
+
+        public string PostprocessString(string input)
+        {
+            if (optionalFeatures.HasFlag(OptionalFeatures.KoreanPostpositionTransformation))
+                input = LanguageKoreanSpecifics.TransformPostposition(input);
+
+            return input;
         }
     }
 }

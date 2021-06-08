@@ -15,7 +15,8 @@ namespace MonsterTrainUnofficialTranslation
         None = 0,
         OverrideFontScalingAsFallbackOnes = 1,
         KoreanWordWrapping = 2,
-        WarnAccidentallySameStrings = 4,
+        KoreanPostpositionTransformation = 4,
+        WarnAccidentallySameStrings = 8,
     };
 
     [BepInEx.BepInPlugin("com.nedsociety.monstertrainunofficialtranslation", "MonsterTrainUnofficialTranslation", "1.0.0.0")]
@@ -125,6 +126,19 @@ namespace MonsterTrainUnofficialTranslation
         static void Postfix()
         {
             MonsterTrainUnofficialTranslation.Instance.TextPatcher.OnLocalizationLoadCallEnd();
+        }
+    }
+
+    [HarmonyLib.HarmonyPatch(typeof(I2.Loc.LocalizationManager))]
+    [HarmonyLib.HarmonyPatch("TryGetTranslation")]
+    public static class Harmony_I2_Loc_LocalizationManager_TryGetTranslation
+    {
+        static void Postfix(bool __result, ref string Translation, bool applyParameters)
+        {
+            if (__result && applyParameters)
+            {
+                Translation = MonsterTrainUnofficialTranslation.Instance.TextPatcher.PostprocessString(Translation);
+            }
         }
     }
 
