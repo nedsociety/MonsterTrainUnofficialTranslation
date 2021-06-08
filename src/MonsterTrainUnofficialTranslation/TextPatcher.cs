@@ -40,6 +40,34 @@ namespace MonsterTrainUnofficialTranslation
 
             textDataBase = ReadWeblateCsvData(textPathBase, false, optionalFeatures);
             textDataTranslated = ReadWeblateCsvData(textPathTranslated, true, optionalFeatures);
+
+            if (optionalFeatures.HasFlag(OptionalFeatures.WarnAccidentallySameStrings))
+                CheckAccidentallySameStrings();
+        }
+
+        void CheckAccidentallySameStrings()
+        {
+            var t2b = new Dictionary<string, string>();
+            foreach (DictionaryEntry kvp in textDataTranslated)
+            {
+                var id = kvp.Key as string;
+                var translationString = kvp.Value as string;
+                var baseString = textDataBase[id] as string;
+
+                try
+                {
+                    t2b.Add(translationString, baseString);
+                }
+                catch (System.ArgumentException)
+                {
+                    if (!baseString.Equals(t2b[translationString]))
+                    {
+                        Logger.LogWarning(
+                            $"Detected two strings happened to be same but the corresponding base strings differ: '{t2b[translationString]}' and '{baseString}' -> '{translationString}'."
+                        );
+                    }
+                }
+            }
         }
 
         // From https://stackoverflow.com/a/28155130/3567518
@@ -127,6 +155,7 @@ namespace MonsterTrainUnofficialTranslation
 
         OrderedDictionary ReadWeblateCsvData(string path, bool postprocess, OptionalFeatures optionalFeatures)
         {
+            var v2k = new Dictionary<string, string>();
             var ret = new OrderedDictionary();
 
             using (var streamreader = new StreamReader(path))
