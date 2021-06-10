@@ -51,7 +51,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ~
+        working-directory: "~"
     env:
       MonsterTrainAppId: 1102190
       ModLoaderWorkshopId: 2187468759
