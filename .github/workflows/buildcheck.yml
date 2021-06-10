@@ -32,7 +32,7 @@ jobs:
       - name: Cache the files (only DLLs are needed)
         uses: actions/upload-artifact@v2
         with:
-          name: steamdir
+          name: steamdir-cache
           path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
 
   build:
@@ -46,30 +46,38 @@ jobs:
       - name: Restore the binaries from Steam
         uses: actions/download-artifact@v2
         with:
-          name: steamdir
+          name: steamdir-cache
 
-      # Install the .NET Core workload
       - name: Install .NET Core
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 5.0.x
 
-      # Add MSBuild to the PATH
       - name: Setup MSBuild.exe
         uses: microsoft/setup-msbuild@v1.0.2
 
-      # Adjust SteamAppsDir.props
       - name: Write SteamAppsDir.props
         run: >
           Set-Content -Path SteamAppsDir.props
           -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
 
-      # Download 3rd party deps
-      - name: Build the solution
+      - name: Setup 3rd party libs
         run: msbuild MonsterTrainUnofficialTranslation.sln /t:Restore /p:RestorePackagesConfig=true
         working-directory: src
 
-      # Build
       - name: Build the solution
         run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
         working-directory: src
+
+      - name: Package files
+        run: |
+          xcopy "src\MonsterTrainUnofficialTranslation\deployment" ".\package\" /EY
+          xcopy "src\MonsterTrainUnofficialTranslation\bin\Release\netstandard2.0\*.dll" ".\package\plugins\" /EY
+          xcopy "locale\" ".\package\plugins\locale\" /EY
+
+      - name: Cache the files (only DLLs are needed)
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
+          
