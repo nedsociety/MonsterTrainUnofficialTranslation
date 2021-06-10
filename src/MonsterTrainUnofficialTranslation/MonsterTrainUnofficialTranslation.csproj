@@ -63,8 +63,4 @@
     <PackageReference Include="CsvHelper" Version="27.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="echo Copying plugin to the workshop directory: $(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\&#xD;&#xA;xcopy &quot;.\deployment\&quot; &quot;$(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\&quot; /EY&#xD;&#xA;xcopy &quot;$(TargetDir)&quot; &quot;$(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\plugins\&quot; /EY&#xD;&#xA;xcopy &quot;$(SolutionDir)..\locale\&quot; &quot;$(SteamAppsDir)\workshop\content\1102190\MonsterTrainUnofficialTranslation\plugins\locale\&quot; /EY&#xD;&#xA;" />
-  </Target>
 </Project>
