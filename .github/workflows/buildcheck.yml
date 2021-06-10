@@ -53,13 +53,15 @@ jobs:
         shell: bash
         working-directory: /home/steam/steamcmd
     env:
+      SteamId: ${{ secrets.STEAMID }}
+      SteamPw: ${{ secrets.STEAMPW }}
       MonsterTrainAppId: 1102190
       ModLoaderWorkshopId: 2187468759
     steps:
       - name: Download the main game and the BepInEx dependencies
         run: >
           ./steamcmd.sh
-          +login ${{ secrets.SteamId }} ${{ secrets.SteamPw }}
+          +login $SteamId $SteamPw
           +@sSteamCmdForcePlatformType windows
           +force_install_dir ./steamdir
           +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
