@@ -89,7 +89,7 @@ namespace MonsterTrainUnofficialTranslation
                         // are without plosives.
                         //
                         // But in most case it's usually justified to use any postposition in every day life for these large numbers,
-                        // not to mention the game.
+                        // not to mention the game where such numbers don't appear at all.
                         return entry.Value.withPlosive;
                     case 1: // 일
                     case 7: // 칠
