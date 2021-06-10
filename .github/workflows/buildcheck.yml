@@ -26,7 +26,12 @@ jobs:
           +force_install_dir "./steamdir/steamapps/common/Monster Train/"
           +app_update $MonsterTrainAppId
           +quit
-        
+
+      - name: Check the files
+        run: |
+          ls "./steamdir/steamapps/common/Monster Train"
+          ls "./steamdir/steamapps/workshop/content/1102190/2187468759/"
+
       - name: Cache the files (only DLLs are needed)
         uses: actions/upload-artifact@v2
         with:
