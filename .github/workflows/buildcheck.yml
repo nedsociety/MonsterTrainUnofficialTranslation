@@ -52,45 +52,45 @@ jobs:
       MonsterTrainAppId: 1102190
       ModLoaderWorkshopId: 2187468759
     steps:
-    - name: Download the main game and the BepInEx dependencies
-      run: >
-        ./steamcmd.sh
-        +login ${{ secrets.SteamId }} ${{ secrets.SteamPw }}
-        +@sSteamCmdForcePlatformType windows
-        +force_install_dir ./steamdir
-        +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
-        +force_install_dir "./steamdir/steamapps/common/Monster Train/"
-        +app_update $MonsterTrainAppId
-        +quit
-    - name: Cache the files (only DLLs are needed)
-      uses: actions/upload-artifact@@v2
-      with:
-        name: steamdir
-        path: steamdir/**/*.dll
+      - name: Download the main game and the BepInEx dependencies
+        run: >
+          ./steamcmd.sh
+          +login ${{ secrets.SteamId }} ${{ secrets.SteamPw }}
+          +@sSteamCmdForcePlatformType windows
+          +force_install_dir ./steamdir
+          +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
+          +force_install_dir "./steamdir/steamapps/common/Monster Train/"
+          +app_update $MonsterTrainAppId
+          +quit
+      - name: Cache the files (only DLLs are needed)
+        uses: actions/upload-artifact@v2
+        with:
+          name: steamdir
+          path: steamdir/**/*.dll
 
   build:
     runs-on: windows-latest
     needs: download_basegame
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Restore the binaries from Steam
-      uses: actions/download-artifact@v2
-      with:
-        name: steamdir
+      - name: Restore the binaries from Steam
+        uses: actions/download-artifact@v2
+        with:
+          name: steamdir
 
-    # Install the .NET Core workload
-    - name: Install .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.x
+      # Install the .NET Core workload
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
 
-    # Add MSBuild to the PATH
-    - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.2
+      # Add MSBuild to the PATH
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.2
 
-    # Build
-    - name: Build the solution
-      run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
+      # Build
+      - name: Build the solution
+        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
