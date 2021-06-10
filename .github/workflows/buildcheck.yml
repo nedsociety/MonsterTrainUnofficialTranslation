@@ -42,7 +42,7 @@ on:
   push:
     branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, CI ]
 
 jobs:
   download_basegame:
@@ -58,13 +58,6 @@ jobs:
       MonsterTrainAppId: 1102190
       ModLoaderWorkshopId: 2187468759
     steps:
-      - name: Test
-        env:
-          TEST_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TEST_SECRET: ${{ secrets.STEAMID }}
-        run: |
-          echo ${#TEST_GITHUB_TOKEN}
-          echo ${#TEST_SECRET}
       - name: Download the main game and the BepInEx dependencies
         run: >
           ./steamcmd.sh
