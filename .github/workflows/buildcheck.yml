@@ -58,6 +58,13 @@ jobs:
       - name: Setup MSBuild.exe
         uses: microsoft/setup-msbuild@v1.0.2
 
+      # Adjust SteamAppsDir.props
+      - name: Write SteamAppsDir.props
+        run: >
+          Set-Content -Path SteamAppsDir.props
+          -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
+
       # Build
       - name: Build the solution
         run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
+        working-directory: src
