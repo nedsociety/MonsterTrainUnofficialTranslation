@@ -15,6 +15,7 @@ jobs:
       SteamPw: ${{ secrets.STEAMPW }}
       MonsterTrainAppId: 1102190
       ModLoaderWorkshopId: 2187468759
+      STEAMCMDDIR: /home/steam/steamcmd
     steps:
       - name: Download the main game and the BepInEx dependencies
         run: >
