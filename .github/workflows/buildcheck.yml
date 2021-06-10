@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Download the main game and the BepInEx dependencies
         run: >
-          $STEAMCMDDIR/steamcmd.sh
+          ./steamcmd.sh
           +login $SteamId $SteamPw
           +@sSteamCmdForcePlatformType windows
           +force_install_dir ./steamdir
@@ -26,17 +26,13 @@ jobs:
           +force_install_dir "./steamdir/steamapps/common/Monster Train/"
           +app_update $MonsterTrainAppId
           +quit
-
-      - name: Check the files
-        run: |
-          ls "./steamdir/steamapps/common/Monster Train"
-          ls "./steamdir/steamapps/workshop/content/1102190/2187468759/"
-
+        working-directory: ${{ env.STEAMCMDDIR }}
+      
       - name: Cache the files (only DLLs are needed)
         uses: actions/upload-artifact@v2
         with:
           name: steamdir
-          path: steamdir/**/*.dll
+          path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
 
   build:
     runs-on: windows-latest
