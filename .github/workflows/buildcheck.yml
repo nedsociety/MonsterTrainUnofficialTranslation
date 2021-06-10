@@ -48,6 +48,10 @@ jobs:
   download_basegame:
     runs-on: ubuntu-latest
     container: cm2network/steamcmd
+    defaults:
+      run:
+        shell: bash
+        working-directory: ~
     env:
       MonsterTrainAppId: 1102190
       ModLoaderWorkshopId: 2187468759
@@ -62,6 +66,7 @@ jobs:
           +force_install_dir "./steamdir/steamapps/common/Monster Train/"
           +app_update $MonsterTrainAppId
           +quit
+        
       - name: Cache the files (only DLLs are needed)
         uses: actions/upload-artifact@v2
         with:
