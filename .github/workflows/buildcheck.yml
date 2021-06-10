@@ -64,6 +64,11 @@ jobs:
           Set-Content -Path SteamAppsDir.props
           -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
 
+      # Download 3rd party deps
+      - name: Build the solution
+        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Restore /p:RestorePackagesConfig=true
+        working-directory: src
+
       # Build
       - name: Build the solution
         run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
