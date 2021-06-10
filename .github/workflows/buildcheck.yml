@@ -1,0 +1,82 @@
+name: buildcheck
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  download_basegame:
+    runs-on: ubuntu-latest
+    container: cm2network/steamcmd:latest
+    env:
+      SteamId: ${{ secrets.STEAMID }}
+      SteamPw: ${{ secrets.STEAMPW }}
+      MonsterTrainAppId: 1102190
+      ModLoaderWorkshopId: 2187468759
+      STEAMCMDDIR: /home/steam/steamcmd
+    steps:
+      - name: Download the main game and the BepInEx dependencies
+        run: >
+          ./steamcmd.sh
+          +login $SteamId $SteamPw
+          +@sSteamCmdForcePlatformType windows
+          +force_install_dir ./steamdir
+          +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
+          +force_install_dir "./steamdir/steamapps/common/Monster Train/"
+          +app_update $MonsterTrainAppId
+          +quit
+        working-directory: ${{ env.STEAMCMDDIR }}
+      
+      - name: Cache the files (only DLLs are needed)
+        uses: actions/upload-artifact@v2
+        with:
+          name: steamdir-cache
+          path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
+
+  build:
+    runs-on: windows-latest
+    needs: download_basegame
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Restore the binaries from Steam
+        uses: actions/download-artifact@v2
+        with:
+          name: steamdir-cache
+
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Write SteamAppsDir.props
+        run: >
+          Set-Content -Path SteamAppsDir.props
+          -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
+
+      - name: Setup 3rd party libs
+        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Restore /p:RestorePackagesConfig=true
+        working-directory: src
+
+      - name: Build the solution
+        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
+        working-directory: src
+
+      - name: Package files
+        run: |
+          xcopy "src\MonsterTrainUnofficialTranslation\deployment" ".\package\" /EY
+          xcopy "src\MonsterTrainUnofficialTranslation\bin\Release\netstandard2.0\*.dll" ".\package\plugins\" /EY
+          xcopy "locale" ".\package\plugins\locale\" /EY
+
+      - name: Upload the result
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: package
