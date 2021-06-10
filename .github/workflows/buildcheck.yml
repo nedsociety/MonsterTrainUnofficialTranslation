@@ -73,11 +73,10 @@ jobs:
         run: |
           xcopy "src\MonsterTrainUnofficialTranslation\deployment" ".\package\" /EY
           xcopy "src\MonsterTrainUnofficialTranslation\bin\Release\netstandard2.0\*.dll" ".\package\plugins\" /EY
-          xcopy "locale\" ".\package\plugins\locale\" /EY
+          xcopy "locale" ".\package\plugins\locale\" /EY
 
-      - name: Cache the files (only DLLs are needed)
+      - name: Upload the result
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
-          
+          path: package
