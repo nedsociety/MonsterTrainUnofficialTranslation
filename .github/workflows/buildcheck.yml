@@ -10,10 +10,6 @@ jobs:
   download_basegame:
     runs-on: ubuntu-latest
     container: cm2network/steamcmd:latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: /home/steam/steamcmd
     env:
       SteamId: ${{ secrets.STEAMID }}
       SteamPw: ${{ secrets.STEAMPW }}
@@ -22,7 +18,7 @@ jobs:
     steps:
       - name: Download the main game and the BepInEx dependencies
         run: >
-          ./steamcmd.sh
+          $STEAMCMDDIR/steamcmd.sh
           +login $SteamId $SteamPw
           +@sSteamCmdForcePlatformType windows
           +force_install_dir ./steamdir
