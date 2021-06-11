@@ -105,7 +105,8 @@ jobs:
 
       - name: Check
         run: |
-          ls -R workshop_package | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'
+          ls -l workshop_package
+          ls -l workshop_package/content/modimage.png
         working-directory: ${{ env.STEAMCMDDIR }}
 
       - name: Upload to Steam Workshop
