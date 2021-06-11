@@ -22,18 +22,6 @@ jobs:
       STEAMCMDDIR: /home/steam/steamcmd
       
     steps:
-    - name: 
-        run: >
-          ./steamcmd.sh
-          +login $SteamId $SteamPw
-          +@sSteamCmdForcePlatformType windows
-          +force_install_dir ./steamdir
-          +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
-          +force_install_dir "./steamdir/steamapps/common/Monster Train/"
-          +app_update $MonsterTrainAppId
-          +quit
-        working-directory: ${{ env.STEAMCMDDIR }}
-      
       - name: Download the main game and the BepInEx dependencies
         run: >
           ./steamcmd.sh
