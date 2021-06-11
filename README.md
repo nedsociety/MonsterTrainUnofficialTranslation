@@ -6,7 +6,7 @@ This repository houses both codes and translations for the unofficial translatio
 
 Currently we don't have a centralized site for crowdsourced translations. Please contact to the language maintainers:
 
-- Korean: [See this](https://github.com/nedsociety/MonsterTrainUnofficialTranslation/issues/1).
+- Korean: [See this](https://github.com/nedsociety/MonsterTrainUnofficialTranslation/issues/9).
 
 ## Adding a new language
 
