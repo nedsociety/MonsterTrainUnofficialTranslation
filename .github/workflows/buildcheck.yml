@@ -101,6 +101,7 @@ jobs:
 
       - name: Adjust workshop.vdf file with correct path
         run: sed -i 's+\$PACKAGE_ROOT\$+${{ env.STEAMCMDDIR }}/workshop_package+g' workshop_package/workshop.vdf
+        working-directory: ${{ env.STEAMCMDDIR }}
 
       - name: Check
         run: |
