@@ -19,7 +19,7 @@ jobs:
       STEAMCMDDIR: /home/steam/steamcmd
       
     steps:
-      - run: echo
+      - run: echo abc
       # - name: Download the main game and the BepInEx dependencies
       #   run: >
       #     ./steamcmd.sh
@@ -44,7 +44,7 @@ jobs:
     runs-on: windows-latest
     
     steps:
-      - run: echo
+      - run: echo abc
       # - name: Checkout
       #   uses: actions/checkout@v2
 
