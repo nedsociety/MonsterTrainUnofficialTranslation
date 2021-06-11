@@ -85,7 +85,7 @@ jobs:
 
   upload_workshop:
     needs: build
-    # if: ${{ github.event_name == 'push' }}
+    if: ${{ github.event_name == 'push' }}
 
     runs-on: ubuntu-latest
     
