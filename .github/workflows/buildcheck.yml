@@ -19,23 +19,23 @@ jobs:
       STEAMCMDDIR: /home/steam/steamcmd
       
     steps:
-      - name: Download the main game and the BepInEx dependencies
-        run: >
-          ./steamcmd.sh
-          +login $SteamId $SteamPw
-          +@sSteamCmdForcePlatformType windows
-          +force_install_dir ./steamdir
-          +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
-          +force_install_dir "./steamdir/steamapps/common/Monster Train/"
-          +app_update $MonsterTrainAppId
-          +quit
-        working-directory: ${{ env.STEAMCMDDIR }}
+      # - name: Download the main game and the BepInEx dependencies
+      #   run: >
+      #     ./steamcmd.sh
+      #     +login $SteamId $SteamPw
+      #     +@sSteamCmdForcePlatformType windows
+      #     +force_install_dir ./steamdir
+      #     +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
+      #     +force_install_dir "./steamdir/steamapps/common/Monster Train/"
+      #     +app_update $MonsterTrainAppId
+      #     +quit
+      #   working-directory: ${{ env.STEAMCMDDIR }}
       
-      - name: Cache the files (only DLLs are needed)
-        uses: actions/upload-artifact@v2
-        with:
-          name: steamdir-cache
-          path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
+      # - name: Cache the files (only DLLs are needed)
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: steamdir-cache
+      #     path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
 
   build:
     needs: download_basegame
@@ -43,46 +43,46 @@ jobs:
     runs-on: windows-latest
     
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      # - name: Checkout
+      #   uses: actions/checkout@v2
 
-      - name: Restore the binaries from Steam
-        uses: actions/download-artifact@v2
-        with:
-          name: steamdir-cache
+      # - name: Restore the binaries from Steam
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: steamdir-cache
 
-      - name: Install .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 5.0.x
+      # - name: Install .NET Core
+      #   uses: actions/setup-dotnet@v1
+      #   with:
+      #     dotnet-version: 5.0.x
 
-      - name: Setup MSBuild.exe
-        uses: microsoft/setup-msbuild@v1.0.2
+      # - name: Setup MSBuild.exe
+      #   uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Write SteamAppsDir.props
-        run: >
-          Set-Content -Path SteamAppsDir.props
-          -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
+      # - name: Write SteamAppsDir.props
+      #   run: >
+      #     Set-Content -Path SteamAppsDir.props
+      #     -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
 
-      - name: Setup 3rd party libs
-        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Restore /p:RestorePackagesConfig=true
-        working-directory: src
+      # - name: Setup 3rd party libs
+      #   run: msbuild MonsterTrainUnofficialTranslation.sln /t:Restore /p:RestorePackagesConfig=true
+      #   working-directory: src
 
-      - name: Build the solution
-        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
-        working-directory: src
+      # - name: Build the solution
+      #   run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
+      #   working-directory: src
 
-      - name: Package files
-        run: |
-          xcopy "src\MonsterTrainUnofficialTranslation\deployment" ".\package\" /EY
-          xcopy "src\MonsterTrainUnofficialTranslation\bin\Release\netstandard2.0\*.dll" ".\package\plugins\" /EY
-          xcopy "locale" ".\package\plugins\locale\" /EY
+      # - name: Package files
+      #   run: |
+      #     xcopy "src\MonsterTrainUnofficialTranslation\deployment" ".\package\" /EY
+      #     xcopy "src\MonsterTrainUnofficialTranslation\bin\Release\netstandard2.0\*.dll" ".\package\plugins\" /EY
+      #     xcopy "locale" ".\package\plugins\locale\" /EY
 
-      - name: Upload the result
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: package
+      # - name: Upload the result
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: build
+      #     path: package
 
   upload_workshop:
     needs: build
@@ -96,8 +96,11 @@ jobs:
       STEAMCMDDIR: /home/steam/steamcmd
     
     steps:
-      - name: Test
-        run: echo ${{ JSON.stringify(github.event) }}
+      - name: Test 1
+        run: echo ${{ github.event_name }}
+      - name: Test 2
+        run: echo ${{ github.event_path }}
+      
       # - name: Download the main game and the BepInEx dependencies
       #   run: >
       #     ./steamcmd.sh
