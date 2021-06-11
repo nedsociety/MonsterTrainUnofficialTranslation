@@ -65,7 +65,9 @@ jobs:
           -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
 
       - name: Setup 3rd party libs
-        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Restore /p:RestorePackagesConfig=true
+        run: >
+          msbuild MonsterTrainUnofficialTranslation.sln /t:Restore
+          /p:RestorePackagesConfig=true /p:Configuration=Release
         working-directory: src
 
       - name: Build the solution
@@ -99,6 +101,11 @@ jobs:
 
       - name: Adjust workshop.vdf file with correct path
         run: sed -i 's+\$PACKAGE_ROOT\$+${{ env.STEAMCMDDIR }}/workshop_package+g' workshop_package/workshop.vdf
+        working-directory: ${{ env.STEAMCMDDIR }}
+
+      - name: Check
+        run: |
+          ls -R workshop_package | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'
         working-directory: ${{ env.STEAMCMDDIR }}
 
       - name: Upload to Steam Workshop
