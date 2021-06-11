@@ -85,7 +85,6 @@ jobs:
     # if: ${{ github.event_name == 'push' }}
 
     runs-on: ubuntu-latest
-    container: cm2network/steamcmd:latest
 
     env:
       SteamId: ${{ secrets.STEAMID }}
@@ -97,32 +96,45 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: ${{ env.STEAMCMDDIR }}/workshop_package
+          path: workshop_package
+          #path: ${{ env.STEAMCMDDIR }}/workshop_package
 
-      - name: Adjust workshop.vdf file with correct path
-        run: sed -i 's+\$PACKAGE_ROOT\$+${{ env.STEAMCMDDIR }}/workshop_package+g' workshop_package/workshop.vdf
-        working-directory: ${{ env.STEAMCMDDIR }}
+      # - name: Adjust workshop.vdf file with correct path
+      #   run: sed -i 's+\$PACKAGE_ROOT\$+${{ env.STEAMCMDDIR }}/workshop_package+g' workshop_package/workshop.vdf
+      #   working-directory: ${{ env.STEAMCMDDIR }}
 
-      - name: Check
-        run: |
-          whoami
-          echo ---
-          ls -l
-          echo ---
-          ls -l workshop_package
-          echo ---
-          cat workshop_package/workshop.vdf
-          echo ---
-          ls -l workshop_package/content/modimage.png
-          echo ---
-          base64 workshop_package/content/modimage.png
-        working-directory: ${{ env.STEAMCMDDIR }}
+      # - name: Check
+      #   run: |
+      #     whoami
+      #     echo ---
+      #     ls -l
+      #     echo ---
+      #     ls -l workshop_package
+      #     echo ---
+      #     cat workshop_package/workshop.vdf
+      #     echo ---
+      #     ls -l workshop_package/content/modimage.png
+      #     echo ---
+      #     base64 workshop_package/content/modimage.png
+      #   working-directory: ${{ env.STEAMCMDDIR }}
 
-      - name: Upload to Steam Workshop
-        run: >
-          ./steamcmd.sh
-          +login $SteamId $SteamPw
-          +@sSteamCmdForcePlatformType windows
-          +workshop_build_item workshop_package/workshop.vdf
-          +quit
-        working-directory: ${{ env.STEAMCMDDIR }}
+      # - name: Upload to Steam Workshop
+      #   run: >
+      #     ./steamcmd.sh
+      #     +login $SteamId $SteamPw
+      #     +@sSteamCmdForcePlatformType windows
+      #     +workshop_build_item workshop_package/workshop.vdf
+      #     +quit
+      #   working-directory: ${{ env.STEAMCMDDIR }}
+            # Upload to Steam Workshop
+        
+        - name: Upload to Steam Workshop
+          uses: arma-actions/workshop-upload@v1
+          with:
+            appId: '1102190'    # default
+            itemId: '2513567370' # Id of item to update
+            contentPath: 'workshop_package/content'
+            changelog: ''
+          env:
+            STEAM_USERNAME: ${{ secrets.STEAMID }}
+            STEAM_PASSWORD: ${{ secrets.STEAMPW }}
