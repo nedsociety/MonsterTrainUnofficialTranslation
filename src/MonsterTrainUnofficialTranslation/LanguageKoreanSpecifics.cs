@@ -244,5 +244,15 @@ namespace MonsterTrainUnofficialTranslation
                 }
             );
         }
+
+        static Regex regexRawPostposition = new Regex((
+            @"\$(?<postposition>.+?)\$"
+        ), RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+        public static string DisablePostpositionTransform(string text)
+        {
+            // In case where KoreanPostpositionTransformation is disabled, we want to remove the brace ($$).
+            return regexRawPostposition.Replace(text, "${postposition}");
+        }
     }
 }
