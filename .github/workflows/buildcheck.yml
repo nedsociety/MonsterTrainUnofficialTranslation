@@ -88,6 +88,7 @@ jobs:
 
   upload_workshop:
     needs: build
+    if: ${{ github.event_name == "push" }}
 
     runs-on: ubuntu-latest
     container: cm2network/steamcmd:latest
@@ -99,7 +100,7 @@ jobs:
     
     steps:
       - name: Test 1
-        run: echo ${{ github.event_name }}
+        run: echo 
       - name: Test 2
         run: echo ${{ github.event_path }}
       
