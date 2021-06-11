@@ -1,4 +1,4 @@
-name: buildcheck
+name: build
 
 on:
   push:
@@ -10,12 +10,14 @@ jobs:
   download_basegame:
     runs-on: ubuntu-latest
     container: cm2network/steamcmd:latest
+
     env:
       SteamId: ${{ secrets.STEAMID }}
       SteamPw: ${{ secrets.STEAMPW }}
       MonsterTrainAppId: 1102190
       ModLoaderWorkshopId: 2187468759
       STEAMCMDDIR: /home/steam/steamcmd
+      
     steps:
       - name: Download the main game and the BepInEx dependencies
         run: >
@@ -36,9 +38,10 @@ jobs:
           path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
 
   build:
-    runs-on: windows-latest
     needs: download_basegame
-
+    
+    runs-on: windows-latest
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -80,3 +83,40 @@ jobs:
         with:
           name: build
           path: package
+
+  upload_workshop:
+    needs: build
+
+    runs-on: ubuntu-latest
+    container: cm2network/steamcmd:latest
+
+    env:
+      SteamId: ${{ secrets.STEAMID }}
+      SteamPw: ${{ secrets.STEAMPW }}
+      STEAMCMDDIR: /home/steam/steamcmd
+    
+    steps:
+      - name: Test
+        run: echo ${{ github.event }}
+      # - name: Download the main game and the BepInEx dependencies
+      #   run: >
+      #     ./steamcmd.sh
+      #     +login $SteamId $SteamPw
+      #     +@sSteamCmdForcePlatformType windows
+      #     +force_install_dir ./steamdir
+      #     +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
+      #     +force_install_dir "./steamdir/steamapps/common/Monster Train/"
+      #     +app_update $MonsterTrainAppId
+      #     +quit
+      #   working-directory: ${{ env.STEAMCMDDIR }}
+
+      # - name: Restore the binaries from Steam
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: build
+      
+      # - name: Cache the files (only DLLs are needed)
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: steamdir-cache
+      #     path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
