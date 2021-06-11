@@ -97,7 +97,7 @@ jobs:
     
     steps:
       - name: Test
-        run: echo ${{ github.event }}
+        run: echo ${{ JSON.stringify(github.event) }}
       # - name: Download the main game and the BepInEx dependencies
       #   run: >
       #     ./steamcmd.sh
