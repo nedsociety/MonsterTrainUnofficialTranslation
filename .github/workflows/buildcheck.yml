@@ -105,7 +105,12 @@ jobs:
 
       - name: Check
         run: |
+          whoami
+          echo ---
+          ls -l
+          echo ---
           ls -l workshop_package
+          echo ---
           ls -l workshop_package/content/modimage.png
         working-directory: ${{ env.STEAMCMDDIR }}
 
