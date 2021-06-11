@@ -101,24 +101,11 @@ jobs:
         run: sed -i 's+\$PACKAGE_ROOT\$+${{ env.STEAMCMDDIR }}/workshop_package+g' workshop_package/workshop.vdf
         working-directory: ${{ env.STEAMCMDDIR }}
 
-      - name: Check vdf file
-        run: cat workshop_package/workshop.vdf
+      - name: Upload to Steam Workshop
+        run: >
+          ./steamcmd.sh
+          +login $SteamId $SteamPw
+          +@sSteamCmdForcePlatformType windows
+          +workshop_build_item workshop_package/workshop.vdf
+          +quit
         working-directory: ${{ env.STEAMCMDDIR }}
-
-      # - name: Download the main game and the BepInEx dependencies
-      #   run: >
-      #     ./steamcmd.sh
-      #     +login $SteamId $SteamPw
-      #     +@sSteamCmdForcePlatformType windows
-      #     +force_install_dir ./steamdir
-      #     +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
-      #     +force_install_dir "./steamdir/steamapps/common/Monster Train/"
-      #     +app_update $MonsterTrainAppId
-      #     +quit
-      #   working-directory: ${{ env.STEAMCMDDIR }}
-
-      # - name: Cache the files (only DLLs are needed)
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: steamdir-cache
-      #     path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
