@@ -1,4 +1,4 @@
-name: buildcheck
+name: build
 
 on:
   push:
@@ -6,18 +6,26 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  MonsterTrainAppId: '1102190'
+  ModLoaderWorkshopId: '2187468759'
+  ModWorkshopId: '2513567370'
+
 jobs:
   download_basegame:
     runs-on: ubuntu-latest
-    container: cm2network/steamcmd:latest
+    container: cm2network/steamcmd:root
+
     env:
       SteamId: ${{ secrets.STEAMID }}
       SteamPw: ${{ secrets.STEAMPW }}
-      MonsterTrainAppId: 1102190
-      ModLoaderWorkshopId: 2187468759
       STEAMCMDDIR: /home/steam/steamcmd
+      
     steps:
-      - name: Download the main game and the BepInEx dependencies
+      - name: Adjust permission for SteamCMD before use
+        run: chown -R `whoami` /home/steam
+      
+      - name: Download the main game and BepInEx dependencies
         run: >
           ./steamcmd.sh
           +login $SteamId $SteamPw
@@ -36,9 +44,10 @@ jobs:
           path: ${{ env.STEAMCMDDIR }}/steamdir/**/*.dll
 
   build:
-    runs-on: windows-latest
     needs: download_basegame
-
+    
+    runs-on: windows-latest
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -62,21 +71,52 @@ jobs:
           -Value "<Project><PropertyGroup><SteamAppsDir>$pwd\steamapps</SteamAppsDir></PropertyGroup></Project>"
 
       - name: Setup 3rd party libs
-        run: msbuild MonsterTrainUnofficialTranslation.sln /t:Restore /p:RestorePackagesConfig=true
+        run: >
+          msbuild MonsterTrainUnofficialTranslation.sln /t:Restore
+          /p:RestorePackagesConfig=true /p:Configuration=Release
         working-directory: src
 
       - name: Build the solution
         run: msbuild MonsterTrainUnofficialTranslation.sln /t:Rebuild /p:Configuration=Release
         working-directory: src
 
-      - name: Package files
-        run: |
-          xcopy "src\MonsterTrainUnofficialTranslation\deployment" ".\package\" /EY
-          xcopy "src\MonsterTrainUnofficialTranslation\bin\Release\netstandard2.0\*.dll" ".\package\plugins\" /EY
-          xcopy "locale" ".\package\plugins\locale\" /EY
-
       - name: Upload the result
         uses: actions/upload-artifact@v2
         with:
           name: build
           path: package
+
+  upload_workshop:
+    needs: build
+    if: ${{ github.event_name == 'push' }}
+
+    runs-on: ubuntu-latest
+    container: cm2network/steamcmd:root
+
+    env:
+      SteamId: ${{ secrets.STEAMID }}
+      SteamPw: ${{ secrets.STEAMPW }}
+      STEAMCMDDIR: /home/steam/steamcmd
+    
+    steps:
+      - name: Get built package
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: ${{ env.STEAMCMDDIR }}/workshop_package
+
+      - name: Adjust workshop.vdf file with correct path
+        run: sed -i 's+\$PACKAGE_ROOT\$+${{ env.STEAMCMDDIR }}/workshop_package+g' workshop_package/workshop.vdf
+        working-directory: ${{ env.STEAMCMDDIR }}
+
+      - name: Adjust permission for SteamCMD before use
+        run: chown -R `whoami` /home/steam
+
+      - name: Upload to Steam Workshop
+        run: >
+          ./steamcmd.sh
+          +login $SteamId $SteamPw
+          +@sSteamCmdForcePlatformType windows
+          +workshop_build_item workshop_package/workshop.vdf
+          +quit
+        working-directory: ${{ env.STEAMCMDDIR }}
