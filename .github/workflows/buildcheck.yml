@@ -14,7 +14,7 @@ env:
 jobs:
   download_basegame:
     runs-on: ubuntu-latest
-    container: cm2network/steamcmd:latest
+    container: cm2network/steamcmd:root
 
     env:
       SteamId: ${{ secrets.STEAMID }}
@@ -22,6 +22,18 @@ jobs:
       STEAMCMDDIR: /home/steam/steamcmd
       
     steps:
+    - name: 
+        run: >
+          ./steamcmd.sh
+          +login $SteamId $SteamPw
+          +@sSteamCmdForcePlatformType windows
+          +force_install_dir ./steamdir
+          +workshop_download_item $MonsterTrainAppId $ModLoaderWorkshopId
+          +force_install_dir "./steamdir/steamapps/common/Monster Train/"
+          +app_update $MonsterTrainAppId
+          +quit
+        working-directory: ${{ env.STEAMCMDDIR }}
+      
       - name: Download the main game and the BepInEx dependencies
         run: >
           ./steamcmd.sh
