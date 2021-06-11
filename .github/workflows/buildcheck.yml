@@ -126,15 +126,14 @@ jobs:
       #     +workshop_build_item workshop_package/workshop.vdf
       #     +quit
       #   working-directory: ${{ env.STEAMCMDDIR }}
-            # Upload to Steam Workshop
-        
-        - name: Upload to Steam Workshop
-          uses: arma-actions/workshop-upload@v1
-          with:
-            appId: '1102190'    # default
-            itemId: '2513567370' # Id of item to update
-            contentPath: 'workshop_package/content'
-            changelog: ''
-          env:
-            STEAM_USERNAME: ${{ secrets.STEAMID }}
-            STEAM_PASSWORD: ${{ secrets.STEAMPW }}
+
+      - name: Upload to Steam Workshop
+        uses: arma-actions/workshop-upload@v1
+        with:
+          appId: '1102190'    # default
+          itemId: '2513567370' # Id of item to update
+          contentPath: 'workshop_package/content'
+          changelog: ''
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAMID }}
+          STEAM_PASSWORD: ${{ secrets.STEAMPW }}
