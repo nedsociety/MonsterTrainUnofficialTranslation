@@ -1,0 +1,29 @@
+[h1][b][u]IMPORTANT[/u][/b] - How to apply?[/h1]
+[olist]
+    [*]Subcribe to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2187468759]Mod Loader[/url] before subscribing to any other mods, including this.
+
+    [*]Subscribe to this mod.
+
+    [*]Start the game.
+
+    [*]Check: The Mod Settings menu should have [b]MonsterTrainUnofficialTranslation[/b] mod active.
+
+    [*]Check: Make sure if you have English set as your language (if you have already changed the language before).
+    [url=https://i.imgur.com/8VSz217.png]#Image step[/url]
+
+    [*]Press F1, click the MonsterTrainUnofficialTranslation, then change the language to your liking.
+    [url=https://i.imgur.com/KFW1HSB.png]#Image step[/url]
+
+    [*]Restart the game.
+[/olist]
+
+
+[h1]Currently supported languages[/h1]
+[list]
+    [*]Korean ([url=https://github.com/nedsociety/MonsterTrainUnofficialTranslation/blob/master/AUTHORS.Translation.Korean.md]#Authors[/url], [url=https://github.com/nedsociety/MonsterTrainUnofficialTranslation/blob/master/LICENSE.Translation.Korean.md]#License[/url])
+[/list]
+
+
+[h1]I want to start a new language project / I have feedbacks on translation / I have a question[/h1]
+Come to [url=https://github.com/nedsociety/MonsterTrainUnofficialTranslation]the repository[/url]! You may easily request to start and manage a new language project there, and there are language maintainers so that you might give a feedback.
+

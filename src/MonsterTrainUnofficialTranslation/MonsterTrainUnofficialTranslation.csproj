@@ -17,6 +17,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="rebuild.trigger" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="rebuild.trigger">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>$(SteamAppsDir)\common\Monster Train\MonsterTrain_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
@@ -63,4 +73,8 @@
     <PackageReference Include="CsvHelper" Version="27.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="PowerShell -NoProfile -ExecutionPolicy unrestricted -File packaging.ps1 -PackageTarget $(SolutionDir)..\package -SolutionDir $(SolutionDir) -ProjectDir $(ProjectDir) -TargetDir $(TargetDir)&#xD;&#xA;IF %25ERRORLEVEL%25 NEQ 0 exit /b %25ERRORLEVEL%25&#xD;&#xA;" />
+  </Target>
 </Project>
