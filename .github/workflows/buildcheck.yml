@@ -88,24 +88,35 @@ jobs:
 
   upload_workshop:
     needs: build
-    if: ${{ github.event_name == 'push' }}
+    # if: ${{ github.event_name == 'push' }}
 
     runs-on: ubuntu-latest
+    container: cm2network/steamcmd:root
+
+    env:
+      SteamId: ${{ secrets.STEAMID }}
+      SteamPw: ${{ secrets.STEAMPW }}
+      STEAMCMDDIR: /home/steam/steamcmd
     
     steps:
       - name: Get built package
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: workshop_package
-      
+          path: ${{ env.STEAMCMDDIR }}/workshop_package
+
+      - name: Adjust workshop.vdf file with correct path
+        run: sed -i 's+\$PACKAGE_ROOT\$+${{ env.STEAMCMDDIR }}/workshop_package+g' workshop_package/workshop.vdf
+        working-directory: ${{ env.STEAMCMDDIR }}
+
+      - name: Adjust permission for SteamCMD before use
+        run: chown -R `whoami` /home/steam
+
       - name: Upload to Steam Workshop
-        uses: arma-actions/workshop-upload@v1
-        with:
-          appId: ${{ env.MonsterTrainAppId }}
-          itemId: ${{ env.ModWorkshopId }}
-          contentPath: 'workshop_package/content'
-          changelog: ''
-        env:
-          STEAM_USERNAME: ${{ secrets.STEAMID }}
-          STEAM_PASSWORD: ${{ secrets.STEAMPW }}
+        run: >
+          ./steamcmd.sh
+          +login $SteamId $SteamPw
+          +@sSteamCmdForcePlatformType windows
+          +workshop_build_item workshop_package/workshop.vdf
+          +quit
+        working-directory: ${{ env.STEAMCMDDIR }}
