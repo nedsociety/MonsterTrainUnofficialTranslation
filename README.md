@@ -2,25 +2,19 @@
 
 This repository houses both codes and translations for the unofficial translations of [Monster Train](https://store.steampowered.com/app/1102190/Monster_Train/).
 
-## Contributing to the Translation
+## Contributing to the existing languages
 
-Currently we don't have a centralized site for crowdsourced translations. Please contact to the language maintainers:
+Please contact to the language maintainers:
 
 - Korean: [See this](https://github.com/nedsociety/MonsterTrainUnofficialTranslation/issues/9).
 
-## Adding a new language
+Alternatively, you may leave issues or PRs to this repo as well.
 
-[See this wiki page](https://github.com/nedsociety/MonsterTrainUnofficialTranslation/wiki/Adding-a-new-translation)
+## I want to start a new language project
 
-## External codes
-
-This repository makes use of the following codes:
-
-- [BepInEx](https://github.com/BepInEx/BepInEx)
-- [BepInEx.ConfigurationManager](https://github.com/BepInEx/BepInEx.ConfigurationManager)
-- [CsvHelper](https://joshclose.github.io/CsvHelper/)
-- [Json.NET](https://www.newtonsoft.com/json)
+[Start from here.](doc/Starting_a_new_language_project.md)
 
 ## Disclaimer
 
 *Monster Train* is a trademark of *Shiny Shoe LLC*. Unless otherwise stated, the authors and the contributors of this repository is not affiliated with nor endorsed by Shiny Shoe LLC.
+
