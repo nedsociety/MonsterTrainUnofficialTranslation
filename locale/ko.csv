@@ -2236,22 +2236,22 @@ This triggers on Slay"
 
 [corruptpoison]: <b>Reap</b>
 [effect0.status0.power]: A number"
-"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Zero]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Zero]","전방의 적 유닛에게 아군 유닛들의 [spikes] 합의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
+"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Zero]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Zero]","전방의 적 유닛에게 아군 유닛들의 모든 [spikes] 중첩의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
 (Plural form: 'Zero')
 
 [trait0.power]: A number
 [spikes]: <b>Spikes</b>"
-"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[One]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[One]","전방의 적 유닛에게 아군 유닛들의 [spikes] 합의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
+"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[One]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[One]","전방의 적 유닛에게 아군 유닛들의 모든 [spikes] 중첩의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
 (Plural form: 'One')
 
 [trait0.power]: A number
 [spikes]: <b>Spikes</b>"
-"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Few]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Few]","전방의 적 유닛에게 아군 유닛들의 [spikes] 합의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
+"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Few]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Few]","전방의 적 유닛에게 아군 유닛들의 모든 [spikes] 중첩의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
 (Plural form: 'Few')
 
 [trait0.power]: A number
 [spikes]: <b>Spikes</b>"
-"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Plural]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Plural]","전방의 적 유닛에게 아군 유닛들의 [spikes] 합의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
+"CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Plural]","CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2[Plural]","전방의 적 유닛에게 아군 유닛들의 모든 [spikes] 중첩의 [trait0.power] 배만큼 피해를 줍니다.","","False","","","(Group: 'CardData_BrambleLash')
 (Plural form: 'Plural')
 
 [trait0.power]: A number
@@ -7978,22 +7978,22 @@ This triggers on Resolve"
 "CharacterData_descriptionKey-e850c25829d12dd3-c5fb54b6c2cb6b44eb87dd468e302e7b-v2","CharacterData_descriptionKey-e850c25829d12dd3-c5fb54b6c2cb6b44eb87dd468e302e7b-v2","<nobr><b>영혼 1</b></nobr> $을$ 얻습니다.","","False","","","(Group: 'CardData_DeathEater')
 
 This triggers on Harvest"
-"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Zero]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Zero]","아군 유닛들의 [spikes]가 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
+"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Zero]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Zero]","아군 유닛들의 [spikes]이 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
 (Plural form: 'Zero')
 
 [spikes]: <b>Spikes</b>
 [paramint]: A number"
-"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[One]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[One]","아군 유닛들의 [spikes]가 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
+"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[One]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[One]","아군 유닛들의 [spikes]이 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
 (Plural form: 'One')
 
 [spikes]: <b>Spikes</b>
 [paramint]: A number"
-"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Few]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Few]","아군 유닛들의 [spikes]가 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
+"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Few]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Few]","아군 유닛들의 [spikes]이 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
 (Plural form: 'Few')
 
 [spikes]: <b>Spikes</b>
 [paramint]: A number"
-"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Plural]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Plural]","아군 유닛들의 [spikes]가 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
+"CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Plural]","CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2[Plural]","아군 유닛들의 [spikes]이 중첩 당 피해를 +[paramint] 더 줍니다.","","False","","","(Group: 'CardData_ShardChanneler')
 (Plural form: 'Plural')
 
 [spikes]: <b>Spikes</b>
@@ -9141,22 +9141,22 @@ This refers to the subtype ""Steward"", not the unit ""Train Steward"" (although
 
 [effect0.power]: A number
 [burnout]: <b>Burnout</b>"
-"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Zero]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Zero]","[spikes]가 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
+"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Zero]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Zero]","[spikes]이 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
 (Plural form: 'Zero')
 
 [spikes]: <b>Spikes</b>
 [effect0.power]: A number"
-"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[One]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[One]","[spikes]가 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
+"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[One]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[One]","[spikes]이 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
 (Plural form: 'One')
 
 [spikes]: <b>Spikes</b>
 [effect0.power]: A number"
-"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Few]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Few]","[spikes]가 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
+"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Few]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Few]","[spikes]이 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
 (Plural form: 'Few')
 
 [spikes]: <b>Spikes</b>
 [effect0.power]: A number"
-"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Plural]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Plural]","[spikes]가 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
+"CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Plural]","CollectableRelicData_descriptionKey-8848c4091e86e540-3a59dd97e449ec848ba0b19cde68e471-v2[Plural]","[spikes]이 중첩 당 피해를 +[effect0.power] 더 줍니다.","","False","","","(Group: 'CollectableRelicData_StrongerSpikes')
 (Plural form: 'Plural')
 
 [spikes]: <b>Spikes</b>
@@ -12535,7 +12535,7 @@ This is the replacement text for: [spellshield]"
 "ReplacementStringsData__replacement-85cea4e787980553-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-85cea4e787980553-54cd63e248504b84185143a1d93acb06-v2","<b>천벌</b>","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
 A card type. This is a technical game term and so should never be pluralized or change based on context.
 This is the replacement text for: [junk]"
-"ReplacementStringsData__replacement-87f52cca2cf84f65-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-87f52cca2cf84f65-54cd63e248504b84185143a1d93acb06-v2","<b>가시</b>","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
+"ReplacementStringsData__replacement-87f52cca2cf84f65-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-87f52cca2cf84f65-54cd63e248504b84185143a1d93acb06-v2","<b>뾰족함</b>","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
 A trait or status effect. This should match its respective string elsewhere. This is a technical game term and so should never be pluralized or change based on context.
 This is the replacement text for: [spikes]"
 "ReplacementStringsData__replacement-88490f5ee5bc6ad0-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-88490f5ee5bc6ad0-54cd63e248504b84185143a1d93acb06-v2","<b>다중타격</b>","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
@@ -12835,29 +12835,29 @@ This is the replacement text for: [pyrebound]"
 "RoomStateSelfDamageWhenCorruptionModifier","RoomStateSelfDamageWhenCorruptionModifier","늪지의 주민","","False","","",""
 "RoomStateSpawnUnitOnUnitSpawnModifier","RoomStateSpawnUnitOnUnitSpawnModifier","그림자의 부름","","False","","",""
 "RoomStateSpellCostModifier","RoomStateSpellCostModifier","감소된 주문 비용","","False","","",""
-"RoomStateSpikesDamageModifier","RoomStateSpikesDamageModifier","가시 증가","","False","","",""
-"RoomStateSpikesDamageModifier_CardText[Zero]","RoomStateSpikesDamageModifier_CardText[Zero]","이 층에서 가시가 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'Zero')
+"RoomStateSpikesDamageModifier","RoomStateSpikesDamageModifier","뾰족함 증가","","False","","",""
+"RoomStateSpikesDamageModifier_CardText[Zero]","RoomStateSpikesDamageModifier_CardText[Zero]","이 층에서 뾰족함이 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'Zero')
 
 [codeint0]: A number"
-"RoomStateSpikesDamageModifier_CardText[One]","RoomStateSpikesDamageModifier_CardText[One]","이 층에서 가시가 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'One')
+"RoomStateSpikesDamageModifier_CardText[One]","RoomStateSpikesDamageModifier_CardText[One]","이 층에서 뾰족함이 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'One')
 
 [codeint0]: A number"
-"RoomStateSpikesDamageModifier_CardText[Few]","RoomStateSpikesDamageModifier_CardText[Few]","이 층에서 가시가 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'Few')
+"RoomStateSpikesDamageModifier_CardText[Few]","RoomStateSpikesDamageModifier_CardText[Few]","이 층에서 뾰족함이 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'Few')
 
 [codeint0]: A number"
-"RoomStateSpikesDamageModifier_CardText[Plural]","RoomStateSpikesDamageModifier_CardText[Plural]","이 층에서 가시가 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'Plural')
+"RoomStateSpikesDamageModifier_CardText[Plural]","RoomStateSpikesDamageModifier_CardText[Plural]","이 층에서 뾰족함이 주는 피해가 [codeint0] 증가합니다","","False","","","(Plural form: 'Plural')
 
 [codeint0]: A number"
-"RoomStateSpikesDamageModifier_TooltipText[Zero]","RoomStateSpikesDamageModifier_TooltipText[Zero]","이 층에서 <b>가시</b>는 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'Zero')
+"RoomStateSpikesDamageModifier_TooltipText[Zero]","RoomStateSpikesDamageModifier_TooltipText[Zero]","이 층에서 <b>뾰족함 </b>은 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'Zero')
 
 [codeint0]: A number"
-"RoomStateSpikesDamageModifier_TooltipText[One]","RoomStateSpikesDamageModifier_TooltipText[One]","이 층에서 <b>가시</b>는 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'One')
+"RoomStateSpikesDamageModifier_TooltipText[One]","RoomStateSpikesDamageModifier_TooltipText[One]","이 층에서 <b>뾰족함</b>은 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'One')
 
 [codeint0]: A number"
-"RoomStateSpikesDamageModifier_TooltipText[Few]","RoomStateSpikesDamageModifier_TooltipText[Few]","이 층에서 <b>가시</b>는 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'Few')
+"RoomStateSpikesDamageModifier_TooltipText[Few]","RoomStateSpikesDamageModifier_TooltipText[Few]","이 층에서 <b>뾰족함</b>은 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'Few')
 
 [codeint0]: A number"
-"RoomStateSpikesDamageModifier_TooltipText[Plural]","RoomStateSpikesDamageModifier_TooltipText[Plural]","이 층에서 <b>가시</b>는 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'Plural')
+"RoomStateSpikesDamageModifier_TooltipText[Plural]","RoomStateSpikesDamageModifier_TooltipText[Plural]","이 층에서 <b>뾰족함</b>은 중첩 당 피해를 +[codeint0] 더 줍니다.","","False","","","(Plural form: 'Plural')
 
 [codeint0]: A number"
 "RoomStateStatusEffectDamageModifier","RoomStateStatusEffectDamageModifier","전략적","","False","","",""
@@ -13987,7 +13987,7 @@ Evil Eye, Spellcraft, True Champion"
 "SpChallengeData_descriptionKey-3cfbe628d976d8cd-6871f4bfe65fdc741acc1b6279ba1e0a-v2","SpChallengeData_descriptionKey-3cfbe628d976d8cd-6871f4bfe65fdc741acc1b6279ba1e0a-v2","놈들의 군대는 강하고 점점 더 강해집니다. 다행히 당신의 군대도 한 가닥 합니다.","","False","","","(Group: 'SpChallengeData_ShardStrongEnemiesChallenge')"
 "SpChallengeData_descriptionKey-40b0eede0b0396eb-e39215fda28571c44b315822eb3452de-v2","SpChallengeData_descriptionKey-40b0eede0b0396eb-e39215fda28571c44b315822eb3452de-v2","카드의 강화 슬롯은 한 개인데 이미 채워져 있습니다.","","False","","","(Group: 'SpChallengeData_PreUpgradedChallenge')"
 "SpChallengeData_descriptionKey-4378c316207b0c8f-34c3928b9fabab140a8b31e80503695a-v2","SpChallengeData_descriptionKey-4378c316207b0c8f-34c3928b9fabab140a8b31e80503695a-v2","불안정한 계측기, 미리 정해진 길, 그리고 무작위 챔피언이라니. 실력이 좋기를 빕니다.","","False","","","(Group: 'SpChallengeData_RNGMutatorsChallenge')"
-"SpChallengeData_descriptionKey-4e3a745c4fd08525-a090d9a2c664de4488fe3457ef33cce9-v2","SpChallengeData_descriptionKey-4e3a745c4fd08525-a090d9a2c664de4488fe3457ef33cce9-v2","일반 우두머리들은 은신을, 당신은 짐덩이를, 그리고 적들은 가시를 얻습니다. 네, 별로 좋은 건 없네요.","","False","","","(Group: 'SpChallengeData_AnnoyingChallenge')"
+"SpChallengeData_descriptionKey-4e3a745c4fd08525-a090d9a2c664de4488fe3457ef33cce9-v2","SpChallengeData_descriptionKey-4e3a745c4fd08525-a090d9a2c664de4488fe3457ef33cce9-v2","일반 우두머리들은 은신을, 당신은 짐덩이를, 그리고 적들은 뾰족함을 얻습니다. 네, 별로 좋은 건 없네요.","","False","","","(Group: 'SpChallengeData_AnnoyingChallenge')"
 "SpChallengeData_descriptionKey-5d5f56b2d26ae763-aef2308e4ee999742ab8ee498c7de070-v2","SpChallengeData_descriptionKey-5d5f56b2d26ae763-aef2308e4ee999742ab8ee498c7de070-v2","당신의 유닛에게 영구 사망과 심장 적출이 적용됩니다. 눈알이 휘둥그레지지 않나요?","","False","","","(Group: 'SpChallengeData_EvilEyeChallenge')"
 "SpChallengeData_descriptionKey-6b1db403d7fc6cdd-dbc4d247a3d98ee44ab7a6ff64035fdd-v2","SpChallengeData_descriptionKey-6b1db403d7fc6cdd-dbc4d247a3d98ee44ab7a6ff64035fdd-v2","미안해요.","","False","","","(Group: 'SpChallengeData_BlightedHandChallenge')"
 "SpChallengeData_descriptionKey-6e03e04b37a2e53f-014378c8c65d06b4383d5fa4c850ffe0-v2","SpChallengeData_descriptionKey-6e03e04b37a2e53f-014378c8c65d06b4383d5fa4c850ffe0-v2","모든 게 거대하고 아래로 끌려 내려갑니다. 심지어 강화도 더 할 수 있습니다.","","False","","","(Group: 'SpChallengeData_HeavyChallenge')"
@@ -14446,20 +14446,20 @@ Note: the ""Resolve"" here should match Trigger_PostCombat_CardText. ""Action"" 
 
 [codeint0]: A number"
 "StatusEffect_SpellWeakness_Stack_CardText","StatusEffect_SpellWeakness_Stack_CardText","<nobr>주문 약점 {0}</nobr>","","False","","","{0}: A number"
-"StatusEffect_Spikes_CardText","StatusEffect_Spikes_CardText","가시","","False","","","A status effect game term. This means it should always be only this word no matter what (never plural, etc.). This particular status effect means the unit does damage when attacked."
-"StatusEffect_Spikes_CardTooltipText[Zero]","StatusEffect_Spikes_CardTooltipText[Zero]","[spikes]를 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'Zero')
+"StatusEffect_Spikes_CardText","StatusEffect_Spikes_CardText","뾰족함","","False","","","A status effect game term. This means it should always be only this word no matter what (never plural, etc.). This particular status effect means the unit does damage when attacked."
+"StatusEffect_Spikes_CardTooltipText[Zero]","StatusEffect_Spikes_CardTooltipText[Zero]","[spikes]을 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'Zero')
 
 [spikes]: <b>Spikes</b>
 [codeint0]: A number"
-"StatusEffect_Spikes_CardTooltipText[One]","StatusEffect_Spikes_CardTooltipText[One]","[spikes]를 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'One')
+"StatusEffect_Spikes_CardTooltipText[One]","StatusEffect_Spikes_CardTooltipText[One]","[spikes]을 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'One')
 
 [spikes]: <b>Spikes</b>
 [codeint0]: A number"
-"StatusEffect_Spikes_CardTooltipText[Few]","StatusEffect_Spikes_CardTooltipText[Few]","[spikes]를 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'Few')
+"StatusEffect_Spikes_CardTooltipText[Few]","StatusEffect_Spikes_CardTooltipText[Few]","[spikes]을 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'Few')
 
 [spikes]: <b>Spikes</b>
 [codeint0]: A number"
-"StatusEffect_Spikes_CardTooltipText[Plural]","StatusEffect_Spikes_CardTooltipText[Plural]","[spikes]를 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'Plural')
+"StatusEffect_Spikes_CardTooltipText[Plural]","StatusEffect_Spikes_CardTooltipText[Plural]","[spikes]을 가진 유닛이 공격당할 때, 공격자는 중첩 당 [codeint0] 만큼의 피해를 받습니다.","","False","","","(Plural form: 'Plural')
 
 [spikes]: <b>Spikes</b>
 [codeint0]: A number"
@@ -14475,7 +14475,7 @@ Note: the ""Resolve"" here should match Trigger_PostCombat_CardText. ""Action"" 
 "StatusEffect_Spikes_CharacterTooltipText[Plural]","StatusEffect_Spikes_CharacterTooltipText[Plural]","이 유닛을 공격한 유닛에게 피해를 [codeint0] 줍니다.","","False","","","(Plural form: 'Plural')
 
 [codeint0]: A number"
-"StatusEffect_Spikes_Stack_CardText","StatusEffect_Spikes_Stack_CardText","<nobr>가시 {0}</nobr>","","False","","","{0}: A number"
+"StatusEffect_Spikes_Stack_CardText","StatusEffect_Spikes_Stack_CardText","<nobr>뾰족함 {0}</nobr>","","False","","","{0}: A number"
 "StatusEffect_Stealth_CardText","StatusEffect_Stealth_CardText","은신","","False","","","A status effect game term. This means it should always be only this word no matter what (never plural, etc.). This particular status effect means the unit cannot be attacked during combat that round."
 "StatusEffect_Stealth_CardTooltipText","StatusEffect_Stealth_CardTooltipText","교전 중 공격 대상이 되지 않습니다.<br>매 턴마다 감소합니다.","","False","","",""
 "StatusEffect_Stealth_CharacterTooltipText[Zero]","StatusEffect_Stealth_CharacterTooltipText[Zero]","다음 [codeint0] 턴 동안 교전 중 공격 대상이 되지 않습니다.","","False","","","(Plural form: 'Zero')
