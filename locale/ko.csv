@@ -375,7 +375,7 @@ This triggers on Reserve
 
 This triggers on Slay
 [snack]: Morsel"
-"CardData_descriptionKey-28061a75296c8235-cd5dc584a6f69214091c6123b9fa9de7-v2","CardData_descriptionKey-28061a75296c8235-cd5dc584a6f69214091c6123b9fa9de7-v2","영구히 +2[attack] $을/를$ 얻습니다.","","False","","","(Group: 'CardData_FeederPermanentAttackBoost')
+"CardData_descriptionKey-28061a75296c8235-cd5dc584a6f69214091c6123b9fa9de7-v2","CardData_descriptionKey-28061a75296c8235-cd5dc584a6f69214091c6123b9fa9de7-v2","영구히 +2[attack] $을$ 얻습니다.","","False","","","(Group: 'CardData_FeederPermanentAttackBoost')
 
 This triggers on Gorge
 [attack]: <sprite name=""Attack"">"
@@ -14943,7 +14943,7 @@ Speaker: Heph the Blacksmith. Gender: Female."
 "InkLoc-0102","InkLoc-0102","<style=""Body"">이전처럼, <color=""blue"">아마겟돈</color> 전투의 현장이 눈 속에 으스스하게 널려 있습니다.","","False","","","(Group: 'HiddenUpgrade')"
 "InkLoc-0103","InkLoc-0103","이미 와 봤던 곳일까요? 아니면 이 아수라장이 워낙 넓은 데에서 펼쳐져 눈치채지 못 했던 걸까요?","","False","","","(Group: 'HiddenUpgrade')"
 "InkLoc-0104","InkLoc-0104","하지만 당신은 이전에는 찾지 못했던 것을 찾아냅니다. 어두운 형체 속에 밝게 빛나는 유물이 있습니다. 어쩌면 이 유물이라면 이 전쟁을 그저 과거의 유산으로 만들 수 있을지도 모릅니다...</style>","","False","","","(Group: 'HiddenUpgrade')"
-"InkLoc-0105","InkLoc-0105","<style=""Body"">한 기이한 <color=""purple"">형상</color>이 열차를 향해 달려오고 있습니다. 머지 않은 거리에서 <style=""Keyword"">날개달린 자들</style>이 그를 뒤쫒고 있습니다.","","False","","","(Group: 'PurgeableCurse')"
+"InkLoc-0105","InkLoc-0105","<style=""Body"">한 기이한 <color=""purple"">형상</color>이 열차를 향해 달려오고 있습니다. 머지 않은 거리에서 <style=""Keyword"">날개달린 자들</style>이 그를 뒤쫓고 있습니다.","","False","","","(Group: 'PurgeableCurse')"
 "InkLoc-0106","InkLoc-0106","“설명할 시간 없소. 이 것들을 받아 숨겨주시오. 이걸 지닌 채로 저 놈들에게 잡힐 수는 없소. 나중에 찾으러 돌아오리다. 걱정 마시오. <b>나중에 후하게 사례하겠소</b>.”","","False","","","(Group: 'PurgeableCurse')
 Speaker: Dante. Gender: Male."
 "InkLoc-0107","InkLoc-0107","<align=""center""><size=120%><b><smallcaps>“<anim=shake>당장! 급하오!</anim>”</smallcaps></b></size></align></style>","","False","","","(Group: 'PurgeableCurse')
