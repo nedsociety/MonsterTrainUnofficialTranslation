@@ -11087,7 +11087,7 @@ This refers to the subtype ""Steward"", not the unit ""Train Steward"" (although
 "EventChoice_SpellMerge_Accept_Optional","EventChoice_SpellMerge_Accept_Optional","{Card: MergedSpell_Single}에 2 장의 주문의 정수를 담습니다.{DeckReward: SpellMergeReward}","","False","","","{Card: MergedSpell_Single}: A card name.  For example: Trap Chute
 {DeckReward: SpellMergeReward}:"
 "EventChoice_SpellMerge_Duplicate","EventChoice_SpellMerge_Duplicate","뭔가 잘못됐어...","","False","","",""
-"EventChoice_SpellMerge_Duplicate_Optional","EventChoice_SpellMerge_Duplicate_Optional","주문을 하나 정화하고, {Upgrade: ZeroCostAnnihilate}이 부여된 [effect0.power] 장의 복사본을 생성합니다.{DeckReward: SpellMerge_DuplicateReward}","","False","","","{Upgrade: ZeroCostAnnihilate}: An upgrade name.  For example: Monster Railspike
+"EventChoice_SpellMerge_Duplicate_Optional","EventChoice_SpellMerge_Duplicate_Optional","주문을 하나 정화하고, {Upgrade: ZeroCostAnnihilate}이 부여된 3 장의 복사본을 생성합니다.{DeckReward: SpellMerge_DuplicateReward}","","False","","","{Upgrade: ZeroCostAnnihilate}: An upgrade name.  For example: Monster Railspike
 {DeckReward: SpellMerge_DuplicateReward}:"
 "EventChoice_SteroidsPrototype_Leave","EventChoice_SteroidsPrototype_Leave","가만히 놔 둡니다.","","False","","",""
 "EventChoice_SteroidsPrototype_MagicBuff","EventChoice_SteroidsPrototype_MagicBuff","내 마법 능력을 향상시킵니다.","","False","","",""
