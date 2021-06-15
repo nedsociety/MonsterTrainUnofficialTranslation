@@ -9207,7 +9207,7 @@ This refers to the subtype ""Steward"", not the unit ""Train Steward"" (although
 [annihilate]: <b>Purge</b>
 [consume]: <b>Consume</b>"
 "CollectableRelicData_descriptionKey-8e49107aa9cc733c-0855ab14ea90d124ba759676e3e7f31d-v2","CollectableRelicData_descriptionKey-8e49107aa9cc733c-0855ab14ea90d124ba759676e3e7f31d-v2","다시 굴리기 비용이 공짜입니다.","","False","","","(Group: 'CollectableRelicData_FreeReroll')"
-"CollectableRelicData_descriptionKey-8f2907df13c33a97-d329316066a11694c86595d6ec7beb5b-v2","CollectableRelicData_descriptionKey-8f2907df13c33a97-d329316066a11694c86595d6ec7beb5b-v2","턴마다 내 덱의 [blight] 카드 한 장당 +1[ember] $을$ 얻습니다.","","False","","","(Group: 'CollectableRelicData_ScalingBlightEnergyAdd')
+"CollectableRelicData_descriptionKey-8f2907df13c33a97-d329316066a11694c86595d6ec7beb5b-v2","CollectableRelicData_descriptionKey-8f2907df13c33a97-d329316066a11694c86595d6ec7beb5b-v2","턴마다 내 덱의 [blight] 카드 [effect0.power] 장당 +1[ember] $을$ 얻습니다.","","False","","","(Group: 'CollectableRelicData_ScalingBlightEnergyAdd')
 
 [ember]: <sprite name=""Ember"">
 [effect0.power]: A number
