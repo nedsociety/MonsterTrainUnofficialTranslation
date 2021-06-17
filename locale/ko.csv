@@ -12079,7 +12079,7 @@ Russian: левый мини-джойстик"
 "MutatorData_descriptionKey-7cedabbfc2837fb5-c6769b81cab48d745ad9de3579419ef6-v2","MutatorData_descriptionKey-7cedabbfc2837fb5-c6769b81cab48d745ad9de3579419ef6-v2","아군 유닛이 피해를 입을 때마다 1[coin] $을$ 잃습니다.","","False","","","(Group: 'MutatorData_LoseMoneyOnHit')
 
 [coin]: <sprite name=""Gold"">"
-"MutatorData_descriptionKey-8e36f9ae1d89c3ce-ecd465e184ede64408a77372d045468a-v2","MutatorData_descriptionKey-8e36f9ae1d89c3ce-ecd465e184ede64408a77372d045468a-v2","당신의 챔피언이 [sap] 10 및 [heal_immune] $을$ 가지고 입장합니다.","","False","","","(Group: 'MutatorData_ChampionSapAndHeartless')
+"MutatorData_descriptionKey-8e36f9ae1d89c3ce-ecd465e184ede64408a77372d045468a-v2","MutatorData_descriptionKey-8e36f9ae1d89c3ce-ecd465e184ede64408a77372d045468a-v2","당신의 챔피언이 [sap] 10 및 [heal_immune]을 가지고 입장합니다.","","False","","","(Group: 'MutatorData_ChampionSapAndHeartless')
 
 [sap]: <b>Sap</b>
 [heal_immune]: <b>Heartless</b>"
@@ -12478,7 +12478,7 @@ This is the replacement text for: [stygianblessing]"
 "ReplacementStringsData__replacement-5f656dff10b99974-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-5f656dff10b99974-54cd63e248504b84185143a1d93acb06-v2","<b>주입됨</b>","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
 
 This is the replacement text for: [infused]"
-"ReplacementStringsData__replacement-629e8eb7d6b2394d-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-629e8eb7d6b2394d-54cd63e248504b84185143a1d93acb06-v2","<b>심장 적출</b>","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
+"ReplacementStringsData__replacement-629e8eb7d6b2394d-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-629e8eb7d6b2394d-54cd63e248504b84185143a1d93acb06-v2","<b>무정함</b>","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
 A trait or status effect. This should match its respective string elsewhere. This is a technical game term and so should never be pluralized or change based on context.
 This is the replacement text for: [heal_immune]"
 "ReplacementStringsData__replacement-63942d432c755ec5-54cd63e248504b84185143a1d93acb06-v2","ReplacementStringsData__replacement-63942d432c755ec5-54cd63e248504b84185143a1d93acb06-v2","쪼갬","","False","","","(Group: 'ReplacementStringsData_ReplacementStringsData')
@@ -13988,7 +13988,7 @@ Evil Eye, Spellcraft, True Champion"
 "SpChallengeData_descriptionKey-40b0eede0b0396eb-e39215fda28571c44b315822eb3452de-v2","SpChallengeData_descriptionKey-40b0eede0b0396eb-e39215fda28571c44b315822eb3452de-v2","카드의 강화 슬롯은 한 개인데 이미 채워져 있습니다.","","False","","","(Group: 'SpChallengeData_PreUpgradedChallenge')"
 "SpChallengeData_descriptionKey-4378c316207b0c8f-34c3928b9fabab140a8b31e80503695a-v2","SpChallengeData_descriptionKey-4378c316207b0c8f-34c3928b9fabab140a8b31e80503695a-v2","불안정한 계측기, 미리 정해진 길, 그리고 무작위 챔피언이라니. 실력이 좋기를 빕니다.","","False","","","(Group: 'SpChallengeData_RNGMutatorsChallenge')"
 "SpChallengeData_descriptionKey-4e3a745c4fd08525-a090d9a2c664de4488fe3457ef33cce9-v2","SpChallengeData_descriptionKey-4e3a745c4fd08525-a090d9a2c664de4488fe3457ef33cce9-v2","일반 우두머리들은 은신을, 당신은 짐덩이를, 그리고 적들은 뾰족함을 얻습니다. 네, 별로 좋은 건 없네요.","","False","","","(Group: 'SpChallengeData_AnnoyingChallenge')"
-"SpChallengeData_descriptionKey-5d5f56b2d26ae763-aef2308e4ee999742ab8ee498c7de070-v2","SpChallengeData_descriptionKey-5d5f56b2d26ae763-aef2308e4ee999742ab8ee498c7de070-v2","당신의 유닛에게 영구 사망과 심장 적출이 적용됩니다. 눈알이 휘둥그레지지 않나요?","","False","","","(Group: 'SpChallengeData_EvilEyeChallenge')"
+"SpChallengeData_descriptionKey-5d5f56b2d26ae763-aef2308e4ee999742ab8ee498c7de070-v2","SpChallengeData_descriptionKey-5d5f56b2d26ae763-aef2308e4ee999742ab8ee498c7de070-v2","당신의 유닛에게 영구 사망과 무정함이 적용됩니다. 눈알이 휘둥그레지지 않나요?","","False","","","(Group: 'SpChallengeData_EvilEyeChallenge')"
 "SpChallengeData_descriptionKey-6b1db403d7fc6cdd-dbc4d247a3d98ee44ab7a6ff64035fdd-v2","SpChallengeData_descriptionKey-6b1db403d7fc6cdd-dbc4d247a3d98ee44ab7a6ff64035fdd-v2","미안해요.","","False","","","(Group: 'SpChallengeData_BlightedHandChallenge')"
 "SpChallengeData_descriptionKey-6e03e04b37a2e53f-014378c8c65d06b4383d5fa4c850ffe0-v2","SpChallengeData_descriptionKey-6e03e04b37a2e53f-014378c8c65d06b4383d5fa4c850ffe0-v2","모든 게 거대하고 아래로 끌려 내려갑니다. 심지어 강화도 더 할 수 있습니다.","","False","","","(Group: 'SpChallengeData_HeavyChallenge')"
 "SpChallengeData_descriptionKey-7f5f764bc932a33f-a734022f86e1d9044b28c252cdfe2ed9-v2","SpChallengeData_descriptionKey-7f5f764bc932a33f-a734022f86e1d9044b28c252cdfe2ed9-v2","챔피언이 없는 대신 헤프가 도와줍니다.","","False","","","(Group: 'SpChallengeData_TruerChampionHephChallenge')"
@@ -14235,7 +14235,7 @@ Note: the ""Resolve"" here should match Trigger_PostCombat_CardText. ""Action"" 
 "StatusEffect_Hatch_Stack_CardText","StatusEffect_Hatch_Stack_CardText","<nobr>[hatch] {0}</nobr>","","False","","","[hatch]: <b>Shell</b>
 {0}: A number"
 "StatusEffect_HealImmunity","StatusEffect_HealImmunity","이 유닛은 치유될 수 없습니다.","","False","","",""
-"StatusEffect_HealImmunity_CardText","StatusEffect_HealImmunity_CardText","심장 적출","","False","","","A status effect game term. This means it should always be only this word no matter what (never plural, etc.). This particular status effect means the unit cannot be healed."
+"StatusEffect_HealImmunity_CardText","StatusEffect_HealImmunity_CardText","무정함","","False","","","A status effect game term. This means it should always be only this word no matter what (never plural, etc.). This particular status effect means the unit cannot be healed."
 "StatusEffect_HealImmunity_CardTooltipText","StatusEffect_HealImmunity_CardTooltipText","치유될 수 없습니다.","","False","","",""
 "StatusEffect_HealImmunity_CharacterTooltipText","StatusEffect_HealImmunity_CharacterTooltipText","치유될 수 없습니다.","","False","","",""
 "StatusEffect_HealImmunity_NotificationText","StatusEffect_HealImmunity_NotificationText","치유 막힘!","","False","","",""
@@ -14742,7 +14742,7 @@ Note: the ""Resolve"" here should match Trigger_PostCombat_CardText. ""Action"" 
 "Trigger_OnAnyMonsterDeathOnFloor_TooltipText","Trigger_OnAnyMonsterDeathOnFloor_TooltipText","이 층에서 당신의 유닛이 죽을 때 발동합니다.","","False","","",""
 "Trigger_OnAnyUnitDeathOnFloor_CardText","Trigger_OnAnyUnitDeathOnFloor_CardText","수확","","False","","",""
 "Trigger_OnAnyUnitDeathOnFloor_TooltipText","Trigger_OnAnyUnitDeathOnFloor_TooltipText","이 층의 유닛이 죽을 때 발동합니다.","","False","","",""
-"Trigger_OnArmorAdded_CardText","Trigger_OnArmorAdded_CardText","방어구 착용","","False","","",""
+"Trigger_OnArmorAdded_CardText","Trigger_OnArmorAdded_CardText","방어도 획득 시","","False","","",""
 "Trigger_OnArmorAdded_TooltipText","Trigger_OnArmorAdded_TooltipText","이 유닛에 [armor]가 추가될 때 발동합니다.","","False","","","[armor]: <b>Armor</b>"
 "Trigger_OnAttacking_CardText","Trigger_OnAttacking_CardText","타격","","False","","",""
 "Trigger_OnAttacking_TooltipText","Trigger_OnAttacking_TooltipText","공격할 때 발동합니다.","","False","","",""
