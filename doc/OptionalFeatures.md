@@ -10,8 +10,10 @@ Note: The way how font patching works is to dynamically register your fonts as "
 
 ## Language-specific features
 
-* `KoreanWordWrapping`: For Korean language. Apply `<nobr>` wrapping on every single Korean word to properly implement a proper line breaking.
-* `KoreanPostpositionTransformation`: For Korean language. Apply postposition transform rules (e.g., 은 <-> 는, 을 <-> 를, 이 <-> 가) to the text. NOTE: this is a performance-heavy feature with reported frame drop.
+### Korean
 
+* `KoreanWordWrapping`: Apply `<nobr>` wrapping on every single Korean word to properly implement the line breaking rule.
+* `KoreanDisablePostpositionTransformation`: Disable applying postposition transform rules to the text.
+* `KoreanPostpositionTransformation`: Apply postposition transform rules (e.g., 은 <-> 는, 을 <-> 를, 이 <-> 가) to the text. NOTE: this is a performance-heavy feature with reported frame drop.
 
-
+Note: Korean translation requires EXACTLY one of either `KoreanDisablePostpositionTransformation` or `KoreanPostpositionTransformation` to be present. If none of them are present, postpositions which are marked as dynamically transformed (surrounded by `$`) will be printed with mark.

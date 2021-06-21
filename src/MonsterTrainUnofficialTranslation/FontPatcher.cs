@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using HarmonyLib;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace MonsterTrainUnofficialTranslation
@@ -71,7 +72,7 @@ namespace MonsterTrainUnofficialTranslation
             if (!active)
                 return;
 
-            var fontAsset = typeof(TMPro.TextMeshProUGUI).GetField("m_fontAsset", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(element) as TMPro.TMP_FontAsset;
+            var fontAsset = Traverse.Create(element).Field("m_fontAsset").GetValue<TMPro.TMP_FontAsset>();
             if (fontAsset == null)
                 return;
 
@@ -93,7 +94,7 @@ namespace MonsterTrainUnofficialTranslation
                 if (optionalFeatures.HasFlag(OptionalFeatures.OverrideFontScalingAsFallbackOnes))
                 {
                     var newFaceInfo = AdjustFaceInfo(fontAsset.faceInfo, fallback.faceInfo);
-                    typeof(TMPro.TMP_FontAsset).GetField("m_FaceInfo", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(fontAsset, newFaceInfo);
+                    Traverse.Create(fontAsset).Field("m_FaceInfo").SetValue(newFaceInfo);
                 }
             }
             else if (!unhandledFonts.Contains(fontAsset.name))

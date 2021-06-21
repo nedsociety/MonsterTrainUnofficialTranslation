@@ -107,7 +107,7 @@ namespace MonsterTrainUnofficialTranslation
 
                     if (postprocess)
                     {
-                        if (!optionalFeatures.HasFlag(OptionalFeatures.KoreanPostpositionTransformation))
+                        if (optionalFeatures.HasFlag(OptionalFeatures.KoreanDisablePostpositionTransformation))
                             target = LanguageKoreanSpecifics.DisablePostpositionTransform(target);
 
                         if (optionalFeatures.HasFlag(OptionalFeatures.KoreanWordWrapping))

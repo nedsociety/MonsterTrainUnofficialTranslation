@@ -82,13 +82,15 @@ namespace MonsterTrainUnofficialTranslation
                 // Numbers
                 switch (lastVowelCodepoint - 0x30)
                 {
-                    case 0: // 영, 십, 백, 천, 만, 억, *조*, 경, *해*, 극
+                    case 0: // 영, 십, 백, 천, 만, 억, *조*, 경, *해*
                         // This is actually confusing as
                         // - the number is a multiple of 10^12 but not a multiple of 10^13 (~조),
                         // - and the number is a multiple of 10^20 but not a multiple of 10^24 (~해),
                         // are without plosives.
                         //
-                        // But in most case it's usually justified to use any postposition in every day life for these large numbers,
+                        // There are also cases for 자, 구, 재 but they're not practically spoken at all in daily life.
+                        //
+                        // Anyway in most case it's usually justified to use any postposition in every day life even for 조 and 해,
                         // not to mention the game where such numbers don't appear at all.
                         return entry.Value.withPlosive;
                     case 1: // 일
@@ -110,9 +112,6 @@ namespace MonsterTrainUnofficialTranslation
             return postposition;
         }
     };
-    
-
-
 
     static class LanguageKoreanSpecifics
     {

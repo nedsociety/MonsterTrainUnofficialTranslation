@@ -16,7 +16,8 @@ namespace MonsterTrainUnofficialTranslation
         OverrideFontScalingAsFallbackOnes = 1,
         KoreanWordWrapping = 2,
         KoreanPostpositionTransformation = 4,
-        WarnAccidentallySameStrings = 8,
+        KoreanDisablePostpositionTransformation = 8,
+        WarnAccidentallySameStrings = 16,
     };
 
     [BepInEx.BepInPlugin("com.nedsociety.monstertrainunofficialtranslation", "MonsterTrainUnofficialTranslation", "1.0.0.0")]

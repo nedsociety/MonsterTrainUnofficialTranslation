@@ -11,7 +11,7 @@
             "Roboto-Black SDF": "NotoSansKR-Black SDF",
             "Journal SDF": "NanumBrushScript-Regular SDF"
         },
-        "OptionalFeatures": "OverrideFontScalingAsFallbackOnes, KoreanWordWrapping",
+        "OptionalFeatures": "OverrideFontScalingAsFallbackOnes, KoreanWordWrapping, KoreanDisablePostpositionTransformation",
         "ItalicSpacing": "0.2em"
     },
     "한국어 (+조사 변환, 정확하지만 느림)": {
