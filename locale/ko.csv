@@ -10889,7 +10889,7 @@ This refers to the subtype ""Steward"", not the unit ""Train Steward"" (although
 "EventChoice_Copier_Copy1","EventChoice_Copier_Copy1","멀리서 에너지를 흡수합니다.","","False","","",""
 "EventChoice_Copier_Copy1_Optional","EventChoice_Copier_Copy1_Optional","카드를 한 장 복제합니다.{DeckReward: CardDuplicatorReward}","","False","","","{DeckReward: CardDuplicatorReward}:"
 "EventChoice_Copier_CopyAnnihilate","EventChoice_Copier_CopyAnnihilate","무언가를 던져 넣습니다.","","False","","",""
-"EventChoice_Copier_CopyAnnihilate_Optional","EventChoice_Copier_CopyAnnihilate_Optional","카드 한 장을 5 번 복제합니다.{DeckReward: CardDuplicatorReward}","","False","","","{DeckReward: CardAnnihilateDuplicatorReward}:"
+"EventChoice_Copier_CopyAnnihilate_Optional","EventChoice_Copier_CopyAnnihilate_Optional","카드 한 장을 5 번 복제합니다.{DeckReward: CardAnnihilateDuplicatorReward}","","False","","","{DeckReward: CardAnnihilateDuplicatorReward}:"
 "EventChoice_CursedEmber_Blessing","EventChoice_CursedEmber_Blessing","돌출된 무언가를 가져갑니다.","","False","","",""
 "EventChoice_CursedEmber_Blessing_Optional","EventChoice_CursedEmber_Blessing_Optional","{Relic: ScalingBlightEnergyAdd}을 얻습니다. {Card: BlightPyreDamageInHand}을 2 장 얻습니다.","","False","","","{Relic: ScalingBlightEnergyAdd}: A blessing name.  For example: Pyre Hungry
 {Card: BlightPyreDamageInHand}: A card name.  For example: Trap Chute"
