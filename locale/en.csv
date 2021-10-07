@@ -14264,7 +14264,7 @@ Evil Eye, Spellcraft, True Champion"
 "StatusEffect_Cardless_CardText","StatusEffect_Cardless_CardText","Cardless","StatusEffect_Cardless_CardText","","","",""
 "StatusEffect_Cardless_CharacterTooltipText","StatusEffect_Cardless_CharacterTooltipText","This unit was not summoned from a unit card. It won't appear in any card pile and it can't gain Endless.","StatusEffect_Cardless_CharacterTooltipText","","","",""
 "StatusEffect_ClearDebuff_CardText","StatusEffect_ClearDebuff_CardText","Purify","StatusEffect_ClearDebuff_CardText","","","",""
-"StatusEffect_ClearDebuff_CharacterTooltipText","StatusEffect_ClearDebuff_CharacterTooltipText","After a debuff deals damage to this unit, remove that debuff.","StatusEffect_ClearDebuff_CharacterTooltipText","","","",""
+"StatusEffect_ClearDebuff_CharacterTooltipText","StatusEffect_ClearDebuff_CharacterTooltipText","Removes all damaging debuffs from this unit at the end of turn.","StatusEffect_ClearDebuff_CharacterTooltipText","","","",""
 "StatusEffect_CorruptPoison_CardText","StatusEffect_CorruptPoison_CardText","Reap","StatusEffect_CorruptPoison_CardText","","","",""
 "StatusEffect_CorruptPoison_CardTooltipText","StatusEffect_CorruptPoison_CardTooltipText","Unit takes 1 damage per stack of [corrupt] after combat ends.<br>Does not decrease.","StatusEffect_CorruptPoison_CardTooltipText","","","","[corrupt]: <sprite name=""ChargedEchoes"">"
 "StatusEffect_CorruptPoison_CharacterTooltipText[Zero]","StatusEffect_CorruptPoison_CharacterTooltipText[Zero]","Unit takes 1 damage per stack of [corrupt] after combat ends.<br>Does not decrease.<br>([codeint0] damage)","StatusEffect_CorruptPoison_CharacterTooltipText[Zero]","","","","(Plural form: 'Zero')
