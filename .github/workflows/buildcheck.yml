@@ -33,6 +33,7 @@ jobs:
           +app_update $MonsterTrainAppId
           +quit
         working-directory: ${{ env.STEAMCMDDIR }}
+        continue-on-error: true
       
       - name: Cache the files (only DLLs are needed)
         uses: actions/upload-artifact@v2
