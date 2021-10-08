@@ -1,4 +1,4 @@
-﻿param ([string]$PackageTarget, [string]$SolutionDir, [string]$ProjectDir, [string]$TargetDir)
+﻿param ([string]$PackageTarget, [string]$SolutionDir, [string]$ProjectDir, [string]$TargetDir, [string]$SteamAppsDir)
 
 $ErrorActionPreference = "Stop"
 
@@ -21,3 +21,7 @@ xcopy "$($SolutionDir)..\locale" "$($PackageTarget)\content\plugins\locale\" /EY
 CheckLastExitCode
 Copy-Item "$($ProjectDir)workshop.vdf" "$($PackageTarget)\"
 CheckLastExitCode
+
+# Install as local plugin
+#xcopy "$($PackageTarget)\content" "$($SteamAppsDir)\workshop\content\1102190\content\" /EY
+#CheckLastExitCode

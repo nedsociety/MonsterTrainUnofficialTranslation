@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Dynamic;
 using JObject = Newtonsoft.Json.Linq.JObject;
 using JToken = Newtonsoft.Json.Linq.JToken;
 
@@ -15,7 +12,7 @@ namespace MonsterTrainUnofficialTranslation
         None = 0,
         OverrideFontScalingAsFallbackOnes = 1,
         KoreanWordWrapping = 2,
-        KoreanPostpositionTransformation = 4,
+        KoreanEnablePostpositionTransformation = 4,
         KoreanDisablePostpositionTransformation = 8,
         WarnAccidentallySameStrings = 16,
     };
@@ -102,7 +99,7 @@ namespace MonsterTrainUnofficialTranslation
             {
                 Logger.LogInfo("No translation language set.");
                 SetupDummyPatchers();
-                
+
             }
             else if (!languageMap.ContainsKey(configLanguage.Value))
             {

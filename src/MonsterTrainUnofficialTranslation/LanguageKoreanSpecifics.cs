@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -232,8 +231,8 @@ namespace MonsterTrainUnofficialTranslation
                     if (match.Success && !SpriteName.TryGetValue(match.Groups[1].Value, out lastVowel))
                         lastVowel = m.Groups["lastVowel"].Value;
 
-                    
-                    string newPostposition = PostpositionTransformer.Transform( 
+
+                    string newPostposition = PostpositionTransformer.Transform(
                         lastVowel, m.Groups["postposition"].Value
                     );
                     if (match.Groups["nobrCheck"].Length > 0)
@@ -250,7 +249,7 @@ namespace MonsterTrainUnofficialTranslation
 
         public static string DisablePostpositionTransform(string text)
         {
-            // In case where KoreanPostpositionTransformation is disabled, we want to remove the brace ($$).
+            // In case where KoreanDisablePostpositionTransformation is specified, we want to remove the brace ($$).
             return regexRawPostposition.Replace(text, "${postposition}");
         }
     }

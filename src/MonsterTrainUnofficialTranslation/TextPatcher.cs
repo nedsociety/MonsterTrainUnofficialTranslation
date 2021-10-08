@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace MonsterTrainUnofficialTranslation
@@ -12,7 +10,7 @@ namespace MonsterTrainUnofficialTranslation
     {
         BepInEx.Logging.ManualLogSource Logger;
         bool active;
-        
+
         OrderedDictionary textDataBase;
         OrderedDictionary textDataTranslated;
         OptionalFeatures optionalFeatures;
@@ -69,7 +67,7 @@ namespace MonsterTrainUnofficialTranslation
                 }
             }
         }
-                
+
         Regex regexItalicTagClosingWithNonemptyContent = new Regex(@"(?<!\<i\>)\</i\>", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         string ApplyItalicSpacing(string text)
@@ -81,7 +79,7 @@ namespace MonsterTrainUnofficialTranslation
             return regexItalicTagClosingWithNonemptyContent.Replace(text, $"<space={italicSpacing}></i>");
         }
 
-        OrderedDictionary ReadWeblateCsvData(string path, bool postprocess, OptionalFeatures optionalFeatures)
+        public OrderedDictionary ReadWeblateCsvData(string path, bool postprocess, OptionalFeatures optionalFeatures)
         {
             var v2k = new Dictionary<string, string>();
             var ret = new OrderedDictionary();
@@ -141,7 +139,8 @@ namespace MonsterTrainUnofficialTranslation
             using (var streamreader = StringToStreamReader(src.Export_CSV(null)))
             using (var csv = new CsvHelper.CsvReader(streamreader, System.Globalization.CultureInfo.InvariantCulture))
             {
-                foreach (var record in csv.GetRecords<dynamic>()) {
+                foreach (var record in csv.GetRecords<dynamic>())
+                {
                     var dict = record as IDictionary<string, object>;
                     ret.Add(dict["Key"] as string, dict["English [en-US]"] as string);
                 }
@@ -169,7 +168,7 @@ namespace MonsterTrainUnofficialTranslation
                 src.Import_CSV(null, streamwriter.ToString(), I2.Loc.eSpreadsheetUpdateMode.Merge);
             }
         }
-        
+
         OrderedDictionary FilterTextData(OrderedDictionary source, OrderedDictionary baseLanguage, OrderedDictionary translated)
         {
             OrderedDictionary ret = new OrderedDictionary();
@@ -264,7 +263,7 @@ namespace MonsterTrainUnofficialTranslation
 
         public string PostprocessString(string input)
         {
-            if (optionalFeatures.HasFlag(OptionalFeatures.KoreanPostpositionTransformation))
+            if (optionalFeatures.HasFlag(OptionalFeatures.KoreanEnablePostpositionTransformation))
                 input = LanguageKoreanSpecifics.TransformPostposition(input);
 
             return input;
