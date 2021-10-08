@@ -15,7 +15,7 @@ Adding a new language involves following files to be added/modified.
 - steam-related/thumbnail.psd
 - steam-related/[langcode].Desc.txt
 
-Do note that we accept WIP translation as well. And feel free to reach if this guide is too hard to follow.
+Do note that we accept WIP translations as well. And feel free to reach us anytime this guide is too hard to follow.
 
 ------
 

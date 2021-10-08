@@ -1,4 +1,4 @@
-# MonsterTrainUnofficialTranslation (WIP)
+# MonsterTrainUnofficialTranslation
 
 This repository houses both codes and translations for the unofficial translations of [Monster Train](https://store.steampowered.com/app/1102190/Monster_Train/).
 

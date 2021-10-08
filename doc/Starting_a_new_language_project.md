@@ -4,11 +4,9 @@ If you decide to start a language project, the first thing you must do is to for
 
 ## A good team
 
-As of Monster Train build #12838, there are **7,510 strings** with **63,332 words** to translate[^*]. This is not an easy amount so you might want to form a good team to translate. Consult to your local community.
+As of Monster Train build #12905, there are **7,510 strings** with **63,332 words** to translate. This is not an easy amount to work, so you might want to form a good team to translate. Consult to your local community.
 
-[^*]: Well, if you exclude unused strings then about 5% of them are gone, but it's hard to determine whether it is unused or not.
-
-If you want, you can also translate entire game by yourself. This was the case for Korean translation, and it took almost two months for me to finish it on my spare time.
+If you want, you can also translate the entire game by yourself. This was the case for Korean translation, and it took almost two months for me to finish it on my spare time.
 
 ## Set your license for the translation
 
