@@ -3,13 +3,10 @@ name: build
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 env:
   MonsterTrainAppId: '1102190'
   ModLoaderWorkshopId: '2187468759'
-  ModWorkshopId: '2513567370'
 
 jobs:
   download_basegame:
